@@ -70,6 +70,9 @@ export default {
 <style lang="scss">
 .app {
   min-height: 100vh;
+  background: url('~assets/pitch.svg');
+  background-repeat: no-repeat;
+  background-position: top left;
 }
 
 .main-content {
