@@ -1,0 +1,15 @@
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #E1348C;
+$primary-invert: findColorInvert($primary);
+
+// Links
+$link: $white;
+$info: $primary;
+$link-invert: $grey;
+$link-focus-border: $turquoise;
+
+$body-color: $white;
+
+$background: $black;
