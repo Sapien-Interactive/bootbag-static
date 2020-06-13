@@ -1,23 +1,35 @@
 <template>
   <div class="app">
-    <nav
-      class="navbar header has-shadow is-primary"
-      role="navigation"
-      aria-label="main navigation"
-    >
+    <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <Logo />
+        <LogoSmall />
+        <a
+          @click="isOpen = !isOpen"
+          v-bind:class="{ 'is-active': isOpen }"
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
         </a>
-
-        <div class="navbar-burger">
-          <span />
-          <span />
-          <span />
+      </div>
+      <div v-bind:class="{ 'is-active': isOpen }" class="navbar-menu">
+        <div class="navbar-end">
+          <router-link to="/" class="navbar-item is-tab active"
+            >Home</router-link
+          >
+          <router-link to="/privacy-policy" class="navbar-item is-tab"
+            >Privacy Policy</router-link
+          >
+          <router-link to="/terms" class="navbar-item is-tab"
+            >Terms</router-link
+          >
         </div>
       </div>
     </nav>
-
     <section class="main-content columns">
       <div class="container column is-12">
         <nuxt />
@@ -29,28 +41,25 @@
         <aside class="column is-4 section">
           Sapien Interactive &copy; {{ year }}
         </aside>
-        <ul class="column is-8 section links">
-          <li v-for="(item, key) of items" :key="key">
-            <nuxt-link :to="item.to" exact-active-class="is-active">
-              {{ item.title }}
-            </nuxt-link>
-          </li>
-        </ul>
+        <aside class="column is-8 section links right">
+          <a href="#" target="_blank"><img src="~assets/facebook.png"/></a>
+          <a href="#" target="_blank"><img src="~assets/twitter.png"/></a>
+        </aside>
       </section>
     </footer>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo'
-
+import LogoSmall from '~/components/LogoSmall'
 export default {
   components: {
-    Logo
+    LogoSmall
   },
 
   data() {
     return {
+      isOpen: false,
       items: [
         {
           title: 'Privacy Policy',
@@ -70,25 +79,52 @@ export default {
 <style lang="scss">
 .app {
   min-height: 100vh;
-  background: url('~assets/pitch.svg');
+}
+
+.navbar {
+  background-color: #000000;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-image: url('~assets/Stitching.png');
+  background-position: left;
+
+  .navbar-brand {
+    .logo {
+      width: 60px !important;
+      padding: 10px;
+    }
+  }
+
+  .navbar-burger {
+    color: #ffffff;
+  }
+
+  .navbar-menu {
+    background-color: #000000;
+  }
+
+  .navbar-menu a {
+    color: #fff;
+  }
+
+  .navbar-menu a.active {
+    border-bottom: solid 1px #f80290;
+  }
 }
 
 .main-content {
   min-height: inherit;
 }
 
-.links {
-  text-align: right;
+footer {
+  border-top: solid 1px #292929;
+  font-size: 14px;
 
-  li {
-    display: inline-flex;
-    margin-right: 1rem;
+  .section {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+  }
 
-    &:last-child {
-      margin-right: 0;
-    }
+  .right {
+    text-align: right;
   }
 }
 </style>
