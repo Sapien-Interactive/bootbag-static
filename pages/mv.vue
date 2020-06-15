@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-
-    <title>Match Vision test</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/mv/mv.css" rel="stylesheet" />
-  </head>
-
-  <body>
-    <div>
+<template>
+  <div>
+    <section class="section">
       <opta-widget
         widget="live_action"
         competition="23"
@@ -68,14 +55,42 @@
         breakpoints="415, 600"
         sport="football"
       ></opta-widget>
-    </div>
-    <script src="http://widget.cloud.opta.net/v3/v3.opta-widgets.js"></script>
-    <script>
-      var opta_settings = {
-        subscription_id: '5426c3cc26bb0abe73497947a2c44b05',
-        language: 'en_GB',
-        timezone: 'Europe/London'
-      }
-    </script>
-  </body>
-</html>
+    </section>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'MatchVision',
+
+  head() {
+    return {
+      script: [
+        { src: '//secure.widget.cloud.opta.net/v3/v14.opta-widgets.js' }
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap'
+        }
+      ]
+    }
+  },
+
+  beforeMount() {
+    window.opta_settings = {
+      subscription_id: '5426c3cc26bb0abe73497947a2c44b05',
+      language: 'en_GB',
+      timezone: 'Europe/London'
+    }
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+div {
+  width: 75%;
+  margin: 3rem auto;
+}
+</style>
