@@ -65,7 +65,9 @@ export default {
 
   head() {
     return {
-      script: [{ src: 'https://widget.cloud.opta.net/v3/v3.opta-widgets.js' }],
+      script: [
+        { src: '//secure.widget.cloud.opta.net/v3/v14.opta-widgets.js' }
+      ],
       link: [
         {
           rel: 'stylesheet',
