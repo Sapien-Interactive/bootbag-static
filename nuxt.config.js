@@ -38,7 +38,7 @@ module.exports = {
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
+    ['@nuxtjs/eslint-module', { fix: true }],
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxtjs/style-resources'
@@ -66,9 +66,12 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  },
-  options: {
-    fix: true
+    extend(config, ctx) {
+      const fileLoader = config.module.rules.find((rule) =>
+        '.png'.match(rule.test)
+      )
+
+      fileLoader.use[0].options = { esModule: false }
+    }
   }
 }

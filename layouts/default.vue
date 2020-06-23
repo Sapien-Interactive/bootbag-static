@@ -2,7 +2,7 @@
   <div class="app">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <LogoSmall />
+        <LogoSmall class="logo" />
         <a
           @click="isOpen = !isOpen"
           v-bind:class="{ 'is-active': isOpen }"
@@ -42,8 +42,13 @@
           Sapien Interactive &copy; {{ year }}
         </aside>
         <aside class="column is-8 section links right">
-          <a href="#" target="_blank"><img src="~assets/facebook.png"/></a>
-          <a href="#" target="_blank"><img src="~assets/twitter.png"/></a>
+          <a href="https://www.facebook.com/bootbag" target="_blank">
+            <img src="~/assets/facebook.png"
+          /></a>
+
+          <a href="https://twitter.com/bootbag2" target="_blank"
+            ><img src="~/assets/twitter.png"
+          /></a>
         </aside>
       </section>
     </footer>
@@ -84,7 +89,7 @@ export default {
 .navbar {
   background-color: #000000;
   background-repeat: no-repeat;
-  background-image: url('~assets/Stitching.png');
+  // background-image: url('~assets/Stitching.png');
   background-position: left;
 
   .navbar-brand {

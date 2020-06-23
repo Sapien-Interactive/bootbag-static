@@ -14,16 +14,30 @@
         <hr />
         <p>Buy before they peak.<br />Sell before they drop.</p>
         <p class="blue">Join the revolution. Register to become a scout.</p>
-        <form class="container">
-          <div class="columns">
-            <input type="email" class="column" placeholder="Email Address" />
-            <input type="submit" class="column" value="Register Now" />
+        <form @submit.prevent="sendEmail" class="container">
+          <div v-if="!sending && success">
+            <p>
+              You have Successfully Registrated for Bootbag, keep an eye on your
+              emails for more details!
+            </p>
+          </div>
+          <div v-else class="columns">
+            <input
+              v-model="email"
+              type="email"
+              class="column"
+              placeholder="Email Address"
+            />
+            <button :disabled="sending" type="submit" class="column">
+              <img v-if="sending" src="~/assets/spinner.svg" />
+              <span v-else="!sending">Register Now</span>
+            </button>
           </div>
         </form>
-        <p class="pink">Download Now</p>
+        <p class="pink">Download soon on...</p>
         <p class="download">
-          <a href="#" target="_blank"><img src="~assets/BtnGooglePlay.png"/></a>
-          <a href="#" target="_blank"><img src="~assets/BtnAppStore.png"/></a>
+          <img src="~/assets/BtnGooglePlay.png" />
+          <img src="~/assets/BtnAppStore.png" />
         </p>
       </div>
     </section>
@@ -32,7 +46,46 @@
 
 <script>
 export default {
-  name: 'HomePage'
+  name: 'HomePage',
+
+  data() {
+    return {
+      sending: false,
+      success: false,
+      email: ''
+    }
+  },
+
+  methods: {
+    async sendEmail() {
+      this.sending = true
+
+      try {
+        const response = await fetch(`${window.location.origin}/api/contact`, {
+          method: 'POST',
+          mode: 'cors',
+          cache: 'no-cache',
+          credentials: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          redirect: 'follow',
+          referrer: 'no-referrer',
+          body: JSON.stringify({
+            email: this.email
+          })
+        })
+
+        await response.json()
+
+        this.success = response.status === 200
+      } catch (error) {
+        this.success = false
+      } finally {
+        this.sending = false
+      }
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
@@ -78,12 +131,13 @@ form {
     padding: 10px;
     border: solid 1px #ffffff;
     background-color: #000000;
+    color: #ffffff;
     font-size: 18px;
     display: inline-block;
     margin-bottom: 20px;
   }
 
-  input[type='submit'] {
+  button[type='submit'] {
     width: 100%;
     font-size: 18px;
     background-color: #f80290;
@@ -93,6 +147,10 @@ form {
     border-radius: 5px;
     display: inline-block;
     margin-bottom: 20px;
+
+    img {
+      max-height: 17px;
+    }
   }
 }
 
@@ -117,7 +175,7 @@ form {
   form {
     width: 50%;
 
-    input[type='submit'] {
+    button[type='submit'] {
       margin-left: 10px;
     }
   }
