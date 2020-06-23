@@ -61,7 +61,7 @@ export default {
       this.sending = true
 
       try {
-        const response = await fetch(`${window.location.origin}/api/contact`, {
+        const response = await fetch(`${window.location.origin}/api/register`, {
           method: 'POST',
           mode: 'cors',
           cache: 'no-cache',
