@@ -2,6 +2,7 @@
   <div>
     <section class="section">
       <opta-widget
+        v-pre
         widget="live_action"
         competition="23"
         season="2019"
@@ -66,7 +67,10 @@ export default {
   head() {
     return {
       script: [
-        { src: '//secure.widget.cloud.opta.net/v3/v14.opta-widgets.js' }
+        {
+          src: 'https://secure.widget.cloud.opta.net/v3/v14.opta-widgets.js',
+          body: true
+        }
       ],
       link: [
         {

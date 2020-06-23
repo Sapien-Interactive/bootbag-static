@@ -1,0 +1,31 @@
+<template>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="40"
+    height="48.3"
+    viewBox="0 0 120.591 145.937"
+  >
+    <g id="Logo" transform="translate(-145.259 -303.588)">
+      <g id="Logo-icon" transform="translate(152.759 303.588)">
+        <path
+          id="Path_345"
+          data-name="Path 345"
+          d="M869.574,270.258a52.539,52.539,0,0,0-29.37,8.934l-1.158.777V237.493H816.707v85.635a52.867,52.867,0,1,0,52.867-52.87Zm0,83.4A30.531,30.531,0,1,1,900.1,323.128,30.564,30.564,0,0,1,869.574,353.658Z"
+          transform="translate(-816.707 -237.493)"
+          fill="#fff"
+        />
+      </g>
+      <g id="Rating" transform="translate(145.759 329.438)">
+        <path
+          id="Union_56"
+          data-name="Union 56"
+          d="M0,59.8a6.925,6.925,0,1,1,13.85,0A45.945,45.945,0,1,0,59.8,13.851V0A59.794,59.794,0,1,1,0,59.8Z"
+          transform="translate(0 0)"
+          fill="#f80290"
+          stroke="rgba(0,0,0,0)"
+          stroke-width="1"
+        />
+      </g>
+    </g>
+  </svg>
+</template>
