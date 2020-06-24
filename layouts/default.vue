@@ -109,7 +109,7 @@ export default {
     color: #fff;
   }
 
-  .navbar-menu a.nuxt-link-active {
+  .navbar-menu a.nuxt-link-exact-active {
     border-bottom: solid 1px #f80290;
   }
 }
