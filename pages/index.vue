@@ -14,14 +14,14 @@
         <hr />
         <p>Buy before they peak.<br />Sell before they drop.</p>
         <p class="blue">Join the revolution. Register to become a scout.</p>
-        <form @submit.prevent="sendEmail" class="container">
-          <div v-if="!sending && success">
-            <p>
-              You have Successfully Registrated for Bootbag, keep an eye on your
-              emails for more details!
-            </p>
-          </div>
-          <div v-else class="columns">
+        <div v-if="!sending && success">
+          <p>
+            You have Successfully Registrated for Bootbag, keep an eye on your
+            emails for more details!
+          </p>
+        </div>
+        <form v-else @submit.prevent="sendEmail" class="container">
+          <div class="columns">
             <input
               v-model="email"
               type="email"
