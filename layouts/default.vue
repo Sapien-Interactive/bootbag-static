@@ -18,9 +18,7 @@
       </div>
       <div v-bind:class="{ 'is-active': isOpen }" class="navbar-menu">
         <div class="navbar-end">
-          <router-link to="/" class="navbar-item is-tab active"
-            >Home</router-link
-          >
+          <router-link to="/" class="navbar-item is-tab">Home</router-link>
           <router-link to="/privacy-policy" class="navbar-item is-tab"
             >Privacy Policy</router-link
           >
@@ -111,7 +109,7 @@ export default {
     color: #fff;
   }
 
-  .navbar-menu a.active {
+  .navbar-menu a.nuxt-link-active {
     border-bottom: solid 1px #f80290;
   }
 }
