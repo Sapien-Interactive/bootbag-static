@@ -3,7 +3,7 @@
     <section class="videoPlaceholder">
       VIDEO GOES HERE
     </section>
-    <section class="section">
+    <section class="section mainSection">
       <div class="coming-soon">
         <h1>Show rival scouts you are the best.</h1>
         <hr />

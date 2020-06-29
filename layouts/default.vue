@@ -37,13 +37,20 @@
     </section>
 
     <footer>
-      <section class="main-content columns">
-        <aside class="column is-4 section">
-          Sapien Interactive &copy; {{ year }}
+      <section class="main-content is-mobile columns">
+        <aside class="column is-8 section">
+          <p class="footerText">Sapien Interactive &copy; {{ year }}</p>
         </aside>
-        <aside class="column is-8 section links right">
-          <a href="#" target="_blank"><img src="~assets/facebook.png"/></a>
-          <a href="#" target="_blank"><img src="~assets/twitter.png"/></a>
+        <aside class="column is-4 section links right">
+          <a href="https://www.facebook.com/bootbag" target="_blank">
+            <img src="~assets/facebook.png" />
+          </a>
+          <a href="https://twitter.com/bootbag" target="_blank">
+            <img src="~assets/twitter.png" />
+          </a>
+          <a href="https://www.instagram.com/bootbag/" target="_blank">
+            <img src="~assets/twitter.png" />
+          </a>
         </aside>
       </section>
     </footer>
@@ -83,14 +90,12 @@ export default {
 
 .navbar {
   background-color: #000000;
-  background-repeat: no-repeat;
-  background-image: url('~assets/Stitching.png');
-  background-position: left;
 
   .navbar-brand {
     .logo {
       width: 60px !important;
       padding: 10px;
+      margin: 0px 43%;
     }
   }
 
@@ -99,7 +104,6 @@ export default {
   }
 
   .navbar-menu {
-    background-color: #000000;
   }
 
   .navbar-menu a {
@@ -107,12 +111,36 @@ export default {
   }
 
   .navbar-menu a.active {
-    border-bottom: solid 1px #f80290;
+    border-bottom: solid 5px #f80290;
   }
+}
+
+.mainSection {
+  background-repeat: no-repeat;
+  background-image: url('~assets/Master-stitching-faded.png');
+  background-position: right;
 }
 
 .main-content {
   min-height: inherit;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    background-repeat: no-repeat;
+    background-image: url('~assets/Master-stitching-faded.png');
+    background-position: left;
+
+    .navbar-brand {
+      .logo {
+        margin: 0;
+      }
+    }
+  }
+
+  .mainSection {
+    background: none;
+  }
 }
 
 footer {
@@ -125,6 +153,10 @@ footer {
 
   .right {
     text-align: right;
+  }
+
+  p {
+    padding-top: 10px;
   }
 }
 </style>
