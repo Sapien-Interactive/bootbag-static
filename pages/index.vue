@@ -1,92 +1,112 @@
 <template>
   <div class="main">
-    <div class="container column is-12">
-      <section class="videoPlaceholder">
-        VIDEO GOES HERE
-      </section>
-      <section class="section">
-        <div class="coming-soon">
-          <h1>
-            The ultimate platform for fans to scout and transfer football
-            players, allowing users to benefit from their performance with the
-            chance of financial rewards.
-          </h1>
-        </div>
-        <div class="columns has-text-centered ticketWrapper">
-          <div class="column ticket">
-            <img src="~/assets/images/Search-player-icon@2x.png" />
-            <p class="text">
-              Football's very first,<br /><strong
-                >real-time scouting game.</strong
-              >
-            </p>
-            <p class="bottom">
-              18 Million UK Football Fans
-            </p>
+    <section class="main-content">
+      <div class="container is-12">
+        <section class="videoPlaceholder">
+          VIDEO GOES HERE
+        </section>
+        <section class="section">
+          <div class="coming-soon">
+            <h1>
+              The ultimate platform for fans to scout and transfer football
+              players, allowing users to benefit from their performance with the
+              chance of financial rewards.
+            </h1>
           </div>
-          <div class="column ticket">
-            <img src="~/assets/images/Pick-Roster-icon@2x.png" />
-            <p class="text">
-              Choose from over
-              <strong>2600<br />players from across the world.</strong>
-            </p>
-            <p class="bottom">3.5 Billion Global Football Fans*</p>
-          </div>
-          <div class="column ticket">
-            <img src="~/assets/images/Watch-Match-Vision-icon@2x.png" />
-            <p class="text">
-              Watch the action.<br />Find the players,<br /><strong
-                >Beat the competition.</strong
-              >
-            </p>
-            <p class="bottom">Compete To Be The Best</p>
-          </div>
-        </div>
-        <div class="coming-soon">
-          <h2>
-            Register To Become A Scout.
-          </h2>
-        </div>
-        <div class="coming-soon">
-          <div v-if="!sending && success">
-            <p>
-              You have Successfully Registered for Bootbag, keep an eye on your
-              emails for more details!
-            </p>
-          </div>
-          <form v-else @submit.prevent="sendEmail" class="container">
-            <div class="columns">
-              <div class="column is-two-thirds">
-                <input
-                  v-model="email"
-                  type="email"
-                  class="column"
-                  placeholder="Email Address"
-                />
-              </div>
-              <div class="column">
-                <button :disabled="sending" type="submit" class="column">
-                  <img v-if="sending" src="~/assets/spinner.svg" />
-                  <span v-else="!sending">Register Now</span>
-                </button>
-              </div>
+          <div class="columns has-text-centered ticketWrapper">
+            <div class="column ticket">
+              <img src="~/assets/images/Search-player-icon@2x.png" />
+
+              <p class="text">
+                Football's very first,<br /><strong
+                  >real-time scouting game.</strong
+                >
+              </p>
+              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
+              <img
+                src="../assets/images/ticket-right.png"
+                class="ticketRight"
+              />
+              <p class="bottom">
+                18 Million UK Football Fans
+              </p>
             </div>
-          </form>
-        </div>
-      </section>
-    </div>
-    <section class="yellowSection  has-text-centered">
-      <p>
-        <span>Join The Revolution</span
-        ><strong>Register To Become A Scout</strong><a href="#">Register Now</a>
-      </p>
+            <div class="column ticket">
+              <img src="~/assets/images/Pick-Roster-icon@2x.png" />
+              <p class="text">
+                Choose from over
+                <strong>2600<br />players from across the world.</strong>
+              </p>
+              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
+              <img
+                src="../assets/images/ticket-right.png"
+                class="ticketRight"
+              />
+              <p class="bottom">3.5 Billion Global Football Fans*</p>
+            </div>
+            <div class="column ticket">
+              <img src="~/assets/images/Watch-Match-Vision-icon@2x.png" />
+              <p class="text">
+                Watch the action.<br />Find the players,<br /><strong
+                  >Beat the competition.</strong
+                >
+              </p>
+              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
+              <img
+                src="../assets/images/ticket-right.png"
+                class="ticketRight"
+              />
+              <p class="bottom">Compete To Be The Best</p>
+            </div>
+          </div>
+          <div class="coming-soon">
+            <h2>
+              Register To Become A Scout.
+            </h2>
+          </div>
+          <div class="coming-soon">
+            <div v-if="!sending && success">
+              <p>
+                You have Successfully Registered for Bootbag, keep an eye on
+                your emails for more details!
+              </p>
+            </div>
+            <form v-else @submit.prevent="sendEmail" class="container">
+              <div class="columns">
+                <div class="column is-two-thirds">
+                  <input
+                    v-model="email"
+                    type="email"
+                    class="column"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="column">
+                  <button :disabled="sending" type="submit" class="column">
+                    <img v-if="sending" src="~/assets/spinner.svg" />
+                    <span v-else="!sending">Register Now</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+      <SignUp />
+      <Footer />
     </section>
   </div>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
+import SignUp from '~/components/SignUp'
 export default {
   name: 'HomePage',
+  components: {
+    Footer,
+    SignUp
+  },
 
   data() {
     return {
@@ -129,6 +149,13 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@font-face {
+  font-family: 'Rajdhani-Regular';
+  src: url('../assets/fonts/Rajdhani-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .videoPlaceholder {
   height: 60vh;
   text-align: center;
@@ -156,6 +183,7 @@ h1 {
   text-transform: uppercase;
   font-size: 18px;
   text-align: center;
+  font-family: 'Rajdhani-Regular';
 }
 
 h1 {
@@ -226,7 +254,7 @@ form {
 
   .ticket {
     background-color: #242323;
-    margin: 20px 20px;
+    margin: 20px 0px 40px 0px;
     padding: 10px 0 0 0;
     border-radius: 5px;
 
@@ -238,6 +266,18 @@ form {
     img {
       width: 60px;
       margin-top: -60px;
+    }
+
+    img.ticketLeft,
+    img.ticketRight {
+      position: relative;
+      float: left;
+      width: 20px !important;
+      margin-top: -90px;
+    }
+
+    img.ticketRight {
+      float: right;
     }
 
     .text {
@@ -268,34 +308,15 @@ form {
   }
 }
 
-.yellowSection {
-  background-color: #fff000;
-
-  p {
-    span {
-      padding: 7px 0;
-      color: #000;
-      display: inline-block;
-    }
-
-    strong {
-      border-left: solid 1px #000;
-      padding-left: 10px;
-      margin-left: 10px;
-    }
-
-    a {
-      background-color: #267efc;
-      color: #fff;
-      padding: 10px 20px;
-      margin-left: 20px;
-    }
-  }
-}
-
 @media only screen and (min-width: 560px) {
   form {
     width: 75%;
+  }
+
+  .ticketWrapper {
+    .ticket {
+      margin: 20px 20px;
+    }
   }
 }
 
