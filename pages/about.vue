@@ -36,17 +36,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.section {
-  h1 {
-    font-weight: bold;
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-  .stamp {
-    width: 100px;
-  }
-}
-</style>
