@@ -55,6 +55,7 @@ export default {
 <style lang="scss">
 body {
   font-family: 'Rajdhani';
+  font-display: 'swap';
   background-color: #000000 !important;
 }
 
