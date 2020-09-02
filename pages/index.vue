@@ -1,10 +1,15 @@
 <template>
   <div class="main">
     <section class="main-content">
-      <div class="container is-12">
-        <section class="videoPlaceholder">
-          VIDEO GOES HERE
-        </section>
+      <section class="videoPlaceholder">
+        <iframe
+          src="https://player.vimeo.com/video/454115781"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <div class="container is-12 homePageWrapper">
         <section class="section">
           <div class="coming-soon">
             <h1>
@@ -148,3 +153,30 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.videoPlaceholder {
+  margin-bottom: 0px;
+  background-color: #000000;
+  text-align: center;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.homePageWrapper {
+  .section {
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .videoPlaceholder {
+    iframe {
+      width: 800px;
+      height: 600px;
+    }
+  }
+}
+</style>

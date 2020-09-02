@@ -53,6 +53,11 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  font-family: 'Rajdhani';
+  background-color: #000000 !important;
+}
+
 .navbar {
   background-color: #000000;
   background-repeat: no-repeat;
@@ -64,7 +69,7 @@ export default {
     .logo {
       width: 60px !important;
       padding: 10px;
-      margin-left: 48%;
+      margin-left: 41%;
     }
   }
 
@@ -87,7 +92,6 @@ export default {
   top: 52px;
   width: 100%;
   text-align: center;
-  font-family: 'Rajdhani';
   font-size: 20px;
   height: 95vh;
   padding-top: 50px;
@@ -118,161 +122,6 @@ export default {
   }
 }
 
-.yellowSection {
-  background-color: #fff000;
-
-  p {
-    span {
-      padding: 7px 0;
-      color: #000;
-      display: inline-block;
-      font-family: 'Rajdhani';
-      font-size: 16px;
-    }
-
-    strong {
-      border-left: solid 1px #000;
-      padding-left: 10px;
-      margin-left: 10px;
-      font-family: 'Rajdhani';
-      font-size: 16px;
-    }
-
-    button {
-      background-color: #267efc;
-      border: solid 1px #267efc;
-      color: #fff;
-      padding: 11px 20px;
-      width: 100%;
-      outline: none;
-      font-family: 'Rajdhani';
-      font-size: 16px;
-      text-transform: uppercase;
-    }
-  }
-
-  .modal-content {
-    background-color: #fff;
-    width: 90%;
-    color: #000;
-    padding-top: 20px;
-    font-family: 'Rajdhani';
-    font-size: 20px;
-
-    .subTitle,
-    .title {
-      font-size: 20px;
-      text-transform: uppercase;
-      margin: 0;
-      padding: 0 20px;
-    }
-
-    .subTitle {
-      font-weight: bold;
-      border-bottom: dotted 1px #666;
-      padding-bottom: 30px;
-      margin-bottom: 30px;
-    }
-
-    .popupLeft,
-    .popupRight {
-      position: relative;
-      margin-top: -60px;
-      float: left;
-    }
-
-    .popupRight {
-      float: right;
-    }
-
-    input {
-      border: none;
-      border-bottom: solid 1px #ccc;
-      color: #ccc;
-      width: 80%;
-      margin: 0 10%;
-    }
-
-    button {
-      background-color: #267efc;
-      border: none;
-      color: #fff;
-      padding: 15px 20px;
-      margin-top: 30px;
-      outline: none;
-      width: 100%;
-      font-size: 20px;
-      font-family: 'Rajdhani';
-      text-transform: uppercase;
-      font-weight: bold;
-      background-image: url('../assets/images/button-rip.png');
-      background-repeat: repeat-x;
-      background-size: 2%;
-    }
-  }
-}
-
-footer {
-  font-size: 14px;
-  background-image: url('../assets/images/Map@2x.png');
-  background-repeat: no-repeat;
-  background-position: top right;
-  padding: 100px 40px;
-  background-size: 50%;
-
-  .logoWrapper {
-    vertical-align: top;
-  }
-
-  .strapline {
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .footerNav {
-    p {
-      font-size: 18px;
-      color: #fff;
-      text-transform: uppercase;
-      margin: 55px 0 30px 0;
-      font-family: 'Rajdhani';
-      text-align: left;
-
-      strong {
-        color: #fff;
-      }
-    }
-
-    ul {
-      li {
-        a {
-          color: #8d8a8a;
-          font-weight: bold;
-          font-family: 'Rajdhani';
-        }
-      }
-    }
-  }
-}
-
-.contact {
-  height: 100vh;
-  background-image: url('../assets/images/map-uk-contact-us@2x.png');
-  background-repeat: no-repeat;
-  background-position: right 100px;
-  background-size: 100%;
-}
-
-.contactLogo {
-  width: 100%;
-  text-align: center;
-
-  img {
-    width: 250px;
-  }
-}
-
 .section {
   h1 {
     font-weight: bold;
@@ -283,18 +132,12 @@ footer {
   .muted strong,
   .muted {
     color: #fff;
-    font-family: 'Rajdhani';
   }
 }
 
 .social {
   border-top: solid 1px #242424;
   padding: 40px 10px;
-}
-
-.videoPlaceholder {
-  height: 60vh;
-  text-align: center;
 }
 
 .main {
@@ -310,6 +153,7 @@ footer {
 
   h1 {
     width: 70%;
+    text-align: center;
   }
 }
 
@@ -319,7 +163,6 @@ h1 {
   text-transform: uppercase;
   font-size: 18px;
   text-align: center;
-  font-family: 'Rajdhani';
 }
 
 h1 {
@@ -362,7 +205,7 @@ form {
     font-size: 18px;
     background-color: #267efc;
     border: solid 1px #267efc;
-    padding: 10px 20px;
+    padding: 10px 0;
     color: #ffffff;
     display: inline-block;
     margin-bottom: 0;
@@ -396,7 +239,8 @@ form {
 
     p {
       margin: 0;
-      padding: 10px 0;
+      padding: 10px;
+      text-align: center;
     }
 
     img {
@@ -432,6 +276,7 @@ form {
     }
 
     .bottom {
+      font-size: 16px;
       margin: 0;
       text-transform: uppercase;
       background-color: #535353;
@@ -445,6 +290,12 @@ form {
 }
 
 @media only screen and (min-width: 560px) {
+  p,
+  h2,
+  h1 {
+    text-align: left;
+  }
+
   form {
     width: 75%;
   }
@@ -455,27 +306,12 @@ form {
     }
   }
 
-  .contact {
-    background-size: 70%;
-  }
-
-  .navbar-brand {
-    .logo {
-      margin-left: 47%;
-    }
-  }
-
-  .yellowSection {
-    p {
-      button {
-        width: auto;
-        margin-left: 20px;
+  .navbar {
+    .navbar-brand {
+      .logo {
+        margin-left: 47%;
       }
     }
-  }
-
-  .modal-content {
-    width: 400px;
   }
 }
 

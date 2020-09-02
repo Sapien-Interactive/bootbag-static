@@ -6,7 +6,7 @@
         <p class="strapline">football's premier scouting game</p>
       </aside>
       <aside class="column is-8">
-        <div class="columns footerNav">
+        <div class="columns is-mobile footerNav">
           <div class="column is-4">
             <p><strong>About</strong></p>
             <ul>
@@ -61,3 +61,62 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+footer {
+  font-size: 14px;
+  background-image: url('../assets/images/Map@2x.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 100px 40px;
+  background-size: 50%;
+
+  .logoWrapper {
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .strapline {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .footerNav {
+    p {
+      font-size: 18px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0;
+      text-align: left;
+
+      strong {
+        color: #fff;
+      }
+    }
+
+    ul {
+      li {
+        a {
+          color: #8d8a8a;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .footerNav {
+    p {
+      margin: 55px 0 30px 0;
+    }
+  }
+
+  footer {
+    .logoWrapper {
+      text-align: left;
+    }
+  }
+}
+</style>

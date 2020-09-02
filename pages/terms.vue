@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="main-content columns">
-      <section class="section">
+      <section class="section terms">
         <div>
           <h1>Terms</h1>
           Welcome to Bootbag (our app), where sports fans can access real time
@@ -1133,3 +1133,18 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.terms {
+  padding: 3rem 40px;
+
+  h1,
+  p {
+    text-align: left;
+  }
+
+  p {
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="main-content columns">
-      <section class="section">
+      <section class="section about">
         <div>
           <h1>About</h1>
 
@@ -13,10 +13,8 @@
           first real-life scouting game and we hope you enjoy the fun of pitting
           your knowledge against other fans.
           <br /><br />
-
           As fans ourselves we hope you like our game, and gain yourself some
           bragging rights amongst your friends in the process!
-
           <br /><br />
           <img src="../assets/images/stamp.png" class="stamp" /><br /><br />
           Bootbag Team
@@ -36,3 +34,19 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.about {
+  padding: 3rem 40px;
+
+  h1,
+  p {
+    text-align: left;
+  }
+
+  p {
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+}
+</style>
