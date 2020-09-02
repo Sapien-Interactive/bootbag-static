@@ -66,6 +66,7 @@ body {
 
   .navbar-brand {
     width: 100%;
+    padding-top: 10px;
 
     .logo {
       width: 60px !important;
