@@ -1,52 +1,117 @@
 <template>
-  <div>
-    <section class="videoPlaceholder">
-      VIDEO GOES HERE
-    </section>
-    <section class="section">
-      <div class="coming-soon">
-        <h1>Show rival scouts you are the best.</h1>
-        <hr />
-        <h2>
-          Select the Biggest Improving players across 14 Divisions for your
-          roster.
-        </h2>
-        <hr />
-        <p>Buy before they peak.<br />Sell before they drop.</p>
-        <p class="blue">Join the revolution. Register to become a scout.</p>
-        <div v-if="!sending && success">
-          <p>
-            You have Successfully Registrated for Bootbag, keep an eye on your
-            emails for more details!
-          </p>
-        </div>
-        <form v-else @submit.prevent="sendEmail" class="container">
-          <div class="columns">
-            <input
-              v-model="email"
-              type="email"
-              class="column"
-              placeholder="Email Address"
-            />
-            <button :disabled="sending" type="submit" class="column">
-              <img v-if="sending" src="~/assets/spinner.svg" />
-              <span v-else="!sending">Register Now</span>
-            </button>
+  <div class="main">
+    <section class="main-content">
+      <section class="videoPlaceholder">
+        <iframe
+          src="https://player.vimeo.com/video/454115781"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <div class="container is-12 homePageWrapper">
+        <section class="section">
+          <div class="coming-soon">
+            <h1>
+              The ultimate platform for fans to scout and transfer football
+              players, allowing users to benefit from their performance with the
+              chance of financial rewards.
+            </h1>
           </div>
-        </form>
-        <p class="pink">Download soon on...</p>
-        <p class="download">
-          <img src="~/assets/BtnGooglePlay.png" />
-          <img src="~/assets/BtnAppStore.png" />
-        </p>
+          <div class="columns has-text-centered ticketWrapper">
+            <div class="column ticket">
+              <img src="~/assets/images/Search-player-icon@2x.png" />
+
+              <p class="text">
+                Football's very first,<br /><strong
+                  >real-time scouting game.</strong
+                >
+              </p>
+              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
+              <img
+                src="../assets/images/ticket-right.png"
+                class="ticketRight"
+              />
+              <p class="bottom">
+                18 Million UK Football Fans
+              </p>
+            </div>
+            <div class="column ticket">
+              <img src="~/assets/images/Pick-Roster-icon@2x.png" />
+              <p class="text">
+                Choose from over
+                <strong>2600<br />players from across the world.</strong>
+              </p>
+              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
+              <img
+                src="../assets/images/ticket-right.png"
+                class="ticketRight"
+              />
+              <p class="bottom">3.5 Billion Global Football Fans*</p>
+            </div>
+            <div class="column ticket">
+              <img src="~/assets/images/Watch-Match-Vision-icon@2x.png" />
+              <p class="text">
+                Watch the action.<br />Find the players,<br /><strong
+                  >Beat the competition.</strong
+                >
+              </p>
+              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
+              <img
+                src="../assets/images/ticket-right.png"
+                class="ticketRight"
+              />
+              <p class="bottom">Compete To Be The Best</p>
+            </div>
+          </div>
+          <div class="coming-soon">
+            <h2>
+              Register To Become A Scout.
+            </h2>
+          </div>
+          <div class="coming-soon">
+            <div v-if="!sending && success">
+              <p>
+                You have Successfully Registered for Bootbag, keep an eye on
+                your emails for more details!
+              </p>
+            </div>
+            <form v-else @submit.prevent="sendEmail">
+              <div class="columns">
+                <div class="column is-two-thirds">
+                  <input
+                    v-model="email"
+                    type="email"
+                    class="column"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="column">
+                  <button :disabled="sending" type="submit" class="column">
+                    <img v-if="sending" src="~/assets/spinner.svg" />
+                    <span v-else="!sending">Register Now</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
       </div>
+      <SignUp />
+      <Footer />
     </section>
   </div>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
+import SignUp from '~/components/SignUp'
 export default {
   name: 'HomePage',
+  components: {
+    Footer,
+    SignUp
+  },
 
   data() {
     return {
@@ -88,95 +153,29 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+
+<style lang="scss">
 .videoPlaceholder {
-  height: 60vh;
+  margin-bottom: 0px;
+  background-color: #000000;
   text-align: center;
-}
 
-.coming-soon {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
-
-  > * {
-    margin: 1rem 0px;
-  }
-}
-
-p,
-h2,
-h1 {
-  text-transform: uppercase;
-  font-size: 18px;
-  text-align: center;
-}
-
-p.blue {
-  color: #0eb4a7;
-}
-
-hr {
-  background-color: #0eb4a7;
-  height: 1px;
-  width: 200px;
-}
-
-form {
-  width: 100%;
-
-  input[type='email'] {
+  iframe {
     width: 100%;
-    padding: 10px;
-    border: solid 1px #ffffff;
-    background-color: #000000;
-    color: #ffffff;
-    font-size: 18px;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-
-  button[type='submit'] {
-    width: 100%;
-    font-size: 18px;
-    background-color: #f80290;
-    border: solid 1px #f80290;
-    padding: 10px 20px;
-    color: #ffffff;
-    border-radius: 5px;
-    display: inline-block;
-    margin-bottom: 20px;
-
-    img {
-      max-height: 17px;
-    }
   }
 }
 
-.download {
-  img {
-    width: 49%;
-    display: inline-block;
-  }
-}
-
-.pink {
-  color: #f80290;
-}
-
-@media only screen and (min-width: 560px) {
-  form {
-    width: 75%;
+.homePageWrapper {
+  .section {
+    padding: 0 1.5rem 3rem 1.5rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  form {
-    width: 50%;
-
-    button[type='submit'] {
-      margin-left: 10px;
+  .videoPlaceholder {
+    iframe {
+      width: 800px;
+      height: 600px;
     }
   }
 }

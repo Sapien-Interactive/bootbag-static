@@ -1,10 +1,12 @@
 {
   "name": "bootbag-marketing",
   "version": "1.0.0",
+  "main": "assets/scss/mystyles.scss",
   "description": "Bootbag Fantasy Football",
   "author": "Hamish Hossack",
   "private": true,
   "scripts": {
+    "css-watch": "npm run css-build -- --watch",
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt generate",
     "start": "cross-env NODE_ENV=production node server/index.js",
