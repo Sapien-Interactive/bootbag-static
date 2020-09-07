@@ -196,10 +196,19 @@ export default {
         margin-left: 20px;
       }
     }
-  }
 
-  .modal-content {
-    width: 400px;
+    .modal-content {
+      width: 400px;
+
+      .subTitle {
+        width: 100%;
+        text-align: center;
+      }
+
+      form {
+        width: 100%;
+      }
+    }
   }
 }
 </style>

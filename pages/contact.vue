@@ -42,10 +42,6 @@ export default {
   background-repeat: no-repeat;
   background-position: right 100px;
   background-size: 100%;
-
-  .social {
-    padding: 20px;
-  }
 }
 
 .contactLogo {

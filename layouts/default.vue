@@ -2,7 +2,9 @@
   <div class="app">
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <LogoSmall class="logo" />
+        <div class="logoWrapper">
+          <LogoSmall class="logo" />
+        </div>
         <a
           @click="isOpen = !isOpen"
           v-bind:class="{ 'is-active': isOpen }"
@@ -68,10 +70,15 @@ body {
     width: 100%;
     padding-top: 10px;
 
-    .logo {
-      width: 60px !important;
-      padding: 10px;
-      margin-left: 41%;
+    .logoWrapper {
+      padding-left: 52px;
+      text-align: center;
+      width: 100%;
+
+      .logo {
+        width: 60px !important;
+        padding: 10px;
+      }
     }
   }
 
@@ -305,14 +312,6 @@ form {
   .ticketWrapper {
     .ticket {
       margin: 20px 20px;
-    }
-  }
-
-  .navbar {
-    .navbar-brand {
-      .logo {
-        margin-left: 47%;
-      }
     }
   }
 }

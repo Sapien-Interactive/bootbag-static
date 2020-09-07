@@ -71,6 +71,12 @@ export default {
   }
 }
 
+.contact {
+  .social {
+    padding: 20px;
+  }
+}
+
 @media only screen and (min-width: 560px) {
   .social {
     .ios,
