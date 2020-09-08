@@ -178,9 +178,4 @@ iframe {
 .button {
   text-transform: uppercase;
 }
-
-@media only screen and (min-width: 768px) {
-  .videoPlaceholder {
-  }
-}
 </style>
