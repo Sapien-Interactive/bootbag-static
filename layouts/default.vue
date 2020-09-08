@@ -21,6 +21,7 @@
     </nav>
     <div v-bind:class="{ 'is-active': isOpen }" class="main-menu">
       <a @click="isOpen = !isOpen" href="/">Home</a>
+      <a @click="isOpen = !isOpen" href="https://shop.bootbag.co">Shop</a>
       <a @click="isOpen = !isOpen" href="/about">About</a>
       <a @click="isOpen = !isOpen" href="/contact">Contact</a>
       <a @click="isOpen = !isOpen" href="/terms">Terms</a>
@@ -42,6 +43,7 @@ export default {
   },
   head() {
     return {
+      title: "Bootbag - Football's Premier Scouting Game",
       link: [
         {
           rel: 'stylesheet',
@@ -55,14 +57,20 @@ export default {
 </script>
 
 <style lang="scss">
+p,
+button,
+input,
 body {
   font-family: 'Rajdhani';
   font-display: 'swap';
-  background-color: #000000 !important;
+}
+
+body {
+  background-color: #151515 !important;
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: #151515;
   background-repeat: no-repeat;
   background-position: left;
 
@@ -96,7 +104,7 @@ body {
 }
 
 .main-menu {
-  background-color: #000000;
+  background-color: #151515;
   position: absolute;
   top: 52px;
   width: 100%;

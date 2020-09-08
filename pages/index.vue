@@ -1,14 +1,14 @@
 <template>
   <div class="main">
-    <section class="main-content">
-      <section class="videoPlaceholder">
-        <iframe
-          src="https://player.vimeo.com/video/454721108"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
-      </section>
+    <section class="videoPlaceholder">
+      <iframe
+        src="https://player.vimeo.com/video/454721108"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section class="main-content homeWrapper">
       <div class="container is-12 homePageWrapper">
         <section class="section">
           <div class="coming-soon">
@@ -40,7 +40,7 @@
               <img src="~/assets/images/Pick-Roster-icon@2x.png" />
               <p class="text">
                 Choose from over
-                <strong>2600<br />players from across the world.</strong>
+                <strong>7500<br />players from across the world.</strong>
               </p>
               <img src="../assets/images/ticket-left.png" class="ticketLeft" />
               <img
@@ -87,7 +87,11 @@
                   />
                 </div>
                 <div class="column">
-                  <button :disabled="sending" type="submit" class="column">
+                  <button
+                    :disabled="sending"
+                    type="submit"
+                    class="column button"
+                  >
                     <img v-if="sending" src="~/assets/spinner.svg" />
                     <span v-else="!sending">Register Now</span>
                   </button>
@@ -162,6 +166,10 @@ export default {
 
   iframe {
     width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -171,12 +179,16 @@ export default {
   }
 }
 
+.homeWrapper {
+  margin-top: 100vh;
+}
+
+.button {
+  text-transform: uppercase;
+}
+
 @media only screen and (min-width: 768px) {
   .videoPlaceholder {
-    iframe {
-      width: 800px;
-      height: 600px;
-    }
   }
 }
 </style>
