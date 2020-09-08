@@ -1,13 +1,11 @@
 <template>
   <div class="main">
-    <section class="videoPlaceholder">
-      <iframe
-        src="https://player.vimeo.com/video/454721108"
-        frameborder="0"
-        allow="autoplay; fullscreen"
-        allowfullscreen
-      ></iframe>
-    </section>
+    <iframe
+      src="https://player.vimeo.com/video/454721108"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
     <section class="main-content homeWrapper">
       <div class="container is-12 homePageWrapper">
         <section class="section">
@@ -159,18 +157,12 @@ export default {
 </script>
 
 <style lang="scss">
-.videoPlaceholder {
-  margin-bottom: 0px;
-  background-color: #000000;
-  text-align: center;
-
-  iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .homePageWrapper {
