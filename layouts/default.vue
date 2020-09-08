@@ -66,11 +66,11 @@ body {
 }
 
 body {
-  background-color: #151515 !important;
+  background-color: #000000 !important;
 }
 
 .navbar {
-  background-color: #151515;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: left;
 
@@ -104,7 +104,7 @@ body {
 }
 
 .main-menu {
-  background-color: #151515;
+  background-color: #000000;
   position: absolute;
   top: 52px;
   width: 100%;
