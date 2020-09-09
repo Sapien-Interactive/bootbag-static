@@ -11,7 +11,7 @@
             <p><strong>About</strong></p>
             <ul>
               <li>
-                <router-link to="/">Home</router-link>
+                <router-link to="https://shop.bootbag.co">Shop</router-link>
               </li>
               <li>
                 <router-link to="/about">About</router-link>
@@ -26,9 +26,6 @@
             <ul>
               <li>
                 <router-link to="/terms">Terms</router-link>
-              </li>
-              <li>
-                <router-link to="/privacyPolicy">Privacy Policy</router-link>
               </li>
             </ul>
           </div>
