@@ -31,8 +31,7 @@
           <input
             v-model="email"
             type="email"
-            class="column"
-            placeholder="Enter Email Address here..."
+            placeholder="Enter email here..."
           />
           <button :disabled="sending" type="submit">
             <img v-if="sending" src="~/assets/spinner.svg" />
@@ -103,18 +102,22 @@ export default {
   p {
     display: inline-block;
 
+    span,
+    strong,
+    button {
+      font-size: 16px;
+    }
+
     span {
       padding: 7px 0;
       color: #000;
       display: inline-block;
-      font-size: 16px;
     }
 
     strong {
       border-left: solid 1px #000;
       padding-left: 10px;
       margin-left: 10px;
-      font-size: 16px;
     }
 
     button {
@@ -124,7 +127,6 @@ export default {
       padding: 11px 20px;
       width: 100%;
       outline: none;
-      font-size: 16px;
       text-transform: uppercase;
     }
   }
@@ -142,6 +144,8 @@ export default {
       text-transform: uppercase;
       margin: 0;
       padding: 0 20px;
+      width: 80%;
+      text-align: center;
     }
 
     .subTitle {
@@ -154,7 +158,7 @@ export default {
     .popupLeft,
     .popupRight {
       position: relative;
-      margin-top: -60px;
+      margin-top: 60px;
       float: left;
     }
 
@@ -162,12 +166,15 @@ export default {
       float: right;
     }
 
-    input {
+    input[type='email'] {
       border: none;
       border-bottom: solid 1px #ccc;
       color: #ccc;
       width: 80%;
       margin: 0 10%;
+      background-image: url('../assets/images/ball-icon.png');
+      background-repeat: no-repeat;
+      background-position: right 15px;
     }
 
     button {
@@ -191,9 +198,16 @@ export default {
 @media only screen and (min-width: 560px) {
   .yellowSection {
     p {
+      span,
+      strong,
+      button {
+        font-size: 21px;
+      }
+
       button {
         width: auto;
         margin-left: 20px;
+        font-weight: bold;
       }
     }
 
@@ -207,6 +221,11 @@ export default {
 
       form {
         width: 100%;
+      }
+
+      .popupLeft,
+      .popupRight {
+        margin-top: -60px;
       }
     }
   }

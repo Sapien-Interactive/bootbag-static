@@ -10,11 +10,8 @@
         <a href="https://twitter.com/bootbag2" target="_blank"
           ><img src="~/assets/images/twitter@2x.png"
         /></a>
-        <a href="https://twitter.com/bootbag2" target="_blank"
+        <a href="https://www.instagram.com/bootbag/" target="_blank"
           ><img src="~/assets/images/instagram@2x.png"
-        /></a>
-        <a href="https://twitter.com/bootbag2" target="_blank"
-          ><img src="~/assets/images/youtube@2x.png"
         /></a>
       </p>
     </aside>
@@ -62,7 +59,7 @@ export default {
   .ios,
   .android {
     width: 45%;
-    display: inline-block;
+    display: none;
     margin: 0;
   }
 

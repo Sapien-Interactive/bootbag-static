@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <div class="logoWrapper">
-          <LogoSmall class="logo" />
+          <a href="/"><LogoSmall class="logo"/></a>
         </div>
         <a
           @click="isOpen = !isOpen"
@@ -13,7 +13,6 @@
           aria-label="main-menu"
           aria-expanded="false"
         >
-          <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
@@ -169,7 +168,7 @@ body {
   margin-top: 20px;
 
   h1 {
-    width: 70%;
+    width: 100%;
     text-align: center;
   }
 }
@@ -227,6 +226,7 @@ form {
     display: inline-block;
     margin-bottom: 0;
     width: 100%;
+    font-weight: bold;
 
     img {
       max-height: 17px;
@@ -320,6 +320,12 @@ form {
   .ticketWrapper {
     .ticket {
       margin: 20px 20px;
+    }
+  }
+
+  .coming-soon {
+    h1 {
+      width: 100%;
     }
   }
 }

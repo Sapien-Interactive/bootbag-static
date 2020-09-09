@@ -1,15 +1,10 @@
 <template>
   <div class="contact">
     <section class="main-content">
-      <section>
-        <p class="contactLogo">
-          <img src="../assets/images/contact-logo.png" />
-        </p>
-      </section>
       <section class="section contactContent">
         <h1>Contact</h1>
-        <p>
-          <strong><a href="mailto:info@bootbag.co">info@bootbag.co</a></strong>
+        <p class="email">
+          <a href="mailto:info@bootbag.co">info@bootbag.co</a>
         </p>
         <p class="muted">
           <strong>Sapien Interactive Limited</strong><br />
@@ -58,6 +53,11 @@ export default {
   p {
     text-align: center;
   }
+}
+
+.email {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 @media only screen and (min-width: 560px) {

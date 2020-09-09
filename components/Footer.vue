@@ -32,13 +32,6 @@
               </li>
             </ul>
           </div>
-          <div class="column is-4">
-            <p><strong>Download</strong></p>
-            <ul>
-              <li><a href="#">App Store</a></li>
-              <li><a href="#">Google Play</a></li>
-            </ul>
-          </div>
         </div>
       </aside>
     </section>
@@ -68,7 +61,7 @@ footer {
   background-image: url('../assets/images/Map@2x.png');
   background-repeat: no-repeat;
   background-position: top right;
-  padding: 100px 40px;
+  padding: 100px 40px 40px 40px;
   background-size: 50%;
 
   .logoWrapper {
@@ -101,12 +94,20 @@ footer {
           color: #8d8a8a;
           font-weight: bold;
         }
+
+        a:hover {
+          color: #ffffff;
+        }
       }
     }
   }
 }
 
 @media only screen and (min-width: 560px) {
+  footer {
+    padding: 100px 40px;
+  }
+
   .footerNav {
     p {
       margin: 55px 0 30px 0;

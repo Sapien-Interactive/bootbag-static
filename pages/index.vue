@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <iframe
-      src="https://player.vimeo.com/video/454721108"
+      src="https://player.vimeo.com/video/456135341"
       frameborder="0"
       allow="autoplay; fullscreen"
       allowfullscreen
@@ -172,10 +172,16 @@ iframe {
 }
 
 .homeWrapper {
-  margin-top: 100vh;
+  margin-top: 60vh;
 }
 
 .button {
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 560px) {
+  .homeWrapper {
+    margin-top: 100vh;
+  }
 }
 </style>
