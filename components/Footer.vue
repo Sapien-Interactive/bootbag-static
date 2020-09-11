@@ -34,7 +34,7 @@
     </section>
     <Social />
     <section class="main-content columns">
-      <aside class="column is-12 section">
+      <aside class="column is-12 legal section">
         Sapien Interactive &copy; 2020
       </aside>
     </section>
@@ -64,6 +64,7 @@ footer {
   .logoWrapper {
     vertical-align: top;
     text-align: center;
+    padding-bottom: 60px;
   }
 
   .strapline {
@@ -98,11 +99,19 @@ footer {
       }
     }
   }
+
+  .legal {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 560px) {
   footer {
     padding: 100px 40px;
+
+    .logoWrapper {
+      padding-bottom: 0;
+    }
   }
 
   .footerNav {
@@ -113,6 +122,10 @@ footer {
 
   footer {
     .logoWrapper {
+      text-align: left;
+    }
+
+    .legal {
       text-align: left;
     }
   }

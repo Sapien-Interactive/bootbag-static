@@ -199,6 +199,12 @@ export default {
       background-position: right 15px;
     }
 
+    input[type='email']:focus {
+      background-color: #efefef;
+      border-bottom: solid 1px #ccc;
+      outline: none;
+    }
+
     button {
       background-color: #267efc;
       border: none;

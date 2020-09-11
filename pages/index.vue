@@ -1,9 +1,9 @@
 <template>
   <div class="main">
     <iframe
-      src="https://player.vimeo.com/video/456135341"
+      src="https://player.vimeo.com/video/456135341?autoplay=true&loop=true"
       frameborder="0"
-      allow="autoplay; fullscreen"
+      allow="autoplay; fullscreen; loop"
       allowfullscreen
     ></iframe>
     <section class="main-content homeWrapper">
@@ -159,7 +159,7 @@ export default {
 <style lang="scss">
 iframe {
   width: 100%;
-  height: 100%;
+  height: 45vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -172,7 +172,7 @@ iframe {
 }
 
 .homeWrapper {
-  margin-top: 60vh;
+  margin-top: 30vh;
 }
 
 .button {
@@ -180,6 +180,10 @@ iframe {
 }
 
 @media only screen and (min-width: 560px) {
+  iframe {
+    height: 100%;
+  }
+
   .homeWrapper {
     margin-top: 100vh;
   }

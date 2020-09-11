@@ -72,6 +72,7 @@ export default {
           body: true
         }
       ],
+      title: "Bootbag - Football's Premier Scouting Game",
       link: [
         {
           rel: 'stylesheet',
