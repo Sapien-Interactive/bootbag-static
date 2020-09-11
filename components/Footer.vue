@@ -22,6 +22,20 @@
             </ul>
           </div>
           <div class="column is-4">
+            <p><strong>Shop</strong></p>
+            <ul>
+              <li>
+                <router-link to="/terms">Bootbag Shirts</router-link>
+              </li>
+              <li><router-link to="/delivery-costs">Delivery</router-link></li>
+              <li>
+                <router-link to="/returns-refunds"
+                  >Refunds & Returns</router-link
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="column is-4">
             <p><strong>Legal</strong></p>
             <ul>
               <li>
