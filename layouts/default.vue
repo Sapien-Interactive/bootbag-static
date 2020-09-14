@@ -25,6 +25,7 @@
         @click="isOpen = !isOpen"
         href="https://shop.bootbag.co/products/bootbag-shirt"
         target="_blank"
+        `
         >Alisha Lehmann Bootbag Shirt</a
       >
       <a
@@ -57,6 +58,16 @@ export default {
   head() {
     return {
       title: "Bootbag - Football's Premier Scouting Game",
+      meta: [
+        {
+          name: 'description',
+          content: "Bootbag - Football's Premier Scouting Game"
+        },
+        {
+          name: 'og:description',
+          content: "Bootbag - Football's Premier Scouting Game"
+        }
+      ],
       link: [
         {
           rel: 'stylesheet',

@@ -1,6 +1,6 @@
 # bootbag-marketing
 
-> Bootbag Fantasy Football
+> Bootbag - Premier Scouting Game
 
 ## Build Setup
 

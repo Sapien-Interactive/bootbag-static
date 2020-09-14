@@ -1,9 +1,9 @@
 {
-  "name": "bootbag-marketing",
+  "name": "bootbag",
   "version": "1.0.0",
   "main": "assets/scss/mystyles.scss",
-  "description": "Bootbag Fantasy Football",
-  "author": "Hamish Hossack",
+  "description": "Bootbag - Premier Scouting Game",
+  "author": "Sapien Interactive",
   "private": true,
   "scripts": {
     "css-watch": "npm run css-build -- --watch",
