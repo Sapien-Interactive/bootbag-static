@@ -22,7 +22,7 @@
 
               <p class="text">
                 Football's very first,<br /><strong
-                  >real-time scouting game.</strong
+                  ><br />real-time scouting game.</strong
                 >
               </p>
               <img src="../assets/images/ticket-left.png" class="ticketLeft" />
@@ -38,7 +38,7 @@
               <img src="~/assets/images/Pick-Roster-icon@2x.png" />
               <p class="text">
                 Choose from over
-                <strong>7500<br />players from across the world.</strong>
+                <strong>7500<br />players from<br />across the world.</strong>
               </p>
               <img src="../assets/images/ticket-left.png" class="ticketLeft" />
               <img

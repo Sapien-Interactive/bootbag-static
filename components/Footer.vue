@@ -11,9 +11,6 @@
             <p><strong>About</strong></p>
             <ul>
               <li>
-                <router-link to="https://shop.bootbag.co">Shop</router-link>
-              </li>
-              <li>
                 <router-link to="/about">About</router-link>
               </li>
               <li>
@@ -25,9 +22,18 @@
             <p><strong>Shop</strong></p>
             <ul>
               <li>
-                <router-link to="/terms">Bootbag Shirts</router-link>
+                <a
+                  href="https://shop.bootbag.co/products/bootbag-shirt"
+                  target="_blank"
+                  >Alisha Lehmann Bootbag Shirt</a
+                >
               </li>
-              <li><router-link to="/delivery-costs">Delivery</router-link></li>
+              <li>
+                <a href="http://shop.bootbag.co/cart">Basket</a>
+              </li>
+              <li>
+                <router-link to="/delivery-costs">Delivery Costs</router-link>
+              </li>
               <li>
                 <router-link to="/returns-refunds"
                   >Refunds & Returns</router-link

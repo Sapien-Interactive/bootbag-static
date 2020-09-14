@@ -21,10 +21,23 @@
     </nav>
     <div v-bind:class="{ 'is-active': isOpen }" class="main-menu">
       <a @click="isOpen = !isOpen" href="/">Home</a>
-      <a @click="isOpen = !isOpen" href="https://shop.bootbag.co">Shop</a>
+      <a
+        @click="isOpen = !isOpen"
+        href="https://shop.bootbag.co/products/bootbag-shirt"
+        target="_blank"
+        >Alisha Lehmann Bootbag Shirt</a
+      >
+      <a
+        @click="isOpen = !isOpen"
+        href="http://shop.bootbag.co/cart"
+        target="_blank"
+        >Basket</a
+      >
       <a @click="isOpen = !isOpen" href="/about">About</a>
       <a @click="isOpen = !isOpen" href="/contact">Contact</a>
       <a @click="isOpen = !isOpen" href="/terms">Terms</a>
+      <a @click="isOpen = !isOpen" href="/delivery-costs">Delivery Costs</a>
+      <a @click="isOpen = !isOpen" href="/refunds-returns">Refunds & Returns</a>
     </div>
     <nuxt />
   </div>
@@ -321,6 +334,10 @@ form {
   .ticketWrapper {
     .ticket {
       margin: 20px 20px;
+
+      p {
+        padding: 10px;
+      }
     }
   }
 

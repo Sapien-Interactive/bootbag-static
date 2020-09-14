@@ -191,7 +191,7 @@ export default {
     input[type='email'] {
       border: none;
       border-bottom: solid 1px #ccc;
-      color: #ccc;
+      color: #000000;
       width: 80%;
       margin: 0 10%;
       background-image: url('../assets/images/ball-icon.png');
@@ -203,6 +203,7 @@ export default {
       background-color: #efefef;
       border-bottom: solid 1px #ccc;
       outline: none;
+      color: #000000;
     }
 
     button {
