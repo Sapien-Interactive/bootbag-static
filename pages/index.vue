@@ -185,7 +185,7 @@ iframe {
   }
 
   .homeWrapper {
-    margin-top: 70vh;
+    margin-top: 80vh;
   }
 }
 </style>
