@@ -25,7 +25,6 @@
         @click="isOpen = !isOpen"
         href="https://shop.bootbag.co/products/bootbag-shirt"
         target="_blank"
-        `
         >Alisha Lehmann Bootbag Shirt</a
       >
       <a
@@ -354,7 +353,7 @@ form {
 
   .coming-soon {
     h1 {
-      width: 100%;
+      width: 80%;
     }
   }
 }

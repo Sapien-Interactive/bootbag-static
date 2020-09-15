@@ -10,10 +10,14 @@
             Simply take your parcel to the Post Office, request the standard
             parcel delivery service. Sit back and wait for your refund.
           </p>
-          <p>Returns Address: XXX, United Kingdom</p>
+          <p>
+            Returns Address: Bootbag Ltd - Mocatta House, Trafalgar Place,
+            Brighton, BN1 4BG
+          </p>
           <p>
             <strong>What is the Bootbag returns address?</strong><br />
-            Returns Address: XXX, United Kingdom
+            Returns Address: Bootbag Ltd - Mocatta House, Trafalgar Place,
+            Brighton, BN1 4BG
           </p>
           <p>
             <strong>What if the item doesn't fit?</strong><br />

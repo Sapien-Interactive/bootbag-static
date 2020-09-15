@@ -10,6 +10,41 @@
       <div class="container is-12 homePageWrapper">
         <section class="section">
           <div class="coming-soon">
+            <h2>
+              Register To Become A Scout.
+            </h2>
+          </div>
+          <div class="coming-soon">
+            <div v-if="!sending && success">
+              <p>
+                You have Successfully Registered for Bootbag, keep an eye on
+                your emails for more details!
+              </p>
+            </div>
+            <form v-else @submit.prevent="sendEmail">
+              <div class="columns">
+                <div class="column is-two-thirds">
+                  <input
+                    v-model="email"
+                    type="email"
+                    class="column"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="column">
+                  <button
+                    :disabled="sending"
+                    type="submit"
+                    class="column button"
+                  >
+                    <img v-if="sending" src="~/assets/spinner.svg" />
+                    <span v-else="!sending">Register Now</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="coming-soon">
             <h1>
               The ultimate platform for fans to scout and transfer football
               players, allowing users to benefit from their performance with the
@@ -22,7 +57,7 @@
 
               <p class="text">
                 Football's very first,<br /><strong
-                  ><br />real-time scouting game.</strong
+                  >real-time<br />scouting game.</strong
                 >
               </p>
               <img src="../assets/images/ticket-left.png" class="ticketLeft" />
@@ -61,41 +96,6 @@
               />
               <p class="bottom">Compete To Be The Best</p>
             </div>
-          </div>
-          <div class="coming-soon">
-            <h2>
-              Register To Become A Scout.
-            </h2>
-          </div>
-          <div class="coming-soon">
-            <div v-if="!sending && success">
-              <p>
-                You have Successfully Registered for Bootbag, keep an eye on
-                your emails for more details!
-              </p>
-            </div>
-            <form v-else @submit.prevent="sendEmail">
-              <div class="columns">
-                <div class="column is-two-thirds">
-                  <input
-                    v-model="email"
-                    type="email"
-                    class="column"
-                    placeholder="Email Address"
-                  />
-                </div>
-                <div class="column">
-                  <button
-                    :disabled="sending"
-                    type="submit"
-                    class="column button"
-                  >
-                    <img v-if="sending" src="~/assets/spinner.svg" />
-                    <span v-else="!sending">Register Now</span>
-                  </button>
-                </div>
-              </div>
-            </form>
           </div>
         </section>
       </div>
@@ -181,11 +181,11 @@ iframe {
 
 @media only screen and (min-width: 560px) {
   iframe {
-    height: 100%;
+    height: 90%;
   }
 
   .homeWrapper {
-    margin-top: 100vh;
+    margin-top: 70vh;
   }
 }
 </style>
