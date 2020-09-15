@@ -339,6 +339,7 @@ form {
 
   form {
     width: 75%;
+    margin-bottom: 40px;
   }
 
   .ticketWrapper {
