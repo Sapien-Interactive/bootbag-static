@@ -108,6 +108,8 @@
 <script>
 import Footer from '~/components/Footer'
 import SignUp from '~/components/SignUp'
+import { UserService } from '~/services'
+
 export default {
   name: 'HomePage',
   components: {
@@ -125,31 +127,21 @@ export default {
 
   methods: {
     async sendEmail() {
-      this.sending = true
+      if (this.email.trim() !== '') {
+        this.sending = true
 
-      try {
-        const response = await fetch(`${window.location.origin}/api/register`, {
-          method: 'POST',
-          mode: 'cors',
-          cache: 'no-cache',
-          credentials: 'same-origin',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          redirect: 'follow',
-          referrer: 'no-referrer',
-          body: JSON.stringify({
-            email: this.email
-          })
-        })
+        try {
+          const res = await UserService.register(this.email)
 
-        await response.json()
+          this.sending = false
 
-        this.success = response.status === 200
-      } catch (error) {
-        this.success = false
-      } finally {
-        this.sending = false
+          this.success = res.status === 200
+          this.email = ''
+        } catch (error) {
+          this.success = false
+        } finally {
+          this.sending = false
+        }
       }
     }
   }

@@ -1,8 +1,9 @@
 <template>
   <section class="yellowSection  has-text-centered">
     <p>
-      <span>Join The Revolution</span><strong>Register To Become A Scout</strong
-      ><button
+      <span>Join The Revolution</span
+      ><strong>Register To Become A Scout</strong>
+      <button
         v-on:click="showPopup = !showPopup"
         class="modal-button"
         data-target="modal"
@@ -49,6 +50,7 @@
 </template>
 
 <script>
+import { UserService } from '~/services'
 export default {
   name: 'SignUp',
 
@@ -66,29 +68,19 @@ export default {
       this.sending = true
 
       try {
-        const response = await fetch(`${window.location.origin}/api/register`, {
-          method: 'POST',
-          mode: 'cors',
-          cache: 'no-cache',
-          credentials: 'same-origin',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          redirect: 'follow',
-          referrer: 'no-referrer',
-          body: JSON.stringify({
-            email: this.email
-          })
-        })
+        const res = await UserService.register(this.email)
 
-        await response.json()
+        this.sending = false
 
-        this.success = response.status === 200
+        this.success = res.status === 200
+        this.email = ''
       } catch (error) {
         this.success = false
       } finally {
         this.sending = false
       }
+
+      this.sending = false
     }
   }
 }
@@ -130,27 +122,27 @@ export default {
       text-transform: uppercase;
 
       /*box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-      transform: scale(1);
-      animation: pulse 2s infinite;*/
+transform: scale(1);
+animation: pulse 2s infinite;*/
     }
 
     /*
-    @keyframes pulse {
-      0% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-      }
+@keyframes pulse {
+0% {
+transform: scale(0.95);
+box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+}
 
-      70% {
-        transform: scale(1);
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-      }
+70% {
+transform: scale(1);
+box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+}
 
-      100% {
-        transform: scale(0.95);
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-      }
-    }*/
+100% {
+transform: scale(0.95);
+box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+}*/
   }
 
   .modal-content {
