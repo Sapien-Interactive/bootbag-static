@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <div class="logoWrapper">
-          <a href="/"><LogoSmall class="logo"/></a>
+          <a href="/"><Logo class="logo"/></a>
         </div>
         <a
           @click="isOpen = !isOpen"
@@ -40,14 +40,17 @@
       <a @click="isOpen = !isOpen" href="/refunds-returns">Refunds & Returns</a>
     </div>
     <nuxt />
+    <cookie-law theme="dark-lime"></cookie-law>
   </div>
 </template>
 
 <script>
-import LogoSmall from '~/components/LogoSmall'
+import CookieLaw from 'vue-cookie-law'
+import Logo from '~/components/Logo'
 export default {
   components: {
-    LogoSmall
+    Logo,
+    CookieLaw
   },
   data() {
     return {
@@ -102,13 +105,11 @@ body {
     padding-top: 10px;
 
     .logoWrapper {
-      padding-left: 52px;
+      padding-left: 25px;
       text-align: center;
-      width: 100%;
 
       .logo {
-        width: 60px !important;
-        padding: 10px;
+        margin-left: 1rem;
       }
     }
   }

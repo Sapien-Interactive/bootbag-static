@@ -36,7 +36,9 @@
     "micro-route": "^2.5.0",
     "nuxt": "^2.12.2",
     "nuxt-buefy": "^0.3.31",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-cookie-law": "^1.13.3",
+    "vue-vimeo-player": "^0.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.1.2",
