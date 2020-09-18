@@ -59,6 +59,13 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+
+  env: {
+    PRE_REG_STAGING_URI:
+      'https://europe-west1-bootbag-staging.cloudfunctions.net/preRegistration',
+    PRE_REG_PRODUCTION_URI:
+      'https://europe-west1-bootbag-production.cloudfunctions.net/preRegistration'
+  },
   /*
    ** Build configuration
    */
