@@ -45,12 +45,11 @@
 </template>
 
 <script>
-import CookieLaw from 'vue-cookie-law'
 import Logo from '~/components/Logo'
+
 export default {
   components: {
-    Logo,
-    CookieLaw
+    Logo
   },
   data() {
     return {

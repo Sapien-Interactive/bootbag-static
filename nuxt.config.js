@@ -32,7 +32,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: `~plugins/vimeo-player`, ssr: false }],
+  plugins: [
+    { src: `~plugins/vimeo-player`, ssr: false },
+    { src: `~plugins/vue-cookie-law`, ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
