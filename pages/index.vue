@@ -45,10 +45,10 @@
             </form>
           </div>
           <div class="coming-soon">
-            <h1>
+            <h1 class="strapline">
               The ultimate platform for fans to scout and transfer football
-              players, allowing users to benefit from their performance with the
-              chance of financial rewards.
+              players, users benefit from their performance with the chance of
+              real financial reward.
             </h1>
           </div>
           <div class="columns has-text-centered ticketWrapper">
@@ -178,6 +178,11 @@ iframe {
 
   .homeWrapper {
     margin-top: 80vh;
+  }
+
+  .strapline {
+    width: 60% !important;
+    display: block;
   }
 }
 </style>

@@ -54,7 +54,7 @@
     </section>
     <Social />
     <section class="main-content columns">
-      <aside class="column is-12 legal section">
+      <aside class="column is-12 legal">
         Sapien Interactive &copy; 2020
       </aside>
     </section>
@@ -89,8 +89,9 @@ footer {
 
   .strapline {
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
+    text-transform: none;
   }
 
   .footerNav {

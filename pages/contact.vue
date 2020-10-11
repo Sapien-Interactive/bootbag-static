@@ -1,6 +1,10 @@
 <template>
   <div class="contact">
     <section class="main-content">
+      <section class="section contactLogo">
+        <img src="~/assets/bootbag.svg" />
+        <p>football's premier scouting game</p>
+      </section>
       <section class="section contactContent">
         <h1>Contact</h1>
         <p class="email">
@@ -32,19 +36,30 @@ export default {
 
 <style lang="scss">
 .contact {
-  height: 100vh;
+  height: 100%;
   background-image: url('../assets/images/map-uk-contact-us@2x.png');
   background-repeat: no-repeat;
-  background-position: right 100px;
-  background-size: 100%;
+  background-position: right 120px;
+  background-size: 90%;
 }
 
 .contactLogo {
   width: 100%;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
 
   img {
-    width: 250px;
+    width: 150px;
+  }
+
+  p {
+    width: 100%;
+    text-align: center;
+    text-transform: none;
+    color: #d4af37;
+    font-size: 14px;
+    font-weight: bold;
   }
 }
 
@@ -52,6 +67,7 @@ export default {
   h1,
   p {
     text-align: center;
+    margin-bottom: 10px;
   }
 }
 

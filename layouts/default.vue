@@ -191,9 +191,22 @@ body {
   align-items: center;
   margin-top: 20px;
 
+  form {
+    margin: 0 0 10px 0;
+  }
+
   h1 {
     width: 100%;
     text-align: center;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .strapline {
+    width: 100%;
+    display: block;
   }
 }
 
@@ -355,6 +368,11 @@ form {
   .coming-soon {
     h1 {
       width: 80%;
+    }
+
+    .strapline {
+      width: 60% !important;
+      display: block;
     }
   }
 }
