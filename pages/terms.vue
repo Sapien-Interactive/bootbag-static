@@ -1121,15 +1121,18 @@
       </section>
     </section>
     <Footer />
+    <FixedFooter />
   </div>
 </template>
 
 <script>
 import Footer from '~/components/Footer'
+import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'Terms',
   components: {
-    Footer
+    Footer,
+    FixedFooter
   }
 }
 </script>

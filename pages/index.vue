@@ -105,6 +105,7 @@
       </div>
       <SignUp />
       <Footer />
+      <FixedFooter />
     </section>
   </div>
 </template>
@@ -112,12 +113,14 @@
 <script>
 import { vueVimeoPlayer } from 'vue-vimeo-player'
 import Footer from '~/components/Footer'
+import FixedFooter from '~/components/FixedFooter'
 import SignUp from '~/components/SignUp'
 import { UserService } from '~/services'
 
 export default {
   name: 'HomePage',
   components: {
+    FixedFooter,
     Footer,
     SignUp,
     vueVimeoPlayer
@@ -165,7 +168,7 @@ iframe {
 
 .homePageWrapper {
   .section {
-    padding: 0 1.5rem 3rem 1.5rem;
+    //padding: 0 1.5rem 3rem 1.5rem;
   }
 }
 
@@ -187,13 +190,17 @@ iframe {
   margin-left: -1px;
   float: left;
   height: 0;
-  padding-top: 591.44px / 1127.34px * 100%;
+  padding-top: 70%;
 }
 
 .aspect-ratio-box::after {
   content: '';
   display: table;
   clear: both;
+}
+
+.yellowSection {
+  display: none;
 }
 
 @media only screen and (min-width: 560px) {
@@ -207,6 +214,19 @@ iframe {
 
   .strapline {
     width: 60% !important;
+    display: block;
+  }
+
+  .aspect-ratio-box::before {
+    content: '';
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 30%; //591.44px / 1127.34px * 100%;
+  }
+
+  .yellowSection {
     display: block;
   }
 }

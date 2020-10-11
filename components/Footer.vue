@@ -78,7 +78,7 @@ footer {
   background-image: url('../assets/images/Map@2x.png');
   background-repeat: no-repeat;
   background-position: top right;
-  padding: 100px 40px 40px 40px;
+  padding: 0px 40px 140px 40px;
   background-size: 50%;
 
   .logoWrapper {
@@ -127,14 +127,6 @@ footer {
 }
 
 @media only screen and (min-width: 560px) {
-  footer {
-    padding: 100px 40px;
-
-    .logoWrapper {
-      padding-bottom: 0;
-    }
-  }
-
   .footerNav {
     p {
       margin: 55px 0 30px 0;
@@ -142,6 +134,9 @@ footer {
   }
 
   footer {
+    padding: 100px 40px 40px 40px;
+    padding-bottom: 0;
+
     .logoWrapper {
       text-align: left;
     }

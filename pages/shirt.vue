@@ -4,6 +4,7 @@
     <section class="main-content homeWrapper">
       <SignUp />
       <Footer />
+      <FixedFooter />
     </section>
   </div>
 </template>
@@ -11,11 +12,13 @@
 <script>
 import Footer from '~/components/Footer'
 import SignUp from '~/components/SignUp'
+import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'Shirt',
   components: {
     Footer,
-    SignUp
+    SignUp,
+    FixedFooter
   }
 }
 </script>

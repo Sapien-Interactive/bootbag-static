@@ -3,7 +3,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <div class="logoWrapper">
-          <a href="/"><Logo class="logo"/></a>
+          <a href="/"><LogoSmall class="logo"/></a>
         </div>
         <a
           @click="isOpen = !isOpen"
@@ -45,11 +45,11 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo'
+import LogoSmall from '~/components/LogoSmall'
 
 export default {
   components: {
-    Logo
+    LogoSmall
   },
   data() {
     return {
@@ -106,6 +106,7 @@ body {
     .logoWrapper {
       padding-left: 25px;
       text-align: center;
+      width: 100%;
 
       .logo {
         margin-left: 1rem;
@@ -129,7 +130,7 @@ body {
 .main-menu {
   background-color: #000000;
   position: absolute;
-  top: 52px;
+  top: 62px;
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -377,6 +378,10 @@ form {
   }
 }
 
+#vimeo-player-1 {
+  margin-top: -60px;
+}
+
 @media only screen and (min-width: 768px) {
   form {
     width: 50%;
@@ -388,6 +393,10 @@ form {
 
   button[type='submit'] {
     margin-bottom: 20px;
+  }
+
+  #vimeo-player-1 {
+    margin-top: 0px;
   }
 }
 </style>

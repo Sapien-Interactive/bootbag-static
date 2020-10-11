@@ -19,17 +19,20 @@
     </section>
     <Social />
     <SignUp />
+    <FixedFooter />
   </div>
 </template>
 
 <script>
 import Social from '~/components/Social'
 import SignUp from '~/components/SignUp'
+import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'HomePage',
   components: {
     Social,
-    SignUp
+    SignUp,
+    FixedFooter
   }
 }
 </script>
