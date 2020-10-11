@@ -120,10 +120,7 @@ export default {
       width: 100%;
       outline: none;
       text-transform: uppercase;
-
-      /*box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-transform: scale(1);
-animation: pulse 2s infinite;*/
+      cursor: pointer;
     }
 
     /*
@@ -212,6 +209,7 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
       background-image: url('../assets/images/button-rip.png');
       background-repeat: repeat-x;
       background-size: 2%;
+      cursor: pointer;
     }
   }
 }

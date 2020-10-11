@@ -32,7 +32,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: `~plugins/vimeo-player`, ssr: false },
+    { src: `~plugins/vue-cookie-law`, ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -70,6 +73,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    vendor: ['vue-vimeo-player'],
     /*
      ** You can extend webpack config here
      */

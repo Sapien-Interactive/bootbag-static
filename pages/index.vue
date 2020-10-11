@@ -1,12 +1,16 @@
 <template>
   <div class="main">
-    <iframe
-      src="https://player.vimeo.com/video/456135341?autoplay=true&loop=true"
-      frameborder="0"
-      allow="autoplay; fullscreen; loop"
-      allowfullscreen
-    ></iframe>
-    <section class="main-content homeWrapper">
+    <section class="main-content">
+      <div class="container is-12 aspect-ratio-box">
+        <client-only>
+          <vueVimeoPlayer
+            :autoplay="true"
+            :loop="true"
+            video-id="456135341"
+            allowfullscreen
+          />
+        </client-only>
+      </div>
       <div class="container is-12 homePageWrapper">
         <section class="section">
           <div class="coming-soon">
@@ -106,6 +110,7 @@
 </template>
 
 <script>
+import { vueVimeoPlayer } from 'vue-vimeo-player'
 import Footer from '~/components/Footer'
 import SignUp from '~/components/SignUp'
 import { UserService } from '~/services'
@@ -114,7 +119,8 @@ export default {
   name: 'HomePage',
   components: {
     Footer,
-    SignUp
+    SignUp,
+    vueVimeoPlayer
   },
 
   data() {
@@ -169,6 +175,25 @@ iframe {
 
 .button {
   text-transform: uppercase;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.aspect-ratio-box::before {
+  content: '';
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  padding-top: 591.44px / 1127.34px * 100%;
+}
+
+.aspect-ratio-box::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
 @media only screen and (min-width: 560px) {
