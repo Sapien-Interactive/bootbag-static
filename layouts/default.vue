@@ -37,7 +37,7 @@
       <a @click="isOpen = !isOpen" href="/contact">Contact</a>
       <a @click="isOpen = !isOpen" href="/terms">Terms</a>
       <a @click="isOpen = !isOpen" href="/delivery-costs">Delivery Costs</a>
-      <a @click="isOpen = !isOpen" href="/refunds-returns">Refunds & Returns</a>
+      <a @click="isOpen = !isOpen" href="/returns-refunds">Refunds & Returns</a>
     </div>
     <nuxt />
     <cookie-law theme="dark-lime"></cookie-law>
