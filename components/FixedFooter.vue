@@ -59,6 +59,10 @@
         color: #848282;
         padding: 5px;
       }
+
+      a:hover {
+        color: #ffffff;
+      }
     }
   }
 }
