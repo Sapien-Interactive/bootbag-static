@@ -13,7 +13,10 @@
       </div>
       <div class="container is-12 homePageWrapper">
         <section class="section">
-          <div class="coming-soon">
+          <div class="coming-soon mobile">
+            <h2><span>Live</span> Register To Become A Scout.</h2>
+          </div>
+          <div class="coming-soon desktop">
             <h2>
               Register To Become A Scout.
             </h2>
@@ -199,6 +202,24 @@ iframe {
   clear: both;
 }
 
+.mobile {
+  display: block;
+  width: 127%;
+  background-color: #fff000;
+  color: #000000;
+  position: relative;
+  margin-left: -20%;
+  padding-left: 15%;
+
+  span {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 0 5px;
+  }
+}
+
+.desktop,
 .yellowSection {
   display: none;
 }
@@ -228,6 +249,20 @@ iframe {
 
   .yellowSection {
     display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      text-align: center;
+    }
   }
 }
 </style>
