@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer :class="showGlobe ? null : 'no-globe'">
     <section class="main-content columns">
       <aside class="column is-4 logoWrapper">
         <LogoSmall class="logo" />
@@ -68,6 +68,12 @@ export default {
   components: {
     LogoSmall,
     Social
+  },
+  props: {
+    showGlobe: {
+      type: Boolean,
+      default: true
+    }
   }
 }
 </script>
@@ -81,6 +87,10 @@ footer {
   padding: 0px 40px 140px 40px;
   background-size: 50%;
 
+  &.no-globe {
+    background-image: none;
+  }
+
   .logoWrapper {
     vertical-align: top;
     text-align: center;
@@ -92,6 +102,15 @@ footer {
     font-size: 14px;
     font-weight: bold;
     text-transform: none;
+  }
+
+  .columns.is-mobile {
+    display: block;
+
+    > div {
+      width: 100% !important;
+      padding-left: 0px;
+    }
   }
 
   .footerNav {
@@ -136,6 +155,15 @@ footer {
   footer {
     padding: 100px 40px 40px 40px;
     padding-bottom: 0;
+
+    .columns.is-mobile {
+      display: flex;
+
+      > div {
+        width: 33.33% !important;
+        padding-left: 0.75rem;
+      }
+    }
 
     .logoWrapper {
       text-align: left;

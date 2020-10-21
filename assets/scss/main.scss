@@ -1,6 +1,17 @@
-@import "./vars";
+@import './vars';
 @import './reset';
 
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
+@import '~bulma';
+@import '~buefy/src/scss/buefy';
 
+/* nuxt page transition */
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s, transform 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}

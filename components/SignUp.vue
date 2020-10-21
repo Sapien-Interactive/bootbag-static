@@ -1,5 +1,8 @@
 <template>
-  <section class="yellowSection  has-text-centered">
+  <section
+    :class="isReady ? 'is-visible' : ''"
+    class="yellowSection  has-text-centered"
+  >
     <p>
       <span>Join The Revolution</span
       ><strong>Register To Become A Scout</strong>
@@ -36,7 +39,7 @@
           />
           <button :disabled="sending" type="submit">
             <img v-if="sending" src="~/assets/spinner.svg" />
-            <span v-else="!sending">Register Now</span>
+            <span v-else>Register Now</span>
           </button>
         </form>
       </div>
@@ -59,8 +62,14 @@ export default {
       sending: false,
       success: false,
       email: '',
-      showPopup: false
+      showPopup: false,
+      isReady: false
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isReady = true
+    }, 1500)
   },
 
   methods: {
@@ -88,8 +97,19 @@ export default {
 
 <style lang="scss">
 .yellowSection {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
   background-color: #fff000;
   text-align: center;
+
+  // transform: translateY(100%);
+  // transition: transform 0.3s ease-out;
+
+  // &.is-visible {
+  //   transform: translateY(0%);
+  // }
 
   p {
     display: inline-block;
@@ -142,12 +162,23 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 }*/
   }
 
+  .modal.is-active {
+    .modal-content {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
   .modal-content {
     background-color: #fff;
     width: 90%;
     color: #000;
     padding-top: 20px;
     font-size: 20px;
+
+    transition: transform 1s ease-out, opacity 1s;
+    transform: translateY(20px);
+    opacity: 0;
 
     .subTitle,
     .title {
@@ -247,6 +278,10 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
         margin-top: -60px;
       }
     }
+  }
+
+  .modal-close {
+    top: 100px;
   }
 }
 </style>
