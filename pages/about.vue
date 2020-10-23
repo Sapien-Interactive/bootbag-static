@@ -5,13 +5,15 @@
         <div>
           <h1>About</h1>
 
-          Bootbag was formed out of a passion for live Football and the fans
-          that make it. Our love for Football, blended with the romance that it
-          provides has driven us to build Bootbag; a place fans can truly put
-          their football knowledge and inner geek to unearth talent before their
-          friends and other Bootbag scouts. We’re proud to make Bootbag the
-          first real-life scouting game and we hope you enjoy the fun of pitting
-          your knowledge against other fans.
+          Bootbag has been designed by Sapien Interactive; combining a passion
+          for football with a desire to bring a new real-time fantasy concept to
+          the world. It has been our intention to create a platform that
+          celebrates both the men’s and women’s professional game, and a belief
+          that players from the lower leagues of the football pyramid are as
+          crucial as the well known players. Football is a universal language,
+          and we hope that Bootbag helps translate your enthusiasm and skill for
+          finding players via a winning roster into something that enhances your
+          experience as a football fan.
           <br /><br />
           <img src="../assets/images/stamp.png" class="stamp" /><br /><br />
           Bootbag Team
