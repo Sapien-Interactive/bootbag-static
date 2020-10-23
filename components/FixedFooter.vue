@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed">
+  <div :class="cls" class="fixed">
     <ul>
       <li>
         <a href="/"
@@ -30,6 +30,34 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      scrolled: false
+    }
+  },
+  computed: {
+    cls() {
+      return {
+        'is-visible': this.scrolled
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
+  methods: {
+    handleScroll() {
+      this.scrolled = window.scrollY > 50
+    }
+  }
+}
+</script>
+
 <style lang="scss">
 .fixed {
   position: fixed;
@@ -37,6 +65,13 @@
   bottom: 0;
   padding: 0;
   background-color: #3e3c3c;
+
+  transform: translateY(100%);
+  transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1); /* easeOutQuint */
+
+  &.is-visible {
+    transform: translateY(0);
+  }
 
   ul {
     list-style: none;
