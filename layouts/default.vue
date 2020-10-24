@@ -78,6 +78,10 @@ export default {
           rel: 'stylesheet',
           href:
             'https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap'
+        },
+        {
+          rel: 'shortcut icon',
+          href: '/assets/icon.png'
         }
       ]
     }
@@ -305,6 +309,7 @@ form {
     font-size: 18px;
     display: inline-block;
     margin-bottom: 0;
+    margin-top: 10px;
   }
 
   button[type='submit'] {
@@ -406,6 +411,10 @@ form {
   form {
     width: 75%;
     margin-bottom: 40px;
+
+    input[type='email'] {
+      margin-top: 0px;
+    }
   }
 
   .ticketWrapper {
@@ -431,7 +440,7 @@ form {
 }
 
 #vimeo-player-1 {
-  margin-top: -60px;
+  margin-top: -80px;
 }
 
 @media only screen and (min-width: 768px) {

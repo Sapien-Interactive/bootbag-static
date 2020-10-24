@@ -31,7 +31,7 @@
       </div> -->
     <div class="wrap">
       <div class="container is-12 homePageWrapper">
-        <section class="section">
+        <section class="section homePageSection">
           <div class="coming-soon mobile">
             <h2><span>Live</span> Register To Become A Scout.</h2>
           </div>
@@ -57,7 +57,7 @@
                     placeholder="Email Address"
                   />
                 </div>
-                <div class="column">
+                <div class="column mobileForm">
                   <button
                     :disabled="sending"
                     type="submit"
@@ -291,11 +291,10 @@ export default {
   background-color: black;
 }
 
-// .homePageWrapper {
-//   .section {
-//     //padding: 0 1.5rem 3rem 1.5rem;
-//   }
-// }
+
+.homePageSection {
+  padding: 20px 1.5rem !important;
+}
 
 .homeWrapper {
   margin-top: 30vh;
@@ -331,14 +330,22 @@ export default {
   color: #000000;
   position: relative;
   margin-left: -20%;
-  padding-left: 15%;
+  padding-left: 12%;
 
-  span {
-    background-color: #000;
-    color: #fff;
-    display: inline-block;
-    padding: 0 5px;
+  h2 {
+    font-size: 22px;
+
+    span {
+      background-color: #000;
+      color: #fff000;
+      display: inline-block;
+      padding: 0 5px;
+    }
   }
+}
+
+.mobileForm {
+  padding: 5px 0.75rem 0.75rem 0.75rem;
 }
 
 .desktop,
@@ -418,6 +425,8 @@ export default {
       background-color: transparent;
       cursor: pointer;
     }
+  .homePageSection {
+    padding: 0 1.5rem !important;
   }
 
   .homeWrapper {
