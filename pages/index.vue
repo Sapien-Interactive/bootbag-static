@@ -467,19 +467,23 @@ export default {
       transition: opacity 0.4s;
       position: absolute;
       top: 50%;
-      left: 0;
-      width: 100%;
+      left: 10%;
+      width: 80%;
       transform: translateY(-40%);
 
       img {
         position: absolute;
-        top: 0;
+        top: 7%;
         left: 0;
         width: 100%;
       }
 
       h3 {
         bottom: 40%;
+
+        &:hover {
+          background-image: url(/play-over.png);
+        }
       }
     }
 
