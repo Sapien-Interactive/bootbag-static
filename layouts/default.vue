@@ -31,6 +31,13 @@
             >Contact</nuxt-link
           >
         </li>
+        <li>
+          <a
+            href="https://shop.bootbag.co/products/bootbag-shirt"
+            target="_blank"
+            >Shop</a
+          >
+        </li>
       </ul>
       <!-- <a
         @click="isOpen = !isOpen"
@@ -103,7 +110,7 @@ body {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: left;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -141,11 +148,23 @@ body {
         top: calc(50% + 6px);
       }
     }
+
+    &.is-active {
+      span {
+        &:nth-child(1) {
+          top: calc(50% - 7px);
+        }
+
+        &:nth-child(3) {
+          top: calc(50% + 3px);
+        }
+      }
+    }
   }
 }
 
 .navbar-burger {
-  display: block;
+  // display: none;
 }
 
 .main-content {
@@ -344,6 +363,10 @@ form {
     padding: 10px 0 0 0;
     border-radius: 5px;
 
+    &:last-child {
+      margin-bottom: 20px;
+    }
+
     p {
       margin: 0;
       padding: 10px;
@@ -452,6 +475,7 @@ form {
   }
 
   .navbar {
+    position: absolute;
     padding: 20px;
   }
 

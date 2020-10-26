@@ -8,16 +8,26 @@
       <div class="poster">
         <button @click="playVideo">
           <img src="/poster.jpg" alt="Bootbag" />
+          <h3>Watch</h3>
         </button>
       </div>
       <div v-html="video" class="player" />
       <h1>
         <button @click="playVideo">
-          The ultimate platform for fans<br />to scout and transfer players<br /><br /><span
+          The ultimate platform for fans<br />to scout and transfer players
+          <!-- <br /><br /><span
             >Click to find out more.</span
-          >
+          > -->
         </button>
       </h1>
+    </div>
+    <div :class="isPlaying ? 'is-playing' : null" class="video-modal">
+      <div v-html="video" class="player" />
+      <button
+        v-on:click="closeVideo"
+        class="modal-close is-large"
+        aria-label="close"
+      ></button>
     </div>
     <!-- <div class="container is-12 aspect-ratio-box">
         <client-only>
@@ -31,9 +41,9 @@
       </div> -->
     <div class="wrap">
       <div class="container is-12 homePageWrapper">
-        <section class="section">
+        <section class="section section-first">
           <div class="coming-soon mobile">
-            <h2><span>Live</span> Register To Become A Scout.</h2>
+            <h2><span>Live</span> <span>Register To Become A Scout.</span></h2>
           </div>
           <div class="coming-soon desktop">
             <h2>
@@ -86,9 +96,12 @@
                   >real-time<br />scouting game.</strong
                 >
               </p>
-              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
               <img
-                src="../assets/images/ticket-right.png"
+                src="../assets/images/ticket-left-new.png"
+                class="ticketLeft"
+              />
+              <img
+                src="../assets/images/ticket-right-new.png"
                 class="ticketRight"
               />
               <p class="bottom">
@@ -101,9 +114,12 @@
                 Choose from over
                 <strong>7500<br />players from<br />across the world.</strong>
               </p>
-              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
               <img
-                src="../assets/images/ticket-right.png"
+                src="../assets/images/ticket-left-new.png"
+                class="ticketLeft"
+              />
+              <img
+                src="../assets/images/ticket-right-new.png"
                 class="ticketRight"
               />
               <p class="bottom">3.5 Billion Global Football Fans*</p>
@@ -115,9 +131,12 @@
                   >Beat the competition.</strong
                 >
               </p>
-              <img src="../assets/images/ticket-left.png" class="ticketLeft" />
               <img
-                src="../assets/images/ticket-right.png"
+                src="../assets/images/ticket-left-new.png"
+                class="ticketLeft"
+              />
+              <img
+                src="../assets/images/ticket-right-new.png"
                 class="ticketRight"
               />
               <p class="bottom">Compete To Be The Best</p>
@@ -125,7 +144,7 @@
           </div>
         </section>
       </div>
-      <SignUp />
+      <SignUp :home="true" />
       <Footer />
       <FixedFooter />
     </div>
@@ -166,9 +185,13 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll)
+    // window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
+    closeVideo() {
+      this.isPlaying = false
+      this.video = ''
+    },
     handleScroll() {
       const st = window.scrollY
       this.opacity = 1 - (1 / window.innerHeight) * st
@@ -211,19 +234,20 @@ export default {
 // }
 
 .video {
-  position: fixed;
+  position: relative;
+  overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
   // position: relative;
-  min-height: 70vh;
+  min-height: 55vh;
 
   .player {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
-    transform: translateY(-50%);
+    transform: translateY(-35%);
   }
 
   h1 {
@@ -232,6 +256,7 @@ export default {
     bottom: 0px;
     left: 0%;
     z-index: 2;
+    margin-bottom: 0;
 
     button {
       color: white;
@@ -256,13 +281,31 @@ export default {
     top: 50%;
     left: 0;
     width: 150%;
-    transform: translate(-17%, -50%);
+    transform: translate(-16.4%, -60%);
 
     img {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
+    }
+
+    h3 {
+      position: absolute;
+      left: 50%;
+      bottom: -15%;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      padding-top: 60px;
+      background-image: url(/play.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: auto 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -283,12 +326,20 @@ export default {
   }
 }
 
+.video-modal {
+  display: none;
+}
+
 .wrap {
   position: relative;
   z-index: 5;
   width: 100%;
-  margin-top: 70vh;
+  // margin-top: 50vh;
   background-color: black;
+
+  section.section-first {
+    padding-top: 0px;
+  }
 }
 
 // .homePageWrapper {
@@ -333,11 +384,21 @@ export default {
   margin-left: -20%;
   padding-left: 15%;
 
+  h2 {
+    font-size: 23px;
+    line-height: 23px;
+  }
+
   span {
-    background-color: #000;
-    color: #fff;
     display: inline-block;
-    padding: 0 5px;
+    padding: 4px 0 2px 0;
+  }
+
+  span:first-child {
+    background-color: #000;
+    color: #fff000;
+
+    padding: 4px 5px 2px 5px;
   }
 }
 
@@ -355,25 +416,32 @@ export default {
     position: relative;
     z-index: 5;
     width: 100%;
-    margin-top: 100vh;
+    margin-top: 75vh;
     background-color: black;
   }
 
+  section.section-first {
+    padding-top: 20px !important;
+    padding-bottom: 0px !important;
+  }
+
   .video {
-    min-height: 100vh;
+    position: fixed;
+    min-height: 75vh;
 
     .player {
-      position: absolute;
+      position: fixed;
       top: 50%;
       left: 0;
       width: 100%;
-      transform: translateY(-50%);
+      transform: translateY(-40%);
+      display: none;
     }
 
     h1 {
       position: absolute;
       width: 40%;
-      bottom: 100px;
+      bottom: 30px;
       left: 50%;
       z-index: 2;
 
@@ -401,13 +469,17 @@ export default {
       top: 50%;
       left: 0;
       width: 100%;
-      transform: translateY(-50%);
+      transform: translateY(-40%);
 
       img {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+      }
+
+      h3 {
+        bottom: 40%;
       }
     }
 
@@ -420,8 +492,39 @@ export default {
     }
   }
 
+  .video-modal {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+
+    &.is-playing {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .player {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      width: 80%;
+      transform: translateY(-50%);
+    }
+  }
+
   .homeWrapper {
     margin-top: 80vh;
+  }
+
+  .ticketWrapper {
+    margin-top: 80px;
   }
 
   .strapline {

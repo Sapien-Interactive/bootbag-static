@@ -1,6 +1,20 @@
 <template>
   <div :class="cls" class="fixed">
     <ul>
+      <li><nuxt-link to="/" class="tab-watch">Watch</nuxt-link></li>
+      <li>
+        <a
+          class="tab-shop"
+          href="https://shop.bootbag.co/products/bootbag-shirt"
+          target="_blank"
+          >Shop</a
+        >
+      </li>
+      <li><nuxt-link class="tab-info" to="/about">About</nuxt-link></li>
+      <li><nuxt-link to="/" class="tab-user">Sign up</nuxt-link></li>
+      <li><nuxt-link to="/terms" class="tab-terms">T&Cs</nuxt-link></li>
+    </ul>
+    <!-- <ul>
       <li>
         <a href="/"
           ><img src="~/assets/images/footer-watch.png" /><br />Watch</a
@@ -26,7 +40,7 @@
           ><img src="~/assets/images/footer-signup.png" /><br />Sign Up</a
         >
       </li>
-    </ul>
+    </ul> -->
   </div>
 </template>
 
@@ -75,24 +89,58 @@ export default {
 
   ul {
     list-style: none;
-    display: inline-block;
+    display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
 
     li {
-      display: inline-block;
-      width: 19%;
+      box-sizing: border-box;
+      width: 20%;
       margin: 0;
-      padding: 0;
+      padding: 12px 0 8px;
 
       a {
+        box-sizing: border-box;
         display: inline-block;
         width: 100%;
+        padding-top: 35px;
         text-align: center;
-        background-color: #3e3c3c;
-        color: #848282;
-        padding: 5px;
+        font-weight: bold;
+        color: white;
+        background-position: top center;
+        background-size: auto 30px;
+        background-repeat: no-repeat;
+        font-size: 14px;
+
+        opacity: 0.3;
+
+        // &.nuxt-link-exact-active {
+        //   opacity: 1;
+        // }
+
+        &.tab-info {
+          background-image: url(/tabs/info@3x.png);
+          background-size: auto 27px;
+        }
+
+        &.tab-watch {
+          background-image: url(/tabs/watch@3x.png);
+        }
+
+        &.tab-shop {
+          background-image: url(/tabs/roster@3x.png);
+        }
+
+        &.tab-user {
+          background-image: url(/tabs/user@3x.png);
+        }
+
+        &.tab-terms {
+          background-image: url(/tabs/terms@3x.png);
+
+          background-size: auto 25px;
+        }
       }
 
       a:hover {

@@ -15,14 +15,14 @@
         /></a>
       </p>
     </aside>
-    <aside class="column is-9 download">
+    <!-- <aside class="column is-9 download">
       <a href="#" class="ios"
         ><img src="~/assets/images/Btn_AppStore@2x.png" class="socialImg"
       /></a>
       <a href="#" class="android"
         ><img src="~/assets/images/BtnGooglePlay@2x.png" class="socialImg"
       /></a>
-    </aside>
+    </aside> -->
   </section>
 </template>
 
