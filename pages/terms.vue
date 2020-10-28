@@ -926,6 +926,9 @@
           will be permitted.<br />
           6. No responsibility can be accepted for entries not received for
           whatever reason.<br />
+          7. Any prize will not be taken from or dictated by the amount of money
+          Bootbag and subsequently Sapien Interactive from purchases made by
+          consumers.<br />
           7. The rules of the competition and the prize for each winner are as
           follows: Further information can be found at: http://www.bootbag.co<br />
           8. The promoter reserves the right to cancel or amend the competition
