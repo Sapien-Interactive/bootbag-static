@@ -940,53 +940,53 @@
           any other event outside of the promoter’s control. Any changes to the
           competition will be notified to entrants as soon as possible by the
           promoter.<br />
-          9. The promoter is not responsible for inaccurate prize details
+          11. The promoter is not responsible for inaccurate prize details
           supplied to any entrant by any third party connected with this
           competition.<br />
-          10. When prizes are not cash related. No cash alternative to the
+          12. When prizes are not cash related. No cash alternative to the
           prizes will be offered. The prizes are not transferable. Prizes are
           subject to availability and we reserve the right to substitute any
           prize with another of equivalent value without giving notice.<br />
-          11. Winners will be chosen: <br />
-          12. By the apps software provided by from all entries received and
+          13. Winners will be chosen:<br />
+          14. By the apps software provided by from all entries received and
           verified by the Bootbag team<br />
-          13. The winner will be notified by email and/or app notification
+          15. The winner will be notified by email and/or app notification
           within 28 days of the closing date. If the winner cannot be contacted
           or the winner fails to claim the prize within 14 days of notification,
           we reserve the right to withdraw the prize from the winner and to
           replace the winner.<br />
-          14. Bootbag will notify the winner when and where the prize can be
+          16. Bootbag will notify the winner when and where the prize can be
           collected.<br />
-          15. Bootbag’s decision in respect of all matters to do with the
-          competition will be final and no correspondence will be entered
-          into.<br />
-          16. By entering this competition, an entrant is indicating his/her
+          17. Bootbag’s decision in respect of all matters to do with the
+          competition will be final and no correspondence will be entered into.
+          <br />
+          18. By entering this competition, an entrant is indicating his/her
           agreement to be bound by these terms and conditions.<br />
-          17. The competition and these terms and conditions will be governed by
+          19. The competition and these terms and conditions will be governed by
           English law and any disputes will be subject to the exclusive
           jurisdiction of the courts of England.<br />
-          18. The winner agrees to the use of his/her name and image in any
+          20. The winner agrees to the use of his/her name and image in any
           publicity material. Any personal data relating to the winner or any
           other entrants will be used solely in accordance with current UK data
           protection legislation and will not be disclosed to a third party
           without the entrant’s prior consent.<br />
-          19. Sign up to Bootbag into the competition will be deemed as
+          21. Sign up to Bootbag into the competition will be deemed as
           acceptance of these terms and conditions.<br />
-          20. The information provided will be used in conjunction with the
+          22. The information provided will be used in conjunction with the
           following Privacy Policy found at http://www.bootbag.co.<br />
           Sapien Interactive Ltd may change this policy from time to time by
           updating this page. You should check this page from time to time to
           ensure that you are happy with any changes. This policy is effective
           from August 2020.<br />
-          21. Bootbag reserves the sole right to remove, cancel or stop any
+          23. Bootbag reserves the sole right to remove, cancel or stop any
           competition and or prize at any point, without incurring any liability
           of any kind whatsoever to any party.<br />
-          22. The prize issued is based on the skill of the scout (user) to
+          24. The prize issued is based on the skill of the scout (user) to
           first qualify in the top 20 positions of the global users for most
           points scored. The scout then competes in the Premier Division against
           19 others and is then ranked within the premier division to denote the
           value of the prize they will receive.<br />
-          23. Unless stated otherwise at the time, the prize (when in cash) will
+          25. Unless stated otherwise at the time, the prize (when in cash) will
           be issued to the card held on the account of the winning scout’s
           profile. Bootbag reserve the right to only pay to this account any
           prize funds won by the scout.<br /><br />
