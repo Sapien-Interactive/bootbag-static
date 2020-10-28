@@ -1,8 +1,5 @@
 <template>
-  <section
-    :class="isReady ? 'is-visible' : ''"
-    class="yellowSection  has-text-centered"
-  >
+  <section :class="cls" class="yellowSection  has-text-centered">
     <p>
       <span>Join The Revolution</span
       ><strong>Register To Become A Scout</strong>
@@ -56,23 +53,40 @@
 import { UserService } from '~/services'
 export default {
   name: 'SignUp',
-
+  props: {
+    home: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       sending: false,
       success: false,
       email: '',
       showPopup: false,
-      isReady: false
+      isReady: false,
+      scrolled: false
+    }
+  },
+  computed: {
+    cls() {
+      return {
+        'is-visible': this.scrolled && this.home,
+        static: !this.home
+      }
     }
   },
   mounted() {
-    setTimeout(() => {
-      this.isReady = true
-    }, 1500)
+    window.addEventListener('scroll', this.handleScroll)
   },
-
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll)
+  },
   methods: {
+    handleScroll() {
+      this.scrolled = window.scrollY > 150
+    },
     async sendEmail() {
       this.sending = true
 
@@ -105,11 +119,14 @@ export default {
   text-align: center;
 
   // transform: translateY(100%);
-  // transition: transform 0.3s ease-out;
+  bottom: -150px;
+  transition: bottom 0.3s ease-out;
 
-  // &.is-visible {
-  //   transform: translateY(0%);
-  // }
+  &.is-visible,
+  &.static {
+    //transform: translateY(0%);
+    bottom: 0px;
+  }
 
   p {
     display: inline-block;
@@ -175,6 +192,7 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     color: #000;
     padding-top: 20px;
     font-size: 20px;
+    min-height: 280px;
 
     transition: transform 1s ease-out, opacity 1s;
     transform: translateY(20px);
@@ -241,6 +259,9 @@ box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
       background-repeat: repeat-x;
       background-size: 2%;
       cursor: pointer;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
     }
   }
 }
