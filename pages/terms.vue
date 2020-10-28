@@ -929,8 +929,8 @@
           7. Any prize will not be taken from or dictated by the amount of money
           Bootbag and subsequently Sapien Interactive from purchases made by
           consumers.<br />
-          7. The rules of the competition and the prize for each winner are as
-          follows: Further information can be found at: http://www.bootbag.co<br />
+          8. The prize money will be managed using a separate bank account at
+          the discretion of the directors of Sapien Interactive Ltd.<br />
           8. The promoter reserves the right to cancel or amend the competition
           and these terms and conditions without notice in the event of a
           catastrophe, war, civil or military disturbance, act of God or any
