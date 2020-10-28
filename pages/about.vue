@@ -1,10 +1,9 @@
 <template>
   <div>
-    <section class="main-content columns">
+    <section class="main-content columns article">
       <section class="section about">
         <div>
           <h1>About</h1>
-
           Bootbag has been designed by Sapien Interactive; combining a passion
           for football with a desire to bring a new real-time fantasy concept to
           the world. It has been our intention to create a platform that
@@ -20,6 +19,7 @@
         </div>
       </section>
     </section>
+    <SignUp />
     <Footer />
     <FixedFooter />
   </div>
@@ -27,12 +27,14 @@
 
 <script>
 import Footer from '~/components/Footer'
+import SignUp from '~/components/SignUp'
 import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'About',
   components: {
     Footer,
-    FixedFooter
+    FixedFooter,
+    SignUp
   }
 }
 </script>
@@ -44,11 +46,32 @@ export default {
   h1,
   p {
     text-align: left;
+    line-height: 1.3em;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+
+    img {
+      margin-bottom: 0.5em;
+    }
   }
 
   p {
     text-transform: none;
-    margin-bottom: 20px;
+    margin-bottom: 3em;
   }
 }
 </style>

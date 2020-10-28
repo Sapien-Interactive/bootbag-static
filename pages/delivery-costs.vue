@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="main-content columns">
+    <section class="main-content columns article">
       <section class="section delivery">
         <div>
           <h1>Delivery Costs</h1>

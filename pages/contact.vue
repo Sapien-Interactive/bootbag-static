@@ -1,12 +1,12 @@
 <template>
   <div class="contact">
-    <section class="main-content">
+    <section class="main-content article">
       <section class="section contactLogo">
         <img src="~/assets/bootbag.svg" />
         <p>football's premier scouting game</p>
       </section>
       <section class="section contactContent">
-        <h1>Contact</h1>
+        <h1>Contact Us</h1>
         <p class="email">
           <a href="mailto:info@bootbag.co">info@bootbag.co</a>
         </p>
@@ -17,20 +17,20 @@
         </p>
       </section>
     </section>
-    <Social />
+    <Footer :showGlobe="false" />
     <SignUp />
     <FixedFooter />
   </div>
 </template>
 
 <script>
-import Social from '~/components/Social'
+import Footer from '~/components/Footer'
 import SignUp from '~/components/SignUp'
 import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'HomePage',
   components: {
-    Social,
+    Footer,
     SignUp,
     FixedFooter
   }
@@ -72,6 +72,18 @@ export default {
     text-align: center;
     margin-bottom: 10px;
   }
+
+  h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  p {
+    text-transform: none;
+  }
 }
 
 .email {
@@ -84,11 +96,11 @@ export default {
     background-size: 70%;
   }
 
-  .contactContent {
-    h1,
-    p {
-      text-align: left;
-    }
-  }
+  // .contactContent {
+  //   h1,
+  //   p {
+  //     text-align: left;
+  //   }
+  // }
 }
 </style>

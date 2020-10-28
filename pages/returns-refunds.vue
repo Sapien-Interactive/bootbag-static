@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="main-content columns">
+    <section class="main-content columns article">
       <section class="section returns">
         <div>
           <h1>Returns & Refunds</h1>

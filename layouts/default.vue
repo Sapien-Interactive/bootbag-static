@@ -20,24 +20,28 @@
       </div>
     </nav>
     <div v-bind:class="{ 'is-active': isOpen }" class="main-menu">
-      <a @click="isOpen = !isOpen" href="/">Home</a>
-      <a
-        @click="isOpen = !isOpen"
-        href="https://shop.bootbag.co/products/bootbag-shirt"
-        target="_blank"
-        >Alisha Lehmann Bootbag Shirt</a
-      >
-      <a
+      <ul>
+        <li>
+          <nuxt-link @click.native="isOpen = !isOpen" to="/about"
+            >About</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link @click.native="isOpen = !isOpen" to="/contact"
+            >Contact</nuxt-link
+          >
+        </li>
+      </ul>
+      <!-- <a
         @click="isOpen = !isOpen"
         href="http://shop.bootbag.co/cart"
         target="_blank"
         >Basket</a
-      >
-      <a @click="isOpen = !isOpen" href="/about">About</a>
-      <a @click="isOpen = !isOpen" href="/contact">Contact</a>
-      <a @click="isOpen = !isOpen" href="/terms">Terms</a>
+      > -->
+
+      <!-- <a @click="isOpen = !isOpen" href="/terms">Terms</a>
       <a @click="isOpen = !isOpen" href="/delivery-costs">Delivery Costs</a>
-      <a @click="isOpen = !isOpen" href="/returns-refunds">Refunds & Returns</a>
+      <a @click="isOpen = !isOpen" href="/returns-refunds">Refunds & Returns</a> -->
     </div>
     <nuxt />
     <cookie-law theme="dark-lime"></cookie-law>
@@ -96,31 +100,51 @@ body {
 
 html,
 body {
-  background-color: #000000 !important;
+  background-color: #000000;
 }
 
 .navbar {
-  background-color: #000000;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
   .navbar-brand {
     width: 100%;
     padding-top: 10px;
+    display: block;
 
     .logoWrapper {
-      padding-left: 25px;
+      padding-left: 0px;
       text-align: center;
       width: 100%;
 
-      .logo {
-        margin-left: 1rem;
-      }
+      // .logo {
+      //   // margin-left: 1rem;
+      // }
     }
   }
 
   .navbar-burger {
+    position: absolute;
+    top: 10px;
+    right: 0px;
     color: #ffffff;
+
+    span {
+      width: 24px;
+
+      &:nth-child(1) {
+        top: calc(50% - 8px);
+      }
+
+      &:nth-child(3) {
+        top: calc(50% + 6px);
+      }
+    }
   }
 }
 
@@ -132,9 +156,15 @@ body {
   min-height: inherit;
 }
 
+.article {
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 10px;
+}
+
 .main-menu {
-  background-color: #000000;
-  position: absolute;
+  background-color: black;
+  position: fixed;
   top: 62px;
   width: 100%;
   text-align: center;
@@ -144,11 +174,27 @@ body {
   display: none;
   z-index: 9999;
 
+  ul {
+    li {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 18px;
+      padding-top: 10px;
+
+      a:hover {
+        color: #8d8a8a;
+      }
+    }
+  }
+
   a {
     display: block;
     width: 100%;
     text-align: center;
-    padding: 10px 0;
+
+    &.nuxt-link-active {
+      color: #267efc;
+    }
   }
 }
 
@@ -188,6 +234,7 @@ body {
 
 .main {
   width: 100%;
+  padding-top: 0px;
 }
 
 .coming-soon {
@@ -196,6 +243,10 @@ body {
   justify-items: center;
   align-items: center;
   margin-top: 20px;
+
+  &.mobile {
+    margin-bottom: 2em;
+  }
 
   form {
     margin: 0 0 10px 0;
@@ -290,11 +341,11 @@ form {
 }
 
 .ticketWrapper {
-  margin: 20px 0 40px 0;
+  margin: 60px 0 40px 0;
 
   .ticket {
     background-color: #242323;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 60px 0;
     padding: 10px 0 0 0;
     border-radius: 5px;
 
@@ -407,6 +458,46 @@ form {
 
   #vimeo-player-1 {
     margin-top: 0px;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
+
+  .navbar-burger {
+    display: none;
+  }
+
+  .article {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .main-menu {
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    padding: 0;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+
+    ul {
+      li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 20px;
+        padding-top: 10px;
+
+        a:hover {
+          color: #8d8a8a;
+        }
+      }
+    }
   }
 }
 </style>

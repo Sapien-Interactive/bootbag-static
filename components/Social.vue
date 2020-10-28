@@ -4,14 +4,14 @@
       <p>Follow Us</p>
       <p>
         <a href="https://www.facebook.com/bootbag" target="_blank">
-          <img src="~/assets/images/facebook@2x.png"
+          <img src="~/assets/images/facebook-new@3x.png"
         /></a>
 
         <a href="https://twitter.com/bootbag2" target="_blank"
-          ><img src="~/assets/images/twitter@2x.png"
+          ><img src="~/assets/images/twitter-new@3x.png"
         /></a>
         <a href="https://www.instagram.com/bootbag/" target="_blank"
-          ><img src="~/assets/images/instagram@2x.png"
+          ><img src="~/assets/images/instagram-new@3x.png"
         /></a>
       </p>
     </aside>
@@ -68,11 +68,11 @@ export default {
   }
 }
 
-.contact {
-  .social {
-    padding: 20px;
-  }
-}
+// .contact {
+//   .social {
+//     padding: 20px;
+//   }
+// }
 
 @media only screen and (min-width: 560px) {
   .social {

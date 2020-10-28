@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="main-content columns">
+    <section class="main-content columns article">
       <section class="section">
         <div>
           <h1>Privacy Policy</h1>
