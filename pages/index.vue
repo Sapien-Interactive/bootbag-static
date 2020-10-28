@@ -384,7 +384,8 @@ export default {
   padding-left: 12%;
 
   h2 {
-    font-size: 22px;
+    font-size: 23px;
+    line-height: 23px;
 
     span {
       background-color: #000;
@@ -392,9 +393,6 @@ export default {
       display: inline-block;
       padding: 0 5px;
     }
-  h2 {
-    font-size: 23px;
-    line-height: 23px;
   }
 
   span {
@@ -506,75 +504,75 @@ export default {
       background-color: transparent;
       cursor: pointer;
     }
-  .homePageSection {
-    padding: 0 1.5rem !important;
-  }
-
-  .video-modal {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 1);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s;
-
-    &.is-playing {
-      opacity: 1;
-      pointer-events: all;
+    .homePageSection {
+      padding: 0 1.5rem !important;
     }
 
-    .player {
-      position: absolute;
-      top: 50%;
-      left: 10%;
-      width: 80%;
-      transform: translateY(-50%);
+    .video-modal {
+      position: fixed;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background-color: rgba(0, 0, 0, 1);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+
+      &.is-playing {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .player {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        width: 80%;
+        transform: translateY(-50%);
+      }
     }
-  }
 
-  .homeWrapper {
-    margin-top: 80vh;
-  }
+    .homeWrapper {
+      margin-top: 80vh;
+    }
 
-  .ticketWrapper {
-    margin-top: 80px;
-  }
+    .ticketWrapper {
+      margin-top: 80px;
+    }
 
-  .strapline {
-    width: 60% !important;
-    display: block;
-  }
+    .strapline {
+      width: 60% !important;
+      display: block;
+    }
 
-  .aspect-ratio-box::before {
-    content: '';
-    width: 1px;
-    margin-left: -1px;
-    float: left;
-    height: 0;
-    padding-top: 30%; //591.44px / 1127.34px * 100%;
-  }
+    .aspect-ratio-box::before {
+      content: '';
+      width: 1px;
+      margin-left: -1px;
+      float: left;
+      height: 0;
+      padding-top: 30%; //591.44px / 1127.34px * 100%;
+    }
 
-  .yellowSection {
-    display: block;
-  }
+    .yellowSection {
+      display: block;
+    }
 
-  .mobile {
-    display: none;
-  }
+    .mobile {
+      display: none;
+    }
 
-  .desktop {
-    display: block;
-    width: 100%;
-    text-align: center;
-
-    h2 {
+    .desktop {
+      display: block;
+      width: 100%;
       text-align: center;
+
+      h2 {
+        text-align: center;
+      }
     }
   }
-}
 </style>
