@@ -931,13 +931,8 @@
           consumers.<br />
           8. The prize money will be managed using a separate bank account at
           the discretion of the directors of Sapien Interactive Ltd.<br />
-          8. The promoter reserves the right to cancel or amend the competition
-          and these terms and conditions without notice in the event of a
-          catastrophe, war, civil or military disturbance, act of God or any
-          actual or anticipated breach of any applicable law or regulation or
-          any other event outside of the promoter’s control. Any changes to the
-          competition will be notified to entrants as soon as possible by the
-          promoter.<br />
+          9. The rules of the competition and the prize for each winner are as
+          follows: Further information can be found at: http://www.bootbag.co<br />
           9. The promoter is not responsible for inaccurate prize details
           supplied to any entrant by any third party connected with this
           competition.<br />
