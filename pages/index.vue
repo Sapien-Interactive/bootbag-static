@@ -307,7 +307,7 @@ export default {
       background-size: auto 50%;
       transform: translateX(-50%);
     }
-  }
+ 
 
   button {
     outline: none;
