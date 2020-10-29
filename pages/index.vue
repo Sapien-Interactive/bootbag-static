@@ -67,7 +67,7 @@
                     placeholder="Email Address"
                   />
                 </div>
-                <div class="column mobileForm">
+                <div class="column">
                   <button
                     :disabled="sending"
                     type="submit"
@@ -307,7 +307,7 @@ export default {
       background-size: auto 50%;
       transform: translateX(-50%);
     }
- 
+  }
 
   button {
     outline: none;
@@ -342,10 +342,11 @@ export default {
   }
 }
 
-
-.homePageSection {
-  padding: 20px 1.5rem !important;
-}
+// .homePageWrapper {
+//   .section {
+//     //padding: 0 1.5rem 3rem 1.5rem;
+//   }
+// }
 
 .homeWrapper {
   margin-top: 30vh;
@@ -381,18 +382,11 @@ export default {
   color: #000000;
   position: relative;
   margin-left: -20%;
-  padding-left: 12%;
+  padding-left: 15%;
 
   h2 {
     font-size: 23px;
     line-height: 23px;
-
-    span {
-      background-color: #000;
-      color: #fff000;
-      display: inline-block;
-      padding: 0 5px;
-    }
   }
 
   span {
@@ -406,10 +400,6 @@ export default {
 
     padding: 4px 5px 2px 5px;
   }
-}
-
-.mobileForm {
-  padding: 5px 0.75rem 0.75rem 0.75rem;
 }
 
 .desktop,
@@ -504,75 +494,73 @@ export default {
       background-color: transparent;
       cursor: pointer;
     }
-    .homePageSection {
-      padding: 0 1.5rem !important;
+  }
+
+  .video-modal {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+
+    &.is-playing {
+      opacity: 1;
+      pointer-events: all;
     }
 
-    .video-modal {
-      position: fixed;
-      display: block;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 10;
-      background-color: rgba(0, 0, 0, 1);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-
-      &.is-playing {
-        opacity: 1;
-        pointer-events: all;
-      }
-
-      .player {
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        width: 80%;
-        transform: translateY(-50%);
-      }
-    }
-
-    .homeWrapper {
-      margin-top: 80vh;
-    }
-
-    .ticketWrapper {
-      margin-top: 80px;
-    }
-
-    .strapline {
-      width: 60% !important;
-      display: block;
-    }
-
-    .aspect-ratio-box::before {
-      content: '';
-      width: 1px;
-      margin-left: -1px;
-      float: left;
-      height: 0;
-      padding-top: 30%; //591.44px / 1127.34px * 100%;
-    }
-
-    .yellowSection {
-      display: block;
-    }
-
-    .mobile {
-      display: none;
-    }
-
-    .desktop {
-      display: block;
-      width: 100%;
-      text-align: center;
-
-      h2 {
-        text-align: center;
-      }
+    .player {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      width: 80%;
+      transform: translateY(-50%);
     }
   }
+
+  .homeWrapper {
+    margin-top: 80vh;
+  }
+
+  .ticketWrapper {
+    margin-top: 80px;
+  }
+
+  .strapline {
+    width: 60% !important;
+    display: block;
+  }
+
+  .aspect-ratio-box::before {
+    content: '';
+    width: 1px;
+    margin-left: -1px;
+    float: left;
+    height: 0;
+    padding-top: 30%; //591.44px / 1127.34px * 100%;
+  }
+
+  .yellowSection {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
 </style>
