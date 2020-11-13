@@ -66,6 +66,9 @@
                     class="column"
                     placeholder="Email Address"
                   />
+                  <span v-if="error" v-model="error" class="error">
+                    {{ error }}
+                  </span>
                 </div>
                 <div class="column">
                   <button
@@ -74,7 +77,7 @@
                     class="column button"
                   >
                     <img v-if="sending" src="~/assets/spinner.svg" />
-                    <span v-else>Register Now</span>
+                    <span v-else>Register Now</span>]
                   </button>
                 </div>
               </div>
@@ -174,7 +177,8 @@ export default {
       email: '',
       video: '',
       isPlaying: false,
-      opacity: 1
+      opacity: 1,
+      error: ''
     }
   },
   computed: {
@@ -203,11 +207,18 @@ export default {
                         </div>`
     },
     async sendEmail() {
+      this.error = ''
       if (this.email.trim() !== '') {
         this.sending = true
 
         try {
           const res = await UserService.register(this.email)
+
+          const { status } = res
+
+          if (status === 400) {
+            this.error = 'email is already registered'
+          }
 
           this.sending = false
 
@@ -232,6 +243,10 @@ export default {
 //   top: 0;
 //   left: 0;
 // }
+
+.error {
+  color: red;
+}
 
 .video {
   position: relative;
