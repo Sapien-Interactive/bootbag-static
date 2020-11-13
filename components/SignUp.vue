@@ -34,6 +34,7 @@
             type="email"
             placeholder="Enter email here..."
           />
+          <span v-if="error" class="error">{{ error }}</span>
           <button :disabled="sending" type="submit">
             <img v-if="sending" src="~/assets/spinner.svg" />
             <span v-else>Register Now</span>
@@ -66,7 +67,8 @@ export default {
       email: '',
       showPopup: false,
       isReady: false,
-      scrolled: false
+      scrolled: false,
+      error: ''
     }
   },
   computed: {
@@ -89,9 +91,16 @@ export default {
     },
     async sendEmail() {
       this.sending = true
+      this.error = ''
 
       try {
         const res = await UserService.register(this.email)
+
+        const { status } = res
+
+        if (status === 400) {
+          this.error = 'email is already registered'
+        }
 
         this.sending = false
 
@@ -141,6 +150,10 @@ export default {
       padding: 7px 0;
       color: #000;
       display: inline-block;
+    }
+
+    .error {
+      color: red;
     }
 
     strong {
