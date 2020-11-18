@@ -77,7 +77,7 @@
                     class="column button"
                   >
                     <img v-if="sending" src="~/assets/spinner.svg" />
-                    <span v-else>Register Now</span>]
+                    <span v-else>Register Now</span>
                   </button>
                 </div>
               </div>

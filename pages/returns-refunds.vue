@@ -5,52 +5,85 @@
         <div>
           <h1>Returns & Refunds</h1>
           <p>
-            <strong>How do I return an item?</strong><br />
-
-            Simply take your parcel to the Post Office, request the standard
-            parcel delivery service. Sit back and wait for your refund.
-          </p>
-          <p>
-            Returns Address: Bootbag Ltd - Mocatta House, Trafalgar Place,
-            Brighton, BN1 4BG
-          </p>
-          <p>
-            <strong>What is the Bootbag returns address?</strong><br />
-            Returns Address: Bootbag Ltd - Mocatta House, Trafalgar Place,
-            Brighton, BN1 4BG
-          </p>
-          <p>
-            <strong>What if the item doesn't fit?</strong><br />
-            Unfortunately we do not offer product exchanges. If you return an
-            unwanted item, we will issue a refund. Please place another order if
-            you require a different size.
+            Erreà wants you to be totally satisfied with your purchase. However,
+            if you are not satisfied you can return your purchase for a refund
+            or exchange within 10 (ten) days of delivery. All returns are
+            subject to verification of original sale. We reserve the right to
+            limit returns regardless of receipt and may refuse or delay returns
+            if fraud or abuse is suspected.
           </p>
 
           <p>
-            We know that you'll need to try the item on but please be careful
-            not to leave any marks (e.g. make-up, deodorant) as we may not be
-            able to accept it back if we believe it has been worn.
+            To start a return claim, you must contact our Customer service at:
+            customerservice@erreausa.com
           </p>
+
           <p>
-            <strong>What if my shirt is faulty?</strong><br />
-            We're sorry that you've received a faulty shirt - if you return the
-            faulty shirt back to us for inspection and the issue is a production
-            fault for example, we'll send you a replacement. Plus, we'll cover
-            the cost of any returns postage.
+            Only products purchased directly from erreausa.com website may be
+            returned or exchanged through our website.
           </p>
+
           <p>
-            Please contact our Customer Service team within 48 hours of receipt
-            of your parcel if there is a fault so we can resolve the problem for
-            you quickly. If the shirt gets returned without contacting us
-            previously, a refund will be issued.
+            <strong>EASY RETURNS</strong><br />
+
+            The Products must be returned unwashed, unworn, with original sales
+            receipt, in their original package, sales tag attached, with all the
+            related accessories and instruction manuals, where
+            available.Products must be returned in their original condition.
+            Returned products must arrive unwashed, unworn, in its original
+            packaging, and with all related accessories and instruction manuals
+            included.
           </p>
+
           <p>
-            <strong>How long will it take for a refund?</strong><br />
-            Returns can take up to 7 working days to be received back. Once
-            received, we aim to process all returns within 7 working days.
-            You'll receive an email to let you know once this is done and the
-            refund is issued. Please allow 7 working days for the refund to
-            reach your original payment method.
+            Contact our customer service team at customerservice@erreausa.com;
+          </p>
+
+          <p>
+            Wait for the return acceptance notice that you will receive from us;
+          </p>
+
+          <p>Ship the package back to us within 10 days of delivery.</p>
+
+          <p>Shipping and handling costs will not be refunded.</p>
+
+          <p>Product exchanges will be subject to availability.</p>
+
+          <p>
+            You will receive a confirmation email once your returned item is
+            received. After the item has been inspected, you will receive a
+            follow up email to confirm your refund has been processed.
+          </p>
+
+          <p>
+            For all enquiries and request, please contact our customer service
+            team. For further details on our return policy, please see our Sales
+            Terms and Conditions.
+          </p>
+
+          <p>
+            <strong>WRONG, DEFECTIVE OR DAMAGED ITEMS</strong><br />
+
+            If you received a wrong (differing from the one you ordered, or from
+            what is shown on our Online Store), damaged or defective item, you
+            may return it within 30 days of delivery date.
+          </p>
+
+          <p>
+            Normal tear and wear, modifications, alterations, negligence, damage
+            and use for a purpose different for which it was designed, are not
+            covered by Erreà Sport USA warranty.
+          </p>
+
+          <p>
+            <strong>RETURN SHIPPING COSTS</strong><br />
+
+            Unfortunately, we cannot refund original or return shipping fees. We
+            will pay the return shipping costs only if the return is a result of
+            our error. If you return an item using the return label provided by
+            us, and the reason for return isn't a result of an Erreà Sport USA
+            error, the cost of return shipping will be deducted from your
+            refund/replacement.
           </p>
         </div>
       </section>
