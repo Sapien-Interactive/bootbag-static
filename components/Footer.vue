@@ -35,9 +35,7 @@
                 <router-link to="/delivery-costs">Delivery Costs</router-link>
               </li>
               <li>
-                <router-link to="/returns-refunds"
-                  >Refunds & Returns</router-link
-                >
+                <router-link to="/shop-policy">Shop Policy</router-link>
               </li>
             </ul>
           </div>
