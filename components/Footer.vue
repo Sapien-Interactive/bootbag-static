@@ -81,7 +81,7 @@ footer {
   font-size: 14px;
   background-image: url('../assets/images/Map@2x.png');
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top center;
   padding: 0px 40px 100px 40px;
   background-size: 50%;
 
@@ -151,6 +151,7 @@ footer {
   }
 
   footer {
+    background-position: top right;
     padding: 100px 40px 40px 40px;
     padding-bottom: 0;
 
