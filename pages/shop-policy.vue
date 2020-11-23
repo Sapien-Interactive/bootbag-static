@@ -145,6 +145,8 @@ export default {
   h3 {
     text-transform: uppercase;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
   }
 
   strong {
@@ -167,6 +169,14 @@ export default {
     thead {
       background-color: #ffffff;
       color: #000000;
+    }
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .returns {
+    h3 {
+      text-align: left;
     }
   }
 }
