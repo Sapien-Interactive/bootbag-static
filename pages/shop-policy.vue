@@ -149,6 +149,10 @@ export default {
     text-align: center;
   }
 
+  a:hover {
+    color: #267efc;
+  }
+
   strong {
     font-weight: bold;
     color: #ffffff;

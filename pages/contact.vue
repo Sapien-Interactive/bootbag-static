@@ -73,6 +73,10 @@ export default {
     margin-bottom: 10px;
   }
 
+  a:hover {
+    color: #267efc;
+  }
+
   h1 {
     font-weight: bold;
     font-size: 24px;
