@@ -15,15 +15,13 @@
             <strong>What countries do we ship to?</strong><br />
 
             If you have a delivery address outside of the UK you’ll be glad to
-            hear that we currently offer delivery to over 20 countries from the
-            Bootbag.co website. You can find international shipping times and
-            costs below.
+            hear that we currently offer delivery worldwide from our Bootbag.co
+            website. You can find all shipping times and costs below.
           </p>
           <p>
-            Unfortunately we don’t deliver to any other countries not listed on
-            the table below. If you’ve got a questions or comment on our
-            international delivery options we’re happy to help – you can send us
-            an email to <a href="mailto:hello@bootbag.co">hello@bootbag.co</a>.
+            If you’ve got a questions or comment on our international delivery
+            options we’re happy to help – you can send us an email to
+            <a href="mailto:hello@bootbag.co">hello@bootbag.co</a>.
           </p>
           <table>
             <thead>
