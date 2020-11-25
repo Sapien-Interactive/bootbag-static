@@ -35,119 +35,19 @@
             </thead>
             <tbody>
               <tr>
-                <td>Austria</td>
-                <td>6-8 days</td>
-                <td>£4.99</td>
-              </tr>
-              <tr>
-                <td>Belgium</td>
-                <td>4-6 days</td>
-                <td>£5.99</td>
-              </tr>
-              <tr>
-                <td>Bulgaria</td>
-                <td>5-7 days</td>
-                <td>£14.99</td>
-              </tr>
-              <tr>
-                <td>Czech Republic</td>
-                <td>4-6 days</td>
-                <td>£5.99</td>
-              </tr>
-              <tr>
-                <td>Denmark</td>
-                <td>4-6 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
-                <td>Estonia</td>
-                <td>5-7 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
-                <td>Finland</td>
-                <td>5-7 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
-                <td>France</td>
-                <td>4-6 days</td>
-                <td>£7.99</td>
-              </tr>
-              <tr>
-                <td>Germany</td>
-                <td>6-8 days</td>
-                <td>£4.99</td>
-              </tr>
-              <tr>
-                <td>Hungary</td>
-                <td>5-7 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
-                <td>Ireland</td>
-                <td>3-5 days</td>
-                <td>£5.99</td>
-              </tr>
-              <tr>
-                <td>Italy</td>
-                <td>4-6 days</td>
-                <td>£5.99</td>
-              </tr>
-              <tr>
-                <td>Luxembourg</td>
-                <td>4-5 days</td>
-                <td>£5.99</td>
-              </tr>
-              <tr>
-                <td>Netherlands</td>
-                <td>4-5 days</td>
-                <td>£5.99</td>
-              </tr>
-              <tr>
-                <td>Poland</td>
-                <td>5-7 days</td>
-                <td>£9.99</td>
-              </tr>
-              <tr>
-                <td>Portugal</td>
-                <td>5-7 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
-                <td>Romania</td>
-                <td>5-7 days</td>
-                <td>£14.99</td>
-              </tr>
-              <tr>
-                <td>Slovakia</td>
-                <td>4-6 days</td>
-                <td>£5.99</td>
-              </tr>
-              <tr>
-                <td>Slovenia</td>
-                <td>5-7 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
-                <td>Spain</td>
-                <td>5-7 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
-                <td>Sweden</td>
-                <td>5-7 days</td>
-                <td>£6.99</td>
-              </tr>
-              <tr>
                 <td>United Kingdom</td>
                 <td>4-6 days</td>
-                <td>£3.99</td>
+                <td>£4.99</td>
+              </tr>
+              <tr>
+                <td>Europe</td>
+                <td>5-7 days</td>
+                <td>£7.99</td>
               </tr>
               <tr>
                 <td>United States</td>
                 <td>5-7 days</td>
-                <td>£7.99</td>
+                <td>£9.99</td>
               </tr>
             </tbody>
           </table>
