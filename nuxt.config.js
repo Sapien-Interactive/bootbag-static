@@ -35,6 +35,7 @@ module.exports = {
    */
   plugins: [
     { src: `~plugins/vimeo-player`, ssr: false },
+    { src: `~plugins/vue-cookie-law`, ssr: false },
     { src: `~plugins/vue-cookie-law`, ssr: false }
   ],
   /*
@@ -56,7 +57,11 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
-    '@nuxtjs/svg'
+    '@nuxtjs/svg',
+    [
+      '@nuxtjs/google-tag-manager',
+      { id: 'G-BZ085883NG', scriptURL: '//www.googletagmanager.com/gtag/js' }
+    ]
   ],
   /*
    ** Axios module configuration
