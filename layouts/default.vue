@@ -31,7 +31,7 @@
             >Contact</nuxt-link
           >
         </li>
-        <li>
+        <li class="hide">
           <a
             href="https://shop.bootbag.co/products/bootbag-shirt"
             target="_blank"
@@ -97,6 +97,10 @@ export default {
 </script>
 
 <style lang="scss">
+.hide {
+  display: none;
+}
+
 p,
 button,
 input,

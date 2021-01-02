@@ -2,7 +2,7 @@
   <div :class="cls" class="fixed">
     <ul>
       <li><nuxt-link to="/" class="tab-watch">Watch</nuxt-link></li>
-      <li>
+      <li class="hide">
         <a
           class="tab-shop"
           href="https://shop.bootbag.co/products/bootbag-shirt"
@@ -73,6 +73,10 @@ export default {
 </script>
 
 <style lang="scss">
+.hide {
+  display: none;
+}
+
 .fixed {
   position: fixed;
   width: 100%;
