@@ -19,27 +19,6 @@
             </ul>
           </div>
           <div class="column is-4">
-            <p><strong>Shop</strong></p>
-            <ul>
-              <li>
-                <a
-                  href="https://shop.bootbag.co/products/bootbag-shirt"
-                  target="_blank"
-                  >Alisha Lehmann Bootbag Shirt</a
-                >
-              </li>
-              <li>
-                <a href="http://shop.bootbag.co/cart">Basket</a>
-              </li>
-              <li>
-                <router-link to="/delivery-costs">Delivery Costs</router-link>
-              </li>
-              <li>
-                <router-link to="/shop-policy">Shop Policy</router-link>
-              </li>
-            </ul>
-          </div>
-          <div class="column is-4">
             <p><strong>Legal</strong></p>
             <ul>
               <li>

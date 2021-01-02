@@ -100,7 +100,7 @@ export default {
 
     li {
       box-sizing: border-box;
-      width: 20%;
+      width: 25%;
       margin: 0;
       padding: 12px 0 8px;
 
