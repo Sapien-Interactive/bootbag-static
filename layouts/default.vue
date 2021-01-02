@@ -31,24 +31,7 @@
             >Contact</nuxt-link
           >
         </li>
-        <li class="hide">
-          <a
-            href="https://shop.bootbag.co/products/bootbag-shirt"
-            target="_blank"
-            >Shop</a
-          >
-        </li>
       </ul>
-      <!-- <a
-        @click="isOpen = !isOpen"
-        href="http://shop.bootbag.co/cart"
-        target="_blank"
-        >Basket</a
-      > -->
-
-      <!-- <a @click="isOpen = !isOpen" href="/terms">Terms</a>
-      <a @click="isOpen = !isOpen" href="/delivery-costs">Delivery Costs</a>
-      <a @click="isOpen = !isOpen" href="/returns-refunds">Refunds & Returns</a> -->
     </div>
     <nuxt />
     <cookie-law theme="dark-lime"></cookie-law>
@@ -97,10 +80,6 @@ export default {
 </script>
 
 <style lang="scss">
-.hide {
-  display: none;
-}
-
 p,
 button,
 input,
