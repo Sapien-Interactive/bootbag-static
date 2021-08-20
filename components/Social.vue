@@ -7,7 +7,7 @@
           <img src="~/assets/images/facebook-new@3x.png"
         /></a>
 
-        <a href="https://twitter.com/bootbag2" target="_blank"
+        <a href="https://twitter.com/bootbag" target="_blank"
           ><img src="~/assets/images/twitter-new@3x.png"
         /></a>
         <a href="https://www.instagram.com/bootbag/" target="_blank"
