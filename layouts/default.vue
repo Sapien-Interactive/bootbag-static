@@ -1,6 +1,11 @@
 <template>
   <div class="app">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav
+      v-show="showHeader"
+      class="navbar"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
         <div class="logoWrapper">
           <a href="/"><LogoSmall class="logo"/></a>
@@ -19,7 +24,11 @@
         </a>
       </div>
     </nav>
-    <div v-bind:class="{ 'is-active': isOpen }" class="main-menu">
+    <div
+      v-show="showHeader"
+      v-bind:class="{ 'is-active': isOpen }"
+      class="main-menu"
+    >
       <ul>
         <li>
           <nuxt-link @click.native="isOpen = !isOpen" to="/about"
@@ -46,7 +55,9 @@ export default {
     LogoSmall
   },
   data() {
+    const { header } = this.$route.query ?? {}
     return {
+      showHeader: header !== 'none',
       isOpen: false
     }
   },

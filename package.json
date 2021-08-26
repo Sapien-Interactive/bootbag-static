@@ -24,7 +24,7 @@
     }
   },
   "engines": {
-    "node": "10.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
