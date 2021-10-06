@@ -2,7 +2,7 @@
   <div>
     <section class="main-content columns article">
       <section class="section terms">
-        <TermsText />
+        <CompetitionText />
       </section>
     </section>
     <Footer />
@@ -11,12 +11,12 @@
 
 <script>
 import Footer from '~/components/Footer'
-import TermsText from '~/components/TermsText'
+import CompetitionText from '~/components/CompetitionText'
 export default {
-  name: 'Terms',
+  name: 'Competition',
   components: {
     Footer,
-    TermsText
+    CompetitionText
   }
 }
 </script>

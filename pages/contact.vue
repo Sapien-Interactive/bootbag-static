@@ -19,20 +19,17 @@
     </section>
     <Footer :showGlobe="false" />
     <SignUp />
-    <FixedFooter />
   </div>
 </template>
 
 <script>
 import Footer from '~/components/Footer'
 import SignUp from '~/components/SignUp'
-import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'HomePage',
   components: {
     Footer,
-    SignUp,
-    FixedFooter
+    SignUp
   }
 }
 </script>

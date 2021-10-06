@@ -66,7 +66,7 @@
                     class="column"
                     placeholder="Email Address"
                   />
-                  <span v-if="error" v-model="error" class="error">
+                  <span v-if="error" class="error">
                     {{ error }}
                   </span>
                 </div>
@@ -149,7 +149,6 @@
       </div>
       <SignUp :home="true" />
       <Footer />
-      <FixedFooter />
     </div>
   </div>
 </template>
@@ -157,14 +156,12 @@
 <script>
 // import { vueVimeoPlayer } from 'vue-vimeo-player'
 import Footer from '~/components/Footer'
-import FixedFooter from '~/components/FixedFooter'
 import SignUp from '~/components/SignUp'
 import { UserService } from '~/services'
 
 export default {
   name: 'HomePage',
   components: {
-    FixedFooter,
     Footer,
     SignUp
     // vueVimeoPlayer

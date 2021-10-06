@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <nav
-      v-show="showHeader"
+      v-show="!appView"
       class="navbar"
       role="navigation"
       aria-label="main navigation"
@@ -43,7 +43,7 @@
       </ul>
     </div>
     <nuxt />
-    <cookie-law theme="dark-lime"></cookie-law>
+    <cookie-law v-show="!appView" theme="dark-lime"></cookie-law>
   </div>
 </template>
 
@@ -55,9 +55,9 @@ export default {
     LogoSmall
   },
   data() {
-    const { header } = this.$route.query ?? {}
+    const { view } = this.$route.query ?? {}
     return {
-      showHeader: header !== 'none',
+      appView: view === 'app',
       isOpen: false
     }
   },
@@ -159,10 +159,6 @@ body {
       }
     }
   }
-}
-
-.navbar-burger {
-  // display: none;
 }
 
 .main-content {

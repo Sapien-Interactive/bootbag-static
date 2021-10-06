@@ -24,6 +24,9 @@
               <li>
                 <router-link to="/terms">Terms</router-link>
               </li>
+              <li>
+                <router-link to="/competition">Competition</router-link>
+              </li>
             </ul>
           </div>
         </div>
@@ -32,7 +35,7 @@
     <Social />
     <section class="main-content columns">
       <aside class="column is-12 legal">
-        Sapien Interactive &copy; 2020
+        Sapien Interactive &copy; {{ year }}
       </aside>
     </section>
   </footer>
@@ -50,6 +53,11 @@ export default {
     showGlobe: {
       type: Boolean,
       default: true
+    }
+  },
+  data() {
+    return {
+      year: new Date().getFullYear()
     }
   }
 }

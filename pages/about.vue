@@ -21,19 +21,16 @@
     </section>
     <SignUp />
     <Footer />
-    <FixedFooter />
   </div>
 </template>
 
 <script>
 import Footer from '~/components/Footer'
 import SignUp from '~/components/SignUp'
-import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'About',
   components: {
     Footer,
-    FixedFooter,
     SignUp
   }
 }

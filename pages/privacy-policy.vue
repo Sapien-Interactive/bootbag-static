@@ -332,18 +332,15 @@
       </section>
     </section>
     <Footer />
-    <FixedFooter />
   </div>
 </template>
 
 <script>
 import Footer from '~/components/Footer'
-import FixedFooter from '~/components/FixedFooter'
 export default {
   name: 'PrivacyPolicy',
   components: {
-    Footer,
-    FixedFooter
+    Footer
   }
 }
 </script>
