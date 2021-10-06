@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <nav
-      v-show="!appView"
+      v-show="showHeader"
       class="navbar"
       role="navigation"
       aria-label="main navigation"
@@ -56,8 +56,10 @@ export default {
   },
   data() {
     const { view } = this.$route.query || {}
+    const appView = view === 'app'
     return {
-      appView: view === 'app',
+      appView,
+      showHeader: !appView,
       isOpen: false
     }
   },
