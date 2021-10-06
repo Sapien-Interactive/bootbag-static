@@ -55,7 +55,7 @@ export default {
     LogoSmall
   },
   data() {
-    const { view } = this.$route.query ?? {}
+    const { view } = this.$route.query || {}
     return {
       appView: view === 'app',
       isOpen: false
