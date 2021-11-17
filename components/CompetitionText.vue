@@ -229,6 +229,13 @@
       The competition prizes fund will be decided before each monthly round and
       communicated to the community of users via the app notification system.
     </p>
+    <p>
+      Developed by Sapien Interactive Limited - bootbag&reg; and the bootbag
+      logo are registered UK trademark office. All rights reserved. All other
+      company names, brand names, and logo’s are the property of Sapien
+      Interactive Limited. Apple is not involved in any way with the contest or
+      sweepstakes provided by Bootbag.
+    </p>
   </div>
 </template>
 
