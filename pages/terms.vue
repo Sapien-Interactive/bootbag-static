@@ -33,5 +33,9 @@ export default {
     text-transform: none;
     margin-bottom: 20px;
   }
+
+  strong {
+    color: #ddd;
+  }
 }
 </style>

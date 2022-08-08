@@ -103,7 +103,7 @@ body {
 
 html,
 body {
-  background-color: #000000;
+  background-color: #181829;
 }
 
 .navbar {
@@ -174,7 +174,7 @@ body {
 }
 
 .main-menu {
-  background-color: black;
+  background-color: #181829;
   position: fixed;
   top: 62px;
   width: 100%;

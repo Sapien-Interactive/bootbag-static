@@ -19,19 +19,16 @@
         </div>
       </section>
     </section>
-    <SignUp />
     <Footer />
   </div>
 </template>
 
 <script>
 import Footer from '~/components/Footer'
-import SignUp from '~/components/SignUp'
 export default {
   name: 'About',
   components: {
-    Footer,
-    SignUp
+    Footer
   }
 }
 </script>
