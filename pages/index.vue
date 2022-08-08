@@ -24,7 +24,7 @@
     <div :class="isPlaying ? 'is-playing' : null" class="video-modal">
       <div v-html="video" class="player" />
       <button
-        v-on:click="closeVideo"
+        @click="closeVideo"
         class="modal-close is-large"
         aria-label="close"
       ></button>

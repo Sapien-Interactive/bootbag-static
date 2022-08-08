@@ -17,7 +17,7 @@
         </p>
       </section>
     </section>
-    <Footer :showGlobe="false" />
+    <Footer :show-globe="false" />
   </div>
 </template>
 
