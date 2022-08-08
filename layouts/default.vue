@@ -11,8 +11,8 @@
           <a href="/"><LogoSmall class="logo"/></a>
         </div>
         <a
+          :class="{ 'is-active': isOpen }"
           @click="isOpen = !isOpen"
-          v-bind:class="{ 'is-active': isOpen }"
           role="button"
           class="navbar-burger"
           aria-label="main-menu"
@@ -24,11 +24,7 @@
         </a>
       </div>
     </nav>
-    <div
-      v-show="showHeader"
-      v-bind:class="{ 'is-active': isOpen }"
-      class="main-menu"
-    >
+    <div v-show="showHeader" :class="{ 'is-active': isOpen }" class="main-menu">
       <ul>
         <li>
           <nuxt-link @click.native="isOpen = !isOpen" to="/about"
