@@ -136,6 +136,7 @@ export default {
   },
   mounted() {
     // window.addEventListener('scroll', this.handleScroll)
+    this.isMobile = window.innerWidth < 560
     window.addEventListener(
       'resize',
       () => (this.isMobile = window.innerWidth < 560)
