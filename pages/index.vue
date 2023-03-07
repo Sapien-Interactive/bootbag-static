@@ -11,7 +11,6 @@
           <h3>Watch</h3>
         </button>
       </div>
-      <div v-html="video" class="player" />
       <h1>
         <button @click="playVideo">
           The ultimate platform for fans<br />to scout and transfer players
@@ -22,11 +21,11 @@
       </h1>
     </div>
     <div :class="isPlaying ? 'is-playing' : null" class="video-modal">
-      <div v-html="video" class="player" />
+      <div class="player" v-html="video" />
       <button
-        @click="closeVideo"
         class="modal-close is-large"
         aria-label="close"
+        @click="closeVideo"
       ></button>
     </div>
     <!-- <div class="container is-12 aspect-ratio-box">
