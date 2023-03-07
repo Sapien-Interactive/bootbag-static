@@ -11,6 +11,7 @@
           <h3>Watch</h3>
         </button>
       </div>
+      <div v-if="isMobile" class="player" v-html="video" />
       <h1>
         <button @click="playVideo">
           The ultimate platform for fans<br />to scout and transfer players
@@ -21,7 +22,7 @@
       </h1>
     </div>
     <div :class="isPlaying ? 'is-playing' : null" class="video-modal">
-      <div class="player" v-html="video" />
+      <div v-if="!isMobile" class="player" v-html="video" />
       <button
         class="modal-close is-large"
         aria-label="close"
@@ -121,6 +122,7 @@ export default {
       email: '',
       video: '',
       isPlaying: false,
+      isMobile: undefined,
       opacity: 1,
       error: ''
     }
@@ -134,6 +136,10 @@ export default {
   },
   mounted() {
     // window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener(
+      'resize',
+      () => (this.isMobile = window.innerWidth < 560)
+    )
   },
   methods: {
     closeVideo() {
