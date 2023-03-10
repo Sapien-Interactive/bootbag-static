@@ -312,7 +312,7 @@ export default {
     min-height: 75vh;
 
     .player {
-      margin-top: 125px;
+      margin-top: 105px;
     }
 
     h1 {
