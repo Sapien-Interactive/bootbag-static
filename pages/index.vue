@@ -11,7 +11,15 @@
           <h3>Watch</h3>
         </button>
       </div>
-      <div v-html="video" class="player" />
+      <div v-if="isPlaying" class="player">
+        <iframe
+          src="https://player.vimeo.com/video/576805134?color=ff0086&title=0&byline=0&portrait=0&autoplay=true"
+          class="video-iframe"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
       <h1>
         <button @click="playVideo">
           The ultimate platform for fans<br />to scout and transfer players
@@ -20,14 +28,6 @@
           > -->
         </button>
       </h1>
-    </div>
-    <div :class="isPlaying ? 'is-playing' : null" class="video-modal">
-      <div v-html="video" class="player" />
-      <button
-        @click="closeVideo"
-        class="modal-close is-large"
-        aria-label="close"
-      ></button>
     </div>
     <!-- <div class="container is-12 aspect-ratio-box">
         <client-only>
@@ -189,19 +189,12 @@ export default {
     // window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
-    closeVideo() {
-      this.isPlaying = false
-      this.video = ''
-    },
     handleScroll() {
       const st = window.scrollY
       this.opacity = 1 - (1 / window.innerHeight) * st
     },
     playVideo() {
       this.isPlaying = true
-      this.video = `<div style="padding:56.25% 0 0 0;position:relative;">
-                        <iframe src="https://player.vimeo.com/video/576805134?color=ff0086&title=0&byline=0&portrait=0&autoplay=true" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        </div>`
     },
     async sendEmail() {
       this.error = ''
@@ -228,34 +221,24 @@ export default {
 </script>
 
 <style lang="scss">
-// iframe {
-//   width: 100%;
-//   height: 45vh;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-// }
+.video-iframe {
+  width: 100%;
+  height: 100%;
+}
 
 .error {
   color: red;
 }
 
 .video {
+  display: flex;
+  justify-content: center;
   position: relative;
   overflow: hidden;
   top: 0;
   left: 0;
   width: 100%;
-  // position: relative;
   min-height: 55vh;
-
-  .player {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-35%);
-  }
 
   h1 {
     position: absolute;
@@ -279,6 +262,11 @@ export default {
     span {
       color: #267efc;
     }
+  }
+
+  .player {
+    width: 100%;
+    margin-top: 65px;
   }
 
   .poster {
@@ -331,10 +319,6 @@ export default {
       pointer-events: none;
     }
   }
-}
-
-.video-modal {
-  display: none;
 }
 
 .wrap {
@@ -414,10 +398,6 @@ export default {
 }
 
 @media only screen and (min-width: 560px) {
-  iframe {
-    height: 90%;
-  }
-
   .wrap {
     position: relative;
     z-index: 5;
@@ -436,12 +416,7 @@ export default {
     min-height: 75vh;
 
     .player {
-      position: fixed;
-      top: 50%;
-      left: 0;
-      width: 100%;
-      transform: translateY(-40%);
-      display: none;
+      margin-top: 105px;
     }
 
     h1 {
@@ -499,33 +474,6 @@ export default {
       padding: 0;
       background-color: transparent;
       cursor: pointer;
-    }
-  }
-
-  .video-modal {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background-color: rgba(0, 0, 0, 1);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s;
-
-    &.is-playing {
-      opacity: 1;
-      pointer-events: all;
-    }
-
-    .player {
-      position: absolute;
-      top: 50%;
-      left: 10%;
-      width: 80%;
-      transform: translateY(-50%);
     }
   }
 
