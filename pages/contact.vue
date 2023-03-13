@@ -18,15 +18,18 @@
       </section>
     </section>
     <Footer :show-globe="false" />
+    <SignUp />
   </div>
 </template>
 
 <script>
 import Footer from '~/components/Footer'
+import SignUp from '~/components/SignUp'
 export default {
   name: 'HomePage',
   components: {
-    Footer
+    Footer,
+    SignUp
   }
 }
 </script>

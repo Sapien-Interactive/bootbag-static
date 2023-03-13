@@ -2,6 +2,7 @@
   <div class="main">
     <iframe src="https://shop.bootbag.co/products/bootbag-shirt"></iframe>
     <section class="main-content homeWrapper">
+      <SignUp />
       <Footer />
     </section>
   </div>
@@ -9,10 +10,12 @@
 
 <script>
 import Footer from '~/components/Footer'
+import SignUp from '~/components/SignUp'
 export default {
   name: 'Shirt',
   components: {
-    Footer
+    Footer,
+    SignUp
   }
 }
 </script>

@@ -69,7 +69,11 @@ module.exports = {
   axios: {},
 
   env: {
-    FIRE_ENV: process.env.FIRE_ENV
+    FIRE_ENV: process.env.FIRE_ENV,
+    PRE_REG_STAGING_URI:
+      'https://europe-west1-bootbag-staging.cloudfunctions.net/api-http-public-preRegistration',
+    PRE_REG_PRODUCTION_URI:
+      'https://europe-west1-bootbag-production.cloudfunctions.net/api-http-public-preRegistration'
   },
   /*
    ** Build configuration
