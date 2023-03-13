@@ -126,14 +126,11 @@ export default {
   width: 100%;
   background-color: #fff000;
   text-align: center;
-
-  // transform: translateY(100%);
   bottom: -150px;
   transition: bottom 0.3s ease-out;
 
   &.is-visible,
   &.static {
-    //transform: translateY(0%);
     bottom: 0px;
   }
 
@@ -172,24 +169,6 @@ export default {
       text-transform: uppercase;
       cursor: pointer;
     }
-
-    /*
-@keyframes pulse {
-0% {
-transform: scale(0.95);
-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-}
-
-70% {
-transform: scale(1);
-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-}
-
-100% {
-transform: scale(0.95);
-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-}
-}*/
   }
 
   .modal.is-active {
