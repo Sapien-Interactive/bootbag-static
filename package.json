@@ -9,7 +9,7 @@
     "css-watch": "npm run css-build -- --watch",
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt generate",
-    "build:staging": "FIRE_ENV=bootbag-staging nuxt generate",
+    "build:staging": "cross-env FIRE_ENV=bootbag-staging nuxt generate",
     "start": "nuxt start",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test": "jest",
