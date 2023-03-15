@@ -1,10 +1,14 @@
+import { PRE_REGISTRATION_ENDPOINT } from '../constants'
+
 export class UserService {
   static async register(email) {
     try {
       if (email.trim() !== '') {
         const payload = { email }
-        const uri = `${process.env.FUNCTIONS_BASE_URL}/api-http-public-preRegistration`
-        return await this.sendRequest(uri, JSON.stringify(payload))
+        return await this.sendRequest(
+          PRE_REGISTRATION_ENDPOINT,
+          JSON.stringify(payload)
+        )
       }
     } catch (e) {
       throw e
