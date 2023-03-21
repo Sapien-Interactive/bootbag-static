@@ -1,15 +1,32 @@
 @import "~bulma/sass/utilities/_all";
 
-// Set your colors
-$primary: #E1348C;
-$primary-invert: findColorInvert($primary);
+// Brand Colours
+$dark-bg: #020202;
+$medium-bg: #2C2C3E;
+$pink: #E30285;
+$white: #FFFFFF;
+
+// Leagues
+$qualifier-blue: #4455DA;
+$developer-orange: #C75300;
+$challenger-green: #008558;
+$elite-turquoise: #008080;
+$premier-gold: #8A7500;
+
+// Signage
+$positive-green: #01E437;
+$alert-yellow: #FFEF02;
+$negative-red: #FF5C5F;
+$notification-red: #EA0000;
+
+$primary-invert: findColorInvert($pink);
 
 // Links
 $link: $white;
-$info: $primary;
+$info: $pink;
 $link-invert: $grey;
-$link-focus-border: $turquoise;
+$link-focus-border: $elite-turquoise;
 
 $body-color: $white;
 
-$background: $black;
+$background: $dark-bg;
