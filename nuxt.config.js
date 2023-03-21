@@ -26,7 +26,7 @@ module.exports = {
   css: ['~/assets/scss/main'],
 
   styleResources: {
-    sass: ['~/assets/scss/vars']
+    scss: ['~/assets/scss/vars.scss']
   },
 
   /*
