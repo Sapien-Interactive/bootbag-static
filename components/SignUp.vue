@@ -150,7 +150,7 @@ export default {
     }
 
     .error {
-      color: red;
+      color: $negative-red;
     }
 
     strong {
