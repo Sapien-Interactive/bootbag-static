@@ -1,32 +1,32 @@
 @import "~bulma/sass/utilities/_all";
 
 // Brand Colours
-$dark-bg: #020202;
-$medium-bg: #2C2C3E;
-$pink: #E30285;
-$white: #FFFFFF;
+$brand-pink: #E30285;
+$brand-turquoise: #008080;
+
+// Background Colours
+$background-dark: #020202;
+$background-medium: #2C2C3E;
 
 // Leagues
-$qualifier-blue: #4455DA;
-$developer-orange: #C75300;
-$challenger-green: #008558;
-$elite-turquoise: #008080;
-$premier-gold: #8A7500;
+$league-qualifier: #4455DA;
+$league-developer: #C75300;
+$league-challenger: #008558;
+$league-elite: $brand-turquoise;
+$league-premier: #8A7500;
 
 // Signage
-$positive-green: #01E437;
-$alert-yellow: #FFEF02;
-$negative-red: #FF5C5F;
-$notification-red: #EA0000;
-
-$primary-invert: findColorInvert($pink);
+$signage-positive: #01E437;
+$signage-alert: #FFEF02;
+$signage-negative: #F60004;
+$signage-notification: #EA0000;
 
 // Links
 $link: $white;
-$info: $pink;
+$info: $brand-pink;
 $link-invert: $grey;
-$link-focus-border: $elite-turquoise;
+$link-focus-border: $brand-turquoise;
 
 $body-color: $white;
 
-$background: $dark-bg;
+$background: $background-dark;
