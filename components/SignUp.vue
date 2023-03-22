@@ -150,7 +150,7 @@ export default {
     }
 
     .error {
-      color: $negative-red;
+      color: $signage-negative;
     }
 
     strong {
