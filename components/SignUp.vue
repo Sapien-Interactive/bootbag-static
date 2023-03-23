@@ -23,7 +23,7 @@
         <img src="../assets/images/popup-circle-left.png" class="popupLeft" />
         <img src="../assets/images/popup-circle-right.png" class="popupRight" />
         <div v-if="!sending && success">
-          <p>
+          <p class="successMessage">
             You have Successfully Registered for Bootbag, keep an eye on your
             emails for more details!
           </p>
@@ -205,6 +205,10 @@ export default {
       border-bottom: dotted 1px #666;
       padding-bottom: 30px;
       margin-bottom: 30px;
+    }
+
+    .successMessage {
+      padding: 10px 40px;
     }
 
     .popupLeft,
