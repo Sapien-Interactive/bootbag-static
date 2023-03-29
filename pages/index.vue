@@ -227,7 +227,7 @@ export default {
 }
 
 .error {
-  color: red;
+  color: $signage-negative;
 }
 
 .video {
