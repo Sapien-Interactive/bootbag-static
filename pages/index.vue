@@ -43,7 +43,12 @@
       <div class="container is-12 homePageWrapper">
         <section class="section section-first">
           <div class="coming-soon mobile">
-            <h2><span>Live</span> <span>Register To Become A Scout.</span></h2>
+            <h2 v-if="!sending && success">
+              <span>Breaking News!</span> <span>You Are Now Registered.</span>
+            </h2>
+            <h2 v-else>
+              <span>Live</span> <span>Register To Become A Scout.</span>
+            </h2>
           </div>
           <div class="coming-soon desktop">
             <h2>
