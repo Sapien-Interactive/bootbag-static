@@ -4,18 +4,15 @@
       <span>Join The Revolution</span
       ><strong>Register To Become A Scout</strong>
       <button
-        v-on:click="showPopup = !showPopup"
-        class="modal-button"
+        class="button is-primary"
         data-target="modal"
         aria-haspopup="true"
+        @click="showPopup = !showPopup"
       >
         Register Now
       </button>
     </p>
-    <div
-      id="modal"
-      v-bind:class="[showPopup ? 'modal is-active' : '', 'modal']"
-    >
+    <div id="modal" :class="[showPopup ? 'modal is-active' : '', 'modal']">
       <div class="modal-background"></div>
       <div class="modal-content">
         <p class="title">Join The Revolution.</p>
@@ -34,17 +31,17 @@
             type="email"
             placeholder="Enter email here..."
           />
-          <span v-if="error" class="error">{{ error }}</span>
-          <button :disabled="sending" type="submit">
+          <span v-if="error" class="modal-error">{{ error }}</span>
+          <button :disabled="sending" class="button is-primary" type="submit">
             <img v-if="sending" src="~/assets/spinner.svg" />
             <span v-else>Register Now</span>
           </button>
         </form>
       </div>
       <button
-        @click="showPopup = !showPopup"
         class="modal-close is-large"
         aria-label="close"
+        @click="showPopup = !showPopup"
       ></button>
     </div>
   </section>
@@ -99,7 +96,7 @@ export default {
         const { status } = res
 
         if (status === 400) {
-          this.error = 'email is already registered'
+          this.error = 'Email is already registered'
         }
 
         this.sending = false
@@ -149,10 +146,6 @@ export default {
       display: inline-block;
     }
 
-    .error {
-      color: $signage-negative;
-    }
-
     strong {
       border-left: solid 1px #000;
       padding-left: 10px;
@@ -160,9 +153,7 @@ export default {
     }
 
     button {
-      background-color: #267efc;
-      border: solid 1px #267efc;
-      color: #fff;
+      border-radius: 0;
       padding: 11px 20px;
       width: 100%;
       outline: none;
@@ -241,9 +232,8 @@ export default {
     }
 
     button {
-      background-color: #267efc;
       border: none;
-      color: #fff;
+      border-radius: 0;
       padding: 15px 20px;
       margin-top: 30px;
       outline: none;
@@ -258,6 +248,10 @@ export default {
       position: absolute;
       left: 0px;
       bottom: 0px;
+    }
+
+    .modal-error {
+      color: $signage-notification;
     }
   }
 }

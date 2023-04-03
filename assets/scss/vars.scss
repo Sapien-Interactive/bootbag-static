@@ -1,5 +1,3 @@
-@import "~bulma/sass/utilities/_all";
-
 // Brand Colours
 $brand-pink: #E30285;
 $brand-turquoise: #008080;
@@ -7,6 +5,7 @@ $brand-turquoise: #008080;
 // Background Colours
 $background-dark: #020202;
 $background-medium: #2C2C3E;
+$background-app: #181829;
 
 // Leagues
 $league-qualifier: #4455DA;
@@ -18,8 +17,13 @@ $league-premier: #8A7500;
 // Signage
 $signage-positive: #01E437;
 $signage-alert: #FFEF02;
-$signage-negative: #F60004;
+$signage-negative: #FF5C5F;
 $signage-notification: #EA0000;
+
+// Bulma Default Variable Overrides (must be set before importing Bulma)
+$primary: $brand-pink;
+
+@import "~bulma/sass/utilities/_all";
 
 // Bulma Variable Overrides
 $link: $white;

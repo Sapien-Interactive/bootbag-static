@@ -1,0 +1,14 @@
+.button {
+  // Bulma modifier overrides
+  &.is-primary {
+    border: 2px solid $primary;
+    
+    &:hover {
+      border-color: $white
+    }
+    
+    &:active {
+      border-color: $primary
+    }
+  }
+}
