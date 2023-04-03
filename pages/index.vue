@@ -79,7 +79,7 @@
                   <button
                     :disabled="sending"
                     type="submit"
-                    class="column button"
+                    class="column button is-primary"
                   >
                     <img v-if="sending" src="~/assets/spinner.svg" />
                     <span v-else>Register Now</span>
@@ -209,7 +209,7 @@ export default {
           const res = await UserService.register(this.email)
           const { status } = res
           if (status === 400) {
-            this.error = 'email is already registered'
+            this.error = 'Email is already registered'
           }
           this.sending = false
           this.success = res.status === 200
@@ -232,6 +232,8 @@ export default {
 }
 
 .error {
+  display: inline-block;
+  margin-top: 8px;
   color: $signage-negative;
 }
 
@@ -331,7 +333,6 @@ export default {
   z-index: 5;
   width: 100%;
   // margin-top: 50vh;
-  background-color: #181829;
 
   section.section-first {
     padding-top: 0px;
