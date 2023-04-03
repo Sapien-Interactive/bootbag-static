@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div :class="{ app: appView }">
     <nav
       v-show="showHeader"
       class="navbar"
@@ -12,11 +12,11 @@
         </div>
         <a
           :class="{ 'is-active': isOpen }"
-          @click="isOpen = !isOpen"
           role="button"
           class="navbar-burger"
           aria-label="main-menu"
           aria-expanded="false"
+          @click="isOpen = !isOpen"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -27,12 +27,12 @@
     <div v-show="showHeader" :class="{ 'is-active': isOpen }" class="main-menu">
       <ul>
         <li>
-          <nuxt-link @click.native="isOpen = !isOpen" to="/about"
+          <nuxt-link to="/about" @click.native="isOpen = !isOpen"
             >About</nuxt-link
           >
         </li>
         <li>
-          <nuxt-link @click.native="isOpen = !isOpen" to="/contact"
+          <nuxt-link to="/contact" @click.native="isOpen = !isOpen"
             >Contact</nuxt-link
           >
         </li>
@@ -99,7 +99,11 @@ body {
 
 html,
 body {
-  background-color: #181829;
+  background-color: $background-dark;
+}
+
+.app {
+  background-color: $background-app;
 }
 
 .navbar {
@@ -170,7 +174,7 @@ body {
 }
 
 .main-menu {
-  background-color: #181829;
+  background-color: $background-dark;
   position: fixed;
   top: 62px;
   width: 100%;
@@ -188,8 +192,10 @@ body {
       font-size: 18px;
       padding-top: 10px;
 
-      a:hover {
-        color: #8d8a8a;
+      a:hover,
+      a:focus {
+        color: $brand-pink;
+        text-decoration: underline;
       }
     }
   }
@@ -200,7 +206,7 @@ body {
     text-align: center;
 
     &.nuxt-link-active {
-      color: #267efc;
+      color: $brand-pink;
     }
   }
 }
@@ -321,8 +327,7 @@ form {
 
   button[type='submit'] {
     font-size: 18px;
-    background-color: #267efc;
-    border: solid 1px #267efc;
+    line-height: 18px;
     padding: 10px 0;
     color: #ffffff;
     display: inline-block;
@@ -504,10 +509,6 @@ form {
         font-size: 18px;
         margin-left: 20px;
         padding-top: 10px;
-
-        a:hover {
-          color: #8d8a8a;
-        }
       }
     }
   }
