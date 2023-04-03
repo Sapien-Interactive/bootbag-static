@@ -1,6 +1,10 @@
 <template>
   <main class="main">
-    <div :class="isPlaying ? 'is-playing' : null" :style="videoStyle" class="video">
+    <div
+      :class="isPlaying ? 'is-playing' : null"
+      :style="videoStyle"
+      class="video"
+    >
       <div class="poster">
         <button @click="playVideo">
           <img src="/poster.jpg" alt="Bootbag" />
@@ -8,17 +12,14 @@
         </button>
       </div>
       <div v-if="isPlaying" class="player">
-        <iframe src="https://player.vimeo.com/video/576805134?color=ff0086&title=0&byline=0&portrait=0&autoplay=true"
-          class="video-iframe" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        <iframe
+          src="https://player.vimeo.com/video/576805134?color=ff0086&title=0&byline=0&portrait=0&autoplay=true"
+          class="video-iframe"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
       </div>
-      <h1>
-        <button @click="playVideo">
-          The ultimate platform for fans<br />to scout and transfer players
-          <!-- <br /><br /><span
-            >Click to find out more.</span
-          > -->
-        </button>
-      </h1>
     </div>
     <!-- <div class="container is-12 aspect-ratio-box">
         <client-only>
@@ -51,13 +52,22 @@
             <form v-else @submit.prevent="sendEmail">
               <div class="columns">
                 <div class="column is-two-thirds">
-                  <input v-model="email" type="email" class="column" placeholder="Email Address" />
+                  <input
+                    v-model="email"
+                    type="email"
+                    class="column"
+                    placeholder="Email Address"
+                  />
                   <span v-if="error" class="error">
                     {{ error }}
                   </span>
                 </div>
                 <div class="column">
-                  <button :disabled="sending" type="submit" class="column button">
+                  <button
+                    :disabled="sending"
+                    type="submit"
+                    class="column button"
+                  >
                     <img v-if="sending" src="~/assets/spinner.svg" />
                     <span v-else>Register Now</span>
                   </button>
@@ -77,10 +87,18 @@
               <img src="~/assets/images/Search-player-icon@2x.png" />
 
               <p class="text">
-                Football's very first,<br /><strong>real-time<br />scouting game.</strong>
+                Football's very first,<br /><strong
+                  >real-time<br />scouting game.</strong
+                >
               </p>
-              <img src="../assets/images/ticket-left-new.png" class="ticketLeft" />
-              <img src="../assets/images/ticket-right-new.png" class="ticketRight" />
+              <img
+                src="../assets/images/ticket-left-new.png"
+                class="ticketLeft"
+              />
+              <img
+                src="../assets/images/ticket-right-new.png"
+                class="ticketRight"
+              />
               <p class="bottom">
                 18 Million UK Football Fans
               </p>
@@ -91,17 +109,31 @@
                 Choose from over
                 <strong>7500<br />players from<br />across the world.</strong>
               </p>
-              <img src="../assets/images/ticket-left-new.png" class="ticketLeft" />
-              <img src="../assets/images/ticket-right-new.png" class="ticketRight" />
+              <img
+                src="../assets/images/ticket-left-new.png"
+                class="ticketLeft"
+              />
+              <img
+                src="../assets/images/ticket-right-new.png"
+                class="ticketRight"
+              />
               <p class="bottom">3.5 Billion Global Football Fans*</p>
             </div>
             <div class="column ticket">
               <img src="~/assets/images/Watch-Match-Vision-icon@2x.png" />
               <p class="text">
-                Watch the action.<br />Find the players,<br /><strong>Beat the competition.</strong>
+                Watch the action.<br />Find the players,<br /><strong
+                  >Beat the competition.</strong
+                >
               </p>
-              <img src="../assets/images/ticket-left-new.png" class="ticketLeft" />
-              <img src="../assets/images/ticket-right-new.png" class="ticketRight" />
+              <img
+                src="../assets/images/ticket-left-new.png"
+                class="ticketLeft"
+              />
+              <img
+                src="../assets/images/ticket-right-new.png"
+                class="ticketRight"
+              />
               <p class="bottom">Compete To Be The Best</p>
             </div>
           </div>
@@ -182,8 +214,8 @@ export default {
 
 <style lang="scss">
 .video-iframe {
+  aspect-ratio: 16 / 9;
   width: 100%;
-  height: 100%;
 }
 
 .error {
@@ -194,23 +226,8 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  //position: relative;
-  //overflow: hidden;
-  //top: 0;
-  //left: 0;
-  //width: 100%;
-  //min-height: 55vh;
 
   h1 {
-    margin: 0 auto;
-    padding: 20px 0;
-    //position: absolute;
-    //width: 100%;
-    //bottom: 0px;
-    //left: 0%;
-    //z-index: 2;
-    //margin-bottom: 0;
-
     button {
       color: white;
       font-weight: bold;
@@ -229,34 +246,22 @@ export default {
   }
 
   .player {
+    position: relative;
     width: 100%;
-    margin-top: 65px;
+    margin: 0 auto;
   }
 
   .poster {
     width: 100%;
     margin: 0 auto;
-    //padding-top: 45.5%;
-    //transition: opacity 0.4s;
     position: relative;
-    //top: 50%;
-    //left: 0;
-    // width: 150%;
-    //transform: translate(-16.4%, -60%);
-
-    img {
-      //position: absolute;
-      //top: 0;
-      //left: 0;
-      //width: 100%;
-    }
 
     h3 {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      margin-top: -45px;
+
       color: white;
       font-weight: bold;
       text-align: center;
@@ -280,11 +285,8 @@ export default {
   }
 
   &.is-playing {
-
-    .poster,
-    h1 {
-      opacity: 0;
-      pointer-events: none;
+    .poster {
+      display: none;
     }
   }
 }
@@ -293,19 +295,12 @@ export default {
   position: relative;
   z-index: 5;
   width: 100%;
-  // margin-top: 50vh;
   background-color: #181829;
 
   section.section-first {
     padding-top: 0px;
   }
 }
-
-// .homePageWrapper {
-//   .section {
-//     //padding: 0 1.5rem 3rem 1.5rem;
-//   }
-// }
 
 .homeWrapper {
   margin-top: 30vh;
@@ -370,7 +365,6 @@ export default {
     position: relative;
     z-index: 5;
     width: 100%;
-    // margin-top: 75vh;
     background-color: black;
   }
 
@@ -382,30 +376,13 @@ export default {
   .video {
     display: flex;
     flex-direction: column;
-    //position: fixed;
-    //min-height: 75vh;
 
     .player {
-      margin-top: 105px;
+      width: 65%;
     }
 
     h1 {
-      //position: absolute;
-      //width: 40%;
-      //bottom: 30px;
-      //left: 50%;
-      //z-index: 2;
-      margin: 0 auto;
-      padding: 20px 0;
-
       button {
-        //color: white;
-        //font-weight: bold;
-        //text-align: center;
-        //transform: translateX(-50%);
-        //font-size: 24px;
-        //line-height: 1.2em;
-        //text-transform: uppercase;
         position: relative;
       }
 
@@ -417,23 +394,12 @@ export default {
     }
 
     .poster {
-      //padding-top: 45.5%;
-      //transition: opacity 0.4s;
-      //position: absolute;
-      //top: 50%;
-      //left: 10%;
       width: 80%;
-      //transform: translateY(-40%);
 
       img {
-        //position: absolute;
-        //top: 7%;
-        //left: 0;
-        //width: 100%;
       }
 
       h3 {
-        // bottom: 40%;
         margin-top: 0;
 
         &:hover {
