@@ -192,7 +192,8 @@ body {
       font-size: 18px;
       padding-top: 10px;
 
-      a:hover {
+      a:hover,
+      a:focus {
         color: $brand-pink;
         text-decoration: underline;
       }

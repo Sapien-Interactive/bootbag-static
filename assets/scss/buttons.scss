@@ -3,12 +3,12 @@
   &.is-primary {
     border: 2px solid $primary;
     
-    &:hover {
-      border-color: $white
+    &:hover, &:focus {
+      border-color: $white;
     }
     
     &:active {
-      border-color: $primary
+      border-color: $primary;
     }
   }
 }

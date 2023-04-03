@@ -333,7 +333,6 @@ export default {
   z-index: 5;
   width: 100%;
   // margin-top: 50vh;
-  background-color: #181829;
 
   section.section-first {
     padding-top: 0px;

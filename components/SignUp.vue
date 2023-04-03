@@ -232,7 +232,7 @@ export default {
     }
 
     button {
-      border: none;
+      border-top: none;
       border-radius: 0;
       padding: 15px 20px;
       margin-top: 30px;
