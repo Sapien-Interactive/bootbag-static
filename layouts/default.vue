@@ -8,7 +8,9 @@
     >
       <div class="navbar-brand">
         <div class="logoWrapper">
-          <a href="/"><LogoSmall class="logo"/></a>
+          <a href="/">
+            <LogoSmall class="logo" />
+          </a>
         </div>
         <a
           :class="{ 'is-active': isOpen }"
@@ -110,7 +112,6 @@ body {
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: left;
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -477,7 +478,6 @@ form {
   }
 
   .navbar {
-    position: absolute;
     padding: 20px;
   }
 
