@@ -61,7 +61,7 @@
                   <input
                     v-model="email"
                     type="email"
-                    class="column"
+                    class="column input"
                     placeholder="Email Address"
                   />
                   <span v-if="error" class="error">
@@ -72,7 +72,7 @@
                   <button
                     :disabled="sending"
                     type="submit"
-                    class="column button is-primary"
+                    class="button is-primary"
                   >
                     <img v-if="sending" src="~/assets/spinner.svg" />
                     <span v-else>Register Now</span>
