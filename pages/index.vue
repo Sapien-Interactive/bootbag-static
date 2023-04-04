@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <main class="main">
     <div
       :class="isPlaying ? 'is-playing' : null"
       :style="videoStyle"
@@ -20,14 +20,6 @@
           allowfullscreen
         ></iframe>
       </div>
-      <h1>
-        <button @click="playVideo">
-          The ultimate platform for fans<br />to scout and transfer players
-          <!-- <br /><br /><span
-            >Click to find out more.</span
-          > -->
-        </button>
-      </h1>
     </div>
     <!-- <div class="container is-12 aspect-ratio-box">
         <client-only>
@@ -155,7 +147,7 @@
       <SignUp :home="true" />
       <Footer />
     </div>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -227,8 +219,8 @@ export default {
 
 <style lang="scss">
 .video-iframe {
+  aspect-ratio: 16 / 9;
   width: 100%;
-  height: 100%;
 }
 
 .error {
@@ -240,21 +232,9 @@ export default {
 .video {
   display: flex;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 55vh;
+  flex-direction: column;
 
   h1 {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    left: 0%;
-    z-index: 2;
-    margin-bottom: 0;
-
     button {
       color: white;
       font-weight: bold;
@@ -262,6 +242,7 @@ export default {
       font-size: 21px;
       line-height: 1.2em;
       text-transform: uppercase;
+      position: relative;
     }
 
     transition: opacity 0.4s;
@@ -272,30 +253,22 @@ export default {
   }
 
   .player {
+    position: relative;
     width: 100%;
-    margin-top: 65px;
+    margin: 0 auto;
   }
 
   .poster {
-    padding-top: 45.5%;
-    transition: opacity 0.4s;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 150%;
-    transform: translate(-16.4%, -60%);
-
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
 
     h3 {
       position: absolute;
+      top: 50%;
       left: 50%;
-      bottom: -15%;
+      transform: translate(-50%, -50%);
+
       color: white;
       font-weight: bold;
       text-align: center;
@@ -307,7 +280,6 @@ export default {
       background-repeat: no-repeat;
       background-position: top center;
       background-size: auto 50%;
-      transform: translateX(-50%);
     }
   }
 
@@ -320,10 +292,8 @@ export default {
   }
 
   &.is-playing {
-    .poster,
-    h1 {
-      opacity: 0;
-      pointer-events: none;
+    .poster {
+      display: none;
     }
   }
 }
@@ -332,18 +302,11 @@ export default {
   position: relative;
   z-index: 5;
   width: 100%;
-  // margin-top: 50vh;
 
   section.section-first {
     padding-top: 0px;
   }
 }
-
-// .homePageWrapper {
-//   .section {
-//     //padding: 0 1.5rem 3rem 1.5rem;
-//   }
-// }
 
 .homeWrapper {
   margin-top: 30vh;
@@ -408,7 +371,6 @@ export default {
     position: relative;
     z-index: 5;
     width: 100%;
-    margin-top: 75vh;
     background-color: black;
   }
 
@@ -418,28 +380,16 @@ export default {
   }
 
   .video {
-    position: fixed;
-    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
 
     .player {
-      margin-top: 105px;
+      width: 65%;
     }
 
     h1 {
-      position: absolute;
-      width: 40%;
-      bottom: 30px;
-      left: 50%;
-      z-index: 2;
-
       button {
-        color: white;
-        font-weight: bold;
-        text-align: center;
-        transform: translateX(-50%);
-        font-size: 24px;
-        line-height: 1.2em;
-        text-transform: uppercase;
+        position: relative;
       }
 
       transition: opacity 0.4s;
@@ -450,23 +400,13 @@ export default {
     }
 
     .poster {
-      padding-top: 45.5%;
-      transition: opacity 0.4s;
-      position: absolute;
-      top: 50%;
-      left: 10%;
       width: 80%;
-      transform: translateY(-40%);
 
       img {
-        position: absolute;
-        top: 7%;
-        left: 0;
-        width: 100%;
       }
 
       h3 {
-        bottom: 40%;
+        margin-top: 0;
 
         &:hover {
           background-image: url(/play-over.png);
@@ -480,6 +420,7 @@ export default {
       padding: 0;
       background-color: transparent;
       cursor: pointer;
+      position: relative;
     }
   }
 
