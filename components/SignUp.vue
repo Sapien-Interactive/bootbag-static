@@ -1,8 +1,7 @@
 <template>
   <section :class="cls" class="yellowSection  has-text-centered">
     <p>
-      <span>Join The Revolution</span
-      ><strong>Register To Become A Scout</strong>
+      <span>Live</span><strong>Register for the Head Scout position</strong>
       <button
         class="button is-primary"
         data-target="modal"
@@ -15,14 +14,14 @@
     <div id="modal" :class="[showPopup ? 'modal is-active' : '', 'modal']">
       <div class="modal-background"></div>
       <div class="modal-content">
-        <p class="title">Join The Revolution.</p>
-        <p class="subTitle">Register To Become A Scout.</p>
+        <p class="title">LIVE</p>
+        <p class="subTitle">Register for the Head Scout position.</p>
         <img src="../assets/images/popup-circle-left.png" class="popupLeft" />
         <img src="../assets/images/popup-circle-right.png" class="popupRight" />
         <div v-if="!sending && success">
           <p class="successMessage">
-            You have Successfully Registered for Bootbag, keep an eye on your
-            emails for more details!
+            Congratulations, you have been hired as the Head Scout. Keep an eye
+            on your emails for more details!
           </p>
         </div>
         <form v-else @submit.prevent="sendEmail">
@@ -132,7 +131,9 @@ export default {
   }
 
   p {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     span,
     strong,
@@ -185,7 +186,7 @@ export default {
     .title {
       font-size: 20px;
       text-transform: uppercase;
-      margin: 0;
+      margin: 0 auto;
       padding: 0 20px;
       width: 80%;
       text-align: center;

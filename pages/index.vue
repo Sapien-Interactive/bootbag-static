@@ -39,19 +39,20 @@
               <span>Breaking News!</span> <span>You Are Now Registered.</span>
             </h2>
             <h2 v-else>
-              <span>Live</span> <span>Register To Become A Scout.</span>
+              <span>Live</span>
+              <span>Register for the Head Scout position.</span>
             </h2>
           </div>
           <div class="coming-soon desktop">
             <h2>
-              Register To Become A Scout.
+              Register for the Head Scout position.
             </h2>
           </div>
           <div class="coming-soon">
             <div v-if="!sending && success">
               <p>
-                You have Successfully Registered for Bootbag, keep an eye on
-                your emails for more details!
+                Congratulations, you have been hired as the Head Scout. Keep an
+                eye on your emails for more details!
               </p>
             </div>
             <form v-else @submit.prevent="sendEmail">
@@ -111,8 +112,8 @@
             <div class="column ticket">
               <img src="~/assets/images/Pick-Roster-icon@2x.png" />
               <p class="text">
-                Choose from over
-                <strong>7500<br />players from<br />across the world.</strong>
+                Scout players from <br />England's divisions,<br />
+                <strong>Top 4 and the WSL!</strong>
               </p>
               <img
                 src="../assets/images/ticket-left-new.png"
