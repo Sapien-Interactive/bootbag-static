@@ -171,7 +171,6 @@ body {
 .article {
   width: 100%;
   margin: 0 auto;
-  padding: 100px 10px;
 }
 
 .main-menu {
@@ -488,7 +487,6 @@ form {
   .article {
     width: 60%;
     margin: 0 auto;
-    padding-top: 100px;
   }
 
   .main-menu {
