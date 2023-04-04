@@ -302,7 +302,6 @@ export default {
   position: relative;
   z-index: 5;
   width: 100%;
-  background-color: #181829;
 
   section.section-first {
     padding-top: 0px;
