@@ -2,10 +2,28 @@
   <div>
     <section class="main-content columns article">
       <section class="section terms">
-        <div class="mother-goose">
-          <a href="#general" class="goose">General</a>
-          <a href="#alisha" class="goose">Alisha</a>
-          <a href="#minigames" class="goose">Mini Games</a>
+        <div class="tab-wrapper">
+          <button
+            href=" #general"
+            :class="[activeTab ? 'tab-active' : '', 'tab tab-active']"
+            @click="activeTab = !activeTab"
+          >
+            General
+          </button>
+          <button
+            href="#alisha"
+            :class="[activeTab ? 'tab-active' : '', 'tab']"
+            @click="activeTab = !activeTab"
+          >
+            Alisha
+          </button>
+          <button
+            href="#minigames"
+            :class="[activeTab ? 'tab-active' : '', 'tab']"
+            @click="activeTab = !activeTab"
+          >
+            Mini Games
+          </button>
         </div>
 
         <CompetitionText />
@@ -41,34 +59,39 @@ export default {
   }
 }
 
-.mother-goose {
+.tab {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  // margin: 4px 100px;
+  cursor: pointer;
+  border-radius: 28px;
+  border: 2px solid transparent;
+
+  &:hover,
+  &:focus {
+    color: $brand-pink;
+    border: 2px solid $brand-pink;
+  }
+}
+
+.tab-active {
+  background-color: $brand-pink;
+  border: 2px solid $brand-pink;
+
+  &:hover,
+  &:focus {
+    border-color: $white;
+    border: 2px solid $white;
+    color: $white;
+  }
+}
+
+.tab-wrapper {
   display: flex;
   margin-bottom: 20px;
   justify-content: space-between;
-}
-
-.goose {
-  //background-color: $background-dark;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-a:hover,
-a:focus {
-  color: $brand-pink;
-  text-decoration: underline;
-}
-
-a {
-  display: block;
-  width: 100%;
-  text-align: center;
-
-  &.nuxt-link-active {
-    color: $brand-pink;
-  }
 }
 </style>
