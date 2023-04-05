@@ -236,6 +236,14 @@
       Interactive Limited. Apple is not involved in any way with the contest or
       sweepstakes provided by Bootbag.
     </p>
+    <h2><a id="general"></a>General</h2>
+    <p>General</p>
+
+    <h2><a id="alisha"></a>Alisha</h2>
+    <p>Alisha</p>
+
+    <h2><a id="minigames"></a>Mini Games</h2>
+    <p>Mini Games</p>
   </div>
 </template>
 
