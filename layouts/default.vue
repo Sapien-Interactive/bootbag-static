@@ -328,7 +328,6 @@ form {
   button[type='submit'] {
     font-size: 18px;
     line-height: 18px;
-    padding: 10px 0;
     color: #ffffff;
     display: inline-block;
     margin-bottom: 0;
@@ -461,7 +460,12 @@ form {
 
 @media only screen and (min-width: 768px) {
   form {
+    min-width: 500px;
     width: 50%;
+
+    .column {
+      padding: 0.5rem;
+    }
   }
 
   input[type='email'] {
