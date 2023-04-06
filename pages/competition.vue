@@ -3,27 +3,15 @@
     <section class="main-content columns article">
       <section class="section terms">
         <div class="tab-wrapper">
-          <button
-            href=" #general"
-            :class="[activeTab ? 'tab-active' : '', 'tab tab-active']"
-            @click="activeTab = !activeTab"
-          >
+          <a href="#general" class="tab">
             General
-          </button>
-          <button
-            href="#alisha"
-            :class="[activeTab ? 'tab-active' : '', 'tab']"
-            @click="activeTab = !activeTab"
-          >
+          </a>
+          <a href="#alisha" class="tab">
             Alisha
-          </button>
-          <button
-            href="#minigames"
-            :class="[activeTab ? 'tab-active' : '', 'tab']"
-            @click="activeTab = !activeTab"
-          >
+          </a>
+          <a href="#minigames" class="tab">
             Mini Games
-          </button>
+          </a>
         </div>
 
         <CompetitionText />
@@ -41,6 +29,11 @@ export default {
   components: {
     Footer,
     CompetitionText
+  },
+  data() {
+    return {
+      activeTab: false
+    }
   }
 }
 </script>
@@ -63,35 +56,19 @@ export default {
   text-align: center;
   font-weight: bold;
   font-size: 18px;
-  padding: 10px 20px;
-  text-decoration: none;
-  // margin: 4px 100px;
   cursor: pointer;
-  border-radius: 28px;
-  border: 2px solid transparent;
+  color: $white;
+  margin-right: 30px;
 
   &:hover,
   &:focus {
     color: $brand-pink;
-    border: 2px solid $brand-pink;
-  }
-}
-
-.tab-active {
-  background-color: $brand-pink;
-  border: 2px solid $brand-pink;
-
-  &:hover,
-  &:focus {
-    border-color: $white;
-    border: 2px solid $white;
-    color: $white;
+    text-decoration: underline;
   }
 }
 
 .tab-wrapper {
   display: flex;
   margin-bottom: 20px;
-  justify-content: space-between;
 }
 </style>
