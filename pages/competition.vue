@@ -3,13 +3,22 @@
     <section class="main-content columns article">
       <section class="section terms">
         <div class="tab-wrapper">
-          <a href="#general" class="tab">
+          <a
+            onClick="setTimeout(()=>{window.location = '#general' }, 500)"
+            class="tab"
+          >
             General
           </a>
-          <a href="#alisha" class="tab">
+          <a
+            onClick="setTimeout(()=>{window.location = '#alisha' }, 500)"
+            class="tab"
+          >
             Alisha
           </a>
-          <a href="#minigames" class="tab">
+          <a
+            onClick="setTimeout(()=>{window.location = '#minigames' }, 500)"
+            class="tab"
+          >
             Mini Games
           </a>
         </div>
