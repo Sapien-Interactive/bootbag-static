@@ -102,6 +102,7 @@ body {
 html,
 body {
   background-color: $background-dark;
+  scroll-behavior: smooth;
 }
 
 .app {
