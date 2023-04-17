@@ -307,8 +307,10 @@
         <ol class="list-container">
           <div class="competition-list">
             <p>
-              <strong>For the purposes of this clause the following definitions
-                apply:</strong>
+              <strong
+                >For the purposes of this clause the following definitions
+                apply:</strong
+              >
             </p>
             <p>
               <strong>Applicable Laws/Data Protection Laws:</strong> To the
@@ -332,7 +334,7 @@
             </p>
             <p>
               <strong>UK GDPR:</strong> has the meaning given to it in the Data
-              Protection Act 2018
+              Protection Act 2018.
             </p>
           </div>
           <li>
@@ -394,10 +396,11 @@
               Ltd in connection with the processing of Sapien Interactive Ltd
               Personal Data, provided these are in compliance with the
               then-current version of the Sapien Interactive Ltd's privacy
-              policy available at <a href="http://www.bootbag.co">http://www.bootbag.co</a> (Privacy Policy). In the
-              event of any inconsistency or conflict between the terms of the
-              Privacy Policy and this agreement, the Privacy Policy will take
-              precedence.
+              policy available at
+              <a href="http://www.bootbag.co">http://www.bootbag.co</a> (Privacy
+              Policy). In the event of any inconsistency or conflict between the
+              terms of the Privacy Policy and this agreement, the Privacy Policy
+              will take precedence.
             </p>
           </li>
           <li>
@@ -583,30 +586,36 @@
           crowned the winner and the opportunity to have a one to one meeting
           with Alisha *. Runner-up prizes will be rewarded each month.
         </p>
-        <div class="competition-list">
-          <p>
-            UK based winner will meet Alisha at our Bootbag Head Quarters.
-          </p>
-          <p>Overseas based will win a video call with Alisha.</p>
-          <p>
-            Runner-up Prizes 3x signed shirts per month (April, May, June, July)
-            for top round scorers from each month.
-          </p>
-          <p>Winner will be announced on or after August 1st 00:00 2023.</p>
-          <p>
-            Call will be scheduled and agreed by both parties with a suitable
-            time and day based on availability.
-          </p>
-          <p>
-            UK Public and Bank holiday’s will automatically be excluded from
-            possible dates (Including Christmas period).
-          </p>
-          <p>
-            Competition winner will have until 31st December 2023 to have
-            arranged meet and great. Post this date, prize will be null and
-            void.
-          </p>
-        </div>
+        <ol class="list-container">
+          <div class="competition-list">
+            <p>
+              UK based winner will meet Alisha at our Bootbag Head Quarters *.
+            </p>
+            <p>Overseas based will win a video call with Alisha *.</p>
+            <p>
+              Runner-up Prizes 3x signed shirts per month (April, May, June,
+              July) for top round scorers from each month.
+            </p>
+            <p>Winner will be announced on or after August 1st 00:00 2023.</p>
+            <p>
+              Call will be scheduled and agreed by both parties with a suitable
+              time and day based on availability.
+            </p>
+            <p>
+              UK Public and Bank holiday’s will automatically be excluded from
+              possible dates (Including Christmas period).
+            </p>
+            <p>
+              Competition winner will have until 31st December 2023 to have
+              arranged meet and great. Post this date, prize will be null and
+              void.
+            </p>
+            <p>
+              Offering cash (or cash equivalent) prizes to participants in a
+              mini-league
+            </p>
+          </div>
+        </ol>
       </li>
       <li>
         <h2><a id="minigames"></a>Mini Games</h2>
@@ -614,91 +623,80 @@
           Match day competitions that enable users to challenge and vary their
           scouting decision making.
         </p>
-        <div class="competition-list">
-          <p>
-            Winners will be confirmed via social media / email (if opted into
-            marketing communications)
-          </p>
-          <p>
-            Winners will only be referred to by their Scout handle or Bootbag
-            team name (whichever is most applicable to the marketing content)
-          </p>
-          <p>
-            If you believe you’re a winner, we ask you to email
-            support@bootbag.co with the subject line clearly stating the mini
-            competition you’ve won and include your scout handle, email and team
-            as well as any screenshots illustrating your position
-          </p>
-          <p>
-            If the competition is capped, Sapien interactive reserve the right
-            to pull the competition without notice once the prize quantity
-            stipulated in the original competition is achieved
-          </p>
-          <p>
-            The end date of the competition will be found on each marketing
-            creative used to promote the mini game and be specific to the mini
-            game
-          </p>
-        </div>
+        <ol class="list-container">
+          <div class="competition-list">
+            <p>
+              Winners will be confirmed via social media / email (if opted into
+              marketing communications)
+            </p>
+            <p>
+              Winners will only be referred to by their Scout handle or Bootbag
+              team name (whichever is most applicable to the marketing content)
+            </p>
+            <p>
+              If you believe you’re a winner, we ask you to email
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> with
+              the subject line clearly stating the mini competition you’ve won
+              and include your scout handle, email and team as well as any
+              screenshots illustrating your position
+            </p>
+            <p>
+              If the competition is capped, Sapien interactive reserve the right
+              to pull the competition without notice once the prize quantity
+              stipulated in the original competition is achieved
+            </p>
+            <p>
+              The end date of the competition will be found on each marketing
+              creative used to promote the mini game and be specific to the mini
+              game
+            </p>
+          </div>
+        </ol>
       </li>
     </ol>
   </div>
 </template>
 
-<style type="text/css">
+<style lang="scss">
 .list-container {
   counter-reset: item;
-}
 
-.list-container li {
-  display: table;
-  table-layout: fixed;
-}
+  li {
+    display: table;
+    table-layout: fixed;
 
-.list-container li p {
-  display: inline-block;
-  margin-left: 0.5em;
-}
+    &:before {
+      content: counters(item, '.') ' ';
+      counter-increment: item;
+      display: table-cell;
+      vertical-align: top;
+      width: 1em;
+    }
 
-.list-container li:before {
-  content: counters(item, '.') ' ';
-  counter-increment: item;
-  display: table-cell;
-  vertical-align: top;
-  width: 1em;
-}
+    p {
+      margin-left: 0.5em;
+    }
 
-/*ul {
-  list-style: none;
-}
+    a {
+      font-weight: bold;
+      text-decoration: underline;
 
-ul li {
-  display: table;
-  table-layout: fixed;
-  margin-left: 1em;
-}
-
-ul li::before {
-  content: '\2022';
-  display: table-cell;
-  vertical-align: top;
-  width: 1em;
-  color: #ffffff;
-}
-
-ul li p {
-  display: inline-block;
-}*/
-
-.competition-list p::before {
-  content: '\2022';
-  display: table-cell;
-  vertical-align: top;
-  width: 1em;
-  color: #ffffff;
+      &:hover {
+        color: $brand-pink;
+      }
+    }
+  }
 }
 
 .competition-list p {
   display: inline-table;
+
+  &:before {
+    content: '\2022';
+    display: table-cell;
+    vertical-align: top;
+    width: 1em;
+    color: #ffffff;
+  }
 }
 </style>

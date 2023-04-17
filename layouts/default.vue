@@ -188,6 +188,7 @@ body {
 
   ul {
     li {
+      list-style: none;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 18px;
