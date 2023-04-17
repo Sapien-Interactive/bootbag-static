@@ -147,7 +147,7 @@
               No cash prizes if under 18, unless you have a parent/guardian's
               permission to claim. 3.4 Permission is also needed for game entry
               & travel. We collect personal info, learn more here:
-              http://www.bootbag.co
+              <a href="http://www.bootbag.co">http://www.bootbag.co</a>
             </p>
           </li>
         </ol>
@@ -307,10 +307,8 @@
         <ol class="list-container">
           <div class="competition-list">
             <p>
-              <strong
-                >For the purposes of this clause the following definitions
-                apply:</strong
-              >
+              <strong>For the purposes of this clause the following definitions
+                apply:</strong>
             </p>
             <p>
               <strong>Applicable Laws/Data Protection Laws:</strong> To the
@@ -396,7 +394,7 @@
               Ltd in connection with the processing of Sapien Interactive Ltd
               Personal Data, provided these are in compliance with the
               then-current version of the Sapien Interactive Ltd's privacy
-              policy available at http://www.bootbag.co (Privacy Policy). In the
+              policy available at <a href="http://www.bootbag.co">http://www.bootbag.co</a> (Privacy Policy). In the
               event of any inconsistency or conflict between the terms of the
               Privacy Policy and this agreement, the Privacy Policy will take
               precedence.
