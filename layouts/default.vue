@@ -460,12 +460,14 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
-  form {
-    min-width: 500px;
-    width: 50%;
+  .coming-soon {
+    form {
+      min-width: 500px;
+      width: 50%;
 
-    .column {
-      padding: 0.5rem;
+      .column {
+        padding: 0.5rem;
+      }
     }
   }
 
