@@ -4,12 +4,6 @@
       <section class="section terms">
         <div class="tab-wrapper">
           <a
-            onClick="setTimeout(()=>{window.location = '#general' }, 500)"
-            class="tab"
-          >
-            General
-          </a>
-          <a
             onClick="setTimeout(()=>{window.location = '#alisha' }, 500)"
             class="tab"
           >
