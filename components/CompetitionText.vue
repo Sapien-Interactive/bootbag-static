@@ -1,9 +1,9 @@
 <template>
   <div>
-    <ol>
+    <ol class="list-container">
       <li>
         <h2>General</h2>
-        <ol>
+        <ol class="list-container">
           <li>
             <p>
               The promoter is: Sapien Interactive Ltd (company no. 12074025)
@@ -80,7 +80,7 @@
       </li>
       <li>
         <h2>Competition Rules</h2>
-        <ol>
+        <ol class="list-container">
           <li>
             <p>
               The rules of the competition and the prize for each winner are as
@@ -108,9 +108,13 @@
           </li>
           <li>
             <p>When prizes are not cash-related:</p>
-            <ol>
-              <li><p>No cash alternative to the prizes will be offered.</p></li>
-              <li><p>The prizes are not transferable</p></li>
+            <ol class="list-container">
+              <li>
+                <p>No cash alternative to the prizes will be offered.</p>
+              </li>
+              <li>
+                <p>The prizes are not transferable</p>
+              </li>
               <li>
                 <p>
                   Prizes are subject to availability and we reserve the right to
@@ -124,7 +128,7 @@
       </li>
       <li>
         <h2>Age limits and parental permissions</h2>
-        <ol>
+        <ol class="list-container">
           <li>
             <p>
               Under 18? Get a parent/guardian to help with game use & reading
@@ -150,7 +154,7 @@
       </li>
       <li>
         <h2>Registration</h2>
-        <ol>
+        <ol class="list-container">
           <li>
             <p>Registrations must not be made by agents or third parties.</p>
           </li>
@@ -160,7 +164,9 @@
               or Registrations not received for any reason.
             </p>
           </li>
-          <li><p>Any such Registrations will be deemed void.</p></li>
+          <li>
+            <p>Any such Registrations will be deemed void.</p>
+          </li>
           <li>
             <p>
               You can only register one account, multiple accounts on the Site
@@ -183,7 +189,7 @@
       </li>
       <li>
         <h2>Mini-leagues</h2>
-        <ol>
+        <ol class="list-container">
           <li>
             <p>
               Scouts can establish mini-leagues in accordance with the Game
@@ -198,8 +204,10 @@
               participate in, mini-leagues for any commercial purposes,
               including but not limited to:
             </p>
-            <ol>
-              <li><p>Charging for entry into a mini-league;</p></li>
+            <ol class="list-container">
+              <li>
+                <p>Charging for entry into a mini-league;</p>
+              </li>
               <li>
                 <p>
                   Making entry into a mini-league conditional on the purchase of
@@ -235,7 +243,7 @@
       </li>
       <li>
         <h2>Winners will be chosen</h2>
-        <ol>
+        <ol class="list-container">
           <li>
             <p>
               By the apps software providing all entries are received and
@@ -296,7 +304,7 @@
       </li>
       <li>
         <h2>Data Protection</h2>
-        <ol>
+        <ol class="list-container">
           <div class="competition-list">
             <p>
               <strong
@@ -349,7 +357,7 @@
               The parties have determined that, for the purposes of Applicable
               Data Protection Laws:
             </p>
-            <ol>
+            <ol class="list-container">
               <li>
                 <p>
                   Sapien Interactive Ltd shall act as controller in respect of
@@ -502,13 +510,13 @@
               The User hereby provides its prior, general authorisation for the
               Sapien Interactive Ltd to:
             </p>
-            <ol>
+            <ol class="list-container">
               <li>
                 <p>
                   Where necessary appoint processors to process the User
                   Personal Data, provided that Sapien Interactive Ltd:
                 </p>
-                <ol>
+                <ol class="list-container">
                   <li>
                     <p>
                       shall ensure that the terms on which it appoints such
@@ -640,21 +648,21 @@
 </template>
 
 <style type="text/css">
-ol {
+.list-container {
   counter-reset: item;
 }
 
-ol li {
+.list-container li {
   display: table;
   table-layout: fixed;
 }
 
-ol li p {
+.list-container li p {
   display: inline-block;
   margin-left: 0.5em;
 }
 
-ol li:before {
+.list-container li:before {
   content: counters(item, '.') ' ';
   counter-increment: item;
   display: table-cell;
@@ -662,7 +670,7 @@ ol li:before {
   width: 1em;
 }
 
-ul {
+/*ul {
   list-style: none;
 }
 
@@ -682,7 +690,7 @@ ul li::before {
 
 ul li p {
   display: inline-block;
-}
+}*/
 
 .competition-list p::before {
   content: '\2022';
