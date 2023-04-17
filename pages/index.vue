@@ -343,7 +343,7 @@ export default {
   color: #000000;
   position: relative;
   margin-left: -20%;
-  padding-left: 15%;
+  padding-left: 10%;
 
   h2 {
     font-size: 23px;
@@ -358,7 +358,7 @@ export default {
   span:first-child {
     background-color: #000;
     color: #fff000;
-    padding: 4px 5px 2px 5px;
+    display: block;
   }
 }
 
