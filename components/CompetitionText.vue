@@ -577,6 +577,131 @@
           </li>
         </ol>
       </li>
+
+      <li>
+        <p>
+          Sign up to Bootbag into the competition will be deemed as acceptance
+          of these terms and conditions.
+        </p>
+      </li>
+      <li>
+        <p>
+          The information provided will be used in conjunction with the
+          following Privacy Policy found at
+          <a href="http://www.bootbag.co">http://www.bootbag.co</a>. Sapien
+          Interactive Ltd may change this policy from time to time by updating
+          this page. You should check this page from time to time to ensure that
+          you are happy with any changes. This policy is effective from October
+          2021.
+        </p>
+      </li>
+      <li>
+        <p>
+          Bootbag reserves the sole right to remove, cancel or stop any
+          competition and or prize at any point, without incurring any liability
+          of any kind whatsoever to any party.
+        </p>
+      </li>
+      <li>
+        <p>
+          The prize issued is based on the skill of the scout (user) to first
+          qualify in the top for each global Division level and then most points
+          scored amongst other scouts in that league. The scout then competes in
+          the Premier Division against other scouts and is then ranked within
+          the Premier Division to denote the value of the prize they will
+          receive.
+          <strong
+            >The main prize will be won if someone achieves above the target set
+            at the beginning of each round. Sapien Interactive reserves the
+            right to review the prize funds of any position or any prize on a
+            round by round basis. The prize funds will be outlined in marketing
+            communications for the round (in each calendar month).</strong
+          >
+        </p>
+      </li>
+      <li>
+        <p>
+          Unless stated otherwise at the time, the prize (when in cash) will be
+          issued to the card held on the account of the winning scout’s profile.
+          Bootbag reserve the right to only pay to this account any prize funds
+          won by the scout.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>
+            Bootbag will only make cash prize payments to an official bank
+            account. This excludes PayPal and alternative payment methods. This
+            is to ensure Sapien Interactive can track all prize payments made by
+            the Sapien Interactive.</strong
+          >
+        </p>
+        <p>Prizes will be as follows:-</p>
+        <p>A minimum of 1000 scouts playing the game month.</p>
+      </li>
+      <li>
+        <p>What information we collect</p>
+        <ol class="list-container">
+          <li>
+            <p>
+              We may collect the following information whilst you visit our app:
+              Team name and scout name, Favourite team, Date of birth Contact
+              information including email address Payment details (card number,
+              Expiry date and CVV) Demographic information such as postcode,
+              preferences and interests Other information relevant to customer
+              surveys and/or offers What we do with the information we gather We
+              require this information to understand your needs and provide you
+              with a better service, and in particular for the following
+              reasons:
+            </p>
+          </li>
+          <li>
+            <p>
+              <strong
+                >Subject to compliance with Game Rule Terms, Users under the age
+                of 18 will need parental or guardian permission to win any cash
+                prizes. This permission must include confirmation that the
+                parent/guardian agrees to game entry, the winners name to be
+                publicised, agree to the User being awarded a prize and travel
+                with should the prize require an travel.
+              </strong>
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>Internal record keeping</p>
+        <p>
+          We may use the information to improve our products and services. We
+          may periodically send promotional emails about new products, special
+          offers or other information which we think you may find interesting
+          using the email address which you have provided. From time to time, we
+          may also use your information to contact you for market research
+          purposes. We may contact you by email, phone, fax or mail. We may use
+          the information to customise the app according to your interests. 16.
+          The competition prizes fund will be decided before each monthly round
+          and communicated to the community of users via the app notification
+          system. Developed by Sapien Interactive Limited - bootbag® and the
+          bootbag logo are registered UK trademark office. All rights reserved.
+          All other company names, brand names, and logo’s are the property of
+          Sapien Interactive Limited. Apple is not involved in any way with the
+          contest or sweepstakes provided by Bootbag.
+        </p>
+      </li>
+      <li>
+        <p>
+          The competition prizes fund will be decided before each monthly round
+          and communicated to the community of users via the app notification
+          system.
+        </p>
+        <p>
+          Developed by Sapien Interactive Limited - bootbag® and the bootbag
+          logo are registered UK trademark office. All rights reserved. All
+          other company names, brand names, and logo’s are the property of
+          Sapien Interactive Limited. Apple is not involved in any way with the
+          contest or sweepstakes provided by Bootbag.
+        </p>
+      </li>
       <li>
         <h2><a id="alisha"></a>Alisha</h2>
         <p>
@@ -653,6 +778,219 @@
           </div>
         </ol>
       </li>
+      <li>
+        <h2>User Responsibilities</h2>
+        <p>
+          Users agree that, while playing Bootbag, they will not upload, post or
+          transmit to or distribute or otherwise publish through the app or in
+          relation to the Game any information, content or materials that:
+        </p>
+        <ol class="list-container">
+          <div class="competition-list">
+            <p>
+              (a) are protected by copyright, or other proprietary or
+              intellectual property right, or derivative works with respect
+              thereto, except as provided herein or without first obtaining
+              permission from us or the copyright owner;
+            </p>
+            <p>
+              (b) are unlawful, threatening, harassing, profane, tortious,
+              defamatory, discriminatory, vulgar, obscene, libellous, deceptive,
+              fraudulent, contains explicit or graphic descriptions or accounts
+              of sexual acts (including, but not limited to, sexual language of
+              a violent or threatening nature directed at another individual or
+              group of individuals), invasive of another's privacy, or hateful;
+            </p>
+            <p>
+              (c) restrict or inhibit any other user from using and enjoying
+              Bootbag;
+            </p>
+            <p>
+              (d) constitute or encourage conduct that would constitute a
+              criminal offence or give rise to civil liability; or
+            </p>
+            <p>
+              (e) contain a virus or other harmful component or similar computer
+              code designed to adversely affect the operation of any computer
+              software or hardware, advertising of any kind, or false or
+              misleading indications of origin or statements of fact.
+            </p>
+            <p>
+              Users agree that, while playing, they shall keep passwords for
+              their account secure and keep confidential.
+            </p>
+            <p>Users also warrant and agree that they will not:</p>
+            <ol class="list-container">
+              <div class="competition-list">
+                <p>
+                  (a) impersonate, or misrepresent with any other person or
+                  entity;
+                </p>
+                <p>
+                  (b) upload, post, publish, transmit, reproduce, distribute or
+                  in any way exploit any information or other material obtained
+                  through the Bootbag for commercial purposes (other than as
+                  expressly permitted by the provider of such information or
+                  other material);
+                </p>
+                <p>(c) engage in spamming or flooding;</p>
+                <p>
+                  (d) use automated systems to access Bootbag and extract
+                  information from the app;
+                </p>
+                <p>
+                  (e) attempt to gain unauthorised access to other computer
+                  systems through the app;
+                </p>
+                <p>
+                  (f) bring the Game or the Premier League into disrepute; or
+                </p>
+                <p>(g) create mini-leagues for any commercial purpose.</p>
+              </div>
+            </ol>
+          </div>
+        </ol>
+      </li>
+
+      <li>
+        <p>
+          Except as otherwise expressly permitted herein, you may not upload,
+          post, publish, reproduce, transmit or distribute in any way any
+          component of the Game itself or derivative works with respect thereto,
+          as the Game is copyrighted as a collective work under the copyright
+          laws of England and Wales.
+        </p>
+      </li>
+      <li>
+        <h2>Sapien Interactive Ltd Responsibility and Liability</h2>
+        <p>
+          The extent of Sapien Interactive Ltd's responsibility to you has been
+          determined in the context of the following:
+        </p>
+        <p>
+          a) the app is provided to you free of charge and on an "as is" basis;
+        </p>
+
+        <p>
+          b) you are responsible for any action you do or do not take as a
+          result of the app and the information therein;
+        </p>
+        <p>
+          you are responsible for ensuring that your equipment is enabled with
+          appropriate up-to-date virus checking software; and
+        </p>
+      </li>
+
+      <li>
+        <p>
+          While Sapien Interactive Ltd will endeavour to ensure that the app is
+          available to you at all times, without faults and that the contents
+          are correct and accurate, it cannot make any legal commitment to you
+          that this will be the case.
+        </p>
+      </li>
+      <li>
+        <p>
+          Sapien Interactive Ltd reserves the right at any time to temporarily
+          or permanently modify or discontinue the app with or without prior
+          notice (due to reasons outside its reasonable control). In the event
+          thatSapien Interactive Ltd permanently discontinues the app pursuant
+          to this paragraph, you shall be released from your obligations to
+          Sapien Interactive Ltd under these Terms.
+        </p>
+      </li>
+      <li>
+        <p>
+          Nothing in these Terms limits or excludesSapien Interactive Ltd's
+          liability for (i) death or personal injury caused by our negligence;
+          (ii) liability arising from fraud or fraudulent misrepresentation; or
+          (iii) any other reason or by any cause which cannot be excluded by
+          law.
+        </p>
+      </li>
+      <li>
+        <p>
+          Sapien Interactive Ltd accepts no liability to you for any damage,
+          loss, liabilities, injury or disappointment incurred or suffered by
+          you as a result of entering the Game or accepting a prize including
+          but not limited to the following types of loss which you may suffer as
+          a result of your entry to the Game:
+        </p>
+        <p>
+          loss which was not foreseeable to you and theSapien Interactive Ltd
+          when you first applied for the Game (even if that loss results from
+          theSapien Interactive Ltd's failure to comply with these Terms or its
+          negligence);
+        </p>
+        <p>
+          any business loss you may suffer, including loss of revenue, profits,
+          or anticipated savings (whether those losses are the direct or
+          indirect result of Sapien Interactive Ltd's default);
+        </p>
+        <p>
+          any loss or damage to your account resulting from your failure to
+          maintain the security of your account and/or password;
+        </p>
+        <p>
+          loss which you suffer other than as a result of our failure to comply
+          with these Terms or our negligence or breach of statutory duty; and/or
+        </p>
+        <p>
+          any loss which you may suffer as a result of or in connection with or
+          arising out of any Prize.
+        </p>
+      </li>
+      <li>
+        <h2>Breach</h2>
+
+        <p>
+          Any breach by you of the Game Rules from time to time shall also be a
+          breach of these Terms.
+        </p>
+        <p>
+          In the event of any breach by you of these Terms Sapien Interactive
+          Ltd reserves the right in its sole discretion to:
+        </p>
+        <p>a) permanently or temporarily refuse you entry to the app;</p>
+        <p>b) disqualify you from the Game;</p>
+        <p>c) modify, delete and/or suspend your Registration;</p>
+        <p>
+          d) delete all related information associated with your Registration;
+          and/or
+        </p>
+        <p>e) require any reasonable amendment to your Registration.</p>
+        <ol class="list-container">
+          <li>
+            <p>
+              All such decisions will be final and no correspondence will be
+              entered into
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If you are barred or disqualified from being Registered as a
+              Player, you shall not be eligible to participate in the Game under
+              any other identity or team name. Any such decision by Sapien
+              Interactive Ltd shall be final.
+            </p>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+          If any of these Terms are determined to be illegal, invalid, or
+          otherwise enforceable then the remaining terms shall continue in full
+          force and effect.
+        </p>
+      </li>
+      <li>
+        <p>
+          These Terms shall be governed by and construed in accordance with the
+          laws of England and Wales and the parties agree to submit to the
+          exclusive jurisdiction of the Courts of England and Wales.
+        </p>
+      </li>
     </ol>
   </div>
 </template>
@@ -675,14 +1013,14 @@
 
     p {
       margin-left: 0.5em;
-    }
 
-    a {
-      font-weight: bold;
-      text-decoration: underline;
+      a {
+        font-weight: bold;
+        text-decoration: underline;
 
-      &:hover {
-        color: $brand-pink;
+        &:hover {
+          color: $brand-pink;
+        }
       }
     }
   }
@@ -695,7 +1033,7 @@
     content: '\2022';
     display: table-cell;
     vertical-align: top;
-    width: 1em;
+    width: 1.1em;
     color: #ffffff;
   }
 }
