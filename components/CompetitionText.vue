@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="competition-container">
     <h2>General</h2>
     <ol class="list-container">
       <li>
@@ -76,10 +76,8 @@
           </li>
         </ol>
       </li>
-
       <li>
         <h2>Competition Rules</h2>
-
         <ol class="list-container">
           <li>
             <p>
@@ -126,7 +124,6 @@
           </li>
         </ol>
       </li>
-
       <li>
         <h2>Age limits and parental permissions</h2>
         <ol class="list-container">
@@ -602,7 +599,6 @@
           </li> -->
         </ol>
       </li>
-
       <li>
         <p>
           Sign up to Bootbag into the competition will be deemed as acceptance
@@ -662,7 +658,7 @@
           >
         </p>
         <p><strong>Prizes will be as follows:-</strong></p>
-        <p>Premier Division - 1st - 10,500 Diamonds</p>
+        <p>Premier Division - 1st - 10,000 Diamonds</p>
         <p>Premier Division - 2nd - 7,5000 Diamonds</p>
         <p>Premier Division - 3rd - 5,000 Diamonds</p>
         <br />
@@ -820,7 +816,6 @@
       </li>
       <li>
         <h2>User Responsibilities</h2>
-
         <p>
           Users agree that, while playing Bootbag, they will not upload, post or
           transmit to or distribute or otherwise publish through the app or in
@@ -866,21 +861,17 @@
             </p>
           </li>
         </ol>
-
         <p>
           Users agree that, while playing, they shall keep passwords for their
           account secure and keep confidential.
         </p>
-
         <p>Users also warrant and agree that they will not:</p>
-
         <ol class="alphabet-container">
           <li>
             <p>
               impersonate, or misrepresent with any other person or entity;
             </p>
           </li>
-
           <li>
             <p>
               upload, post, publish, transmit, reproduce, distribute or in any
@@ -914,7 +905,6 @@
           </li>
         </ol>
       </li>
-
       <li>
         <p>
           Except as otherwise expressly permitted herein, you may not upload,
@@ -1024,7 +1014,6 @@
       </li>
       <li>
         <h2>Breach</h2>
-
         <p>
           Any breach by you of the Game Rules from time to time shall also be a
           breach of these Terms.
@@ -1060,7 +1049,6 @@
               entered into
             </p>
           </li>
-
           <li>
             <p>
               If you are barred or disqualified from being Registered as a
@@ -1090,19 +1078,30 @@
 </template>
 
 <style lang="scss">
-.list-container {
-  counter-reset: item;
+.competition-container {
+  h2 {
+    text-align: left;
+  }
 
   li {
     display: table;
     table-layout: fixed;
 
     &:before {
-      content: counters(item, '.') ' ';
-      counter-increment: item;
       display: table-cell;
       vertical-align: top;
       width: 1.3em;
+    }
+  }
+}
+
+.list-container {
+  counter-reset: item;
+
+  li {
+    &:before {
+      content: counters(item, '.') ' ';
+      counter-increment: item;
     }
 
     p {
@@ -1124,15 +1123,9 @@
   counter-reset: alphabetStyle;
 
   li {
-    display: table;
-    table-layout: fixed;
-
     &:before {
       content: counter(alphabetStyle, lower-alpha);
       counter-increment: alphabetStyle;
-      display: table-cell;
-      vertical-align: top;
-      width: 1.3em;
     }
   }
 }
