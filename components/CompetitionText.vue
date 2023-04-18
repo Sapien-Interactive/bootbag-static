@@ -1106,6 +1106,7 @@
 
     p {
       margin-left: 0.5em;
+      width: 100%;
 
       a {
         font-weight: bold;
