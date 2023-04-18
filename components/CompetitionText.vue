@@ -662,7 +662,25 @@
           >
         </p>
         <p><strong>Prizes will be as follows:-</strong></p>
-        <p>TBC</p>
+        <p>Premier Division - 1st - 10,500 Diamonds</p>
+        <p>Premier Division - 2nd - 7,5000 Diamonds</p>
+        <p>Premier Division - 3rd - 5,000 Diamonds</p>
+        <br />
+        <p>Elite Division - 1st - 7,500 Diamonds</p>
+        <p>Elite Division - 2nd - 5,000 Diamonds</p>
+        <p>Elite Division - 3rd - 2,500 Diamonds</p>
+        <br />
+        <p>Challenger Division - 1st - 5,000 Diamonds</p>
+        <p>Challenger Division - 2nd - 2,500 Diamonds</p>
+        <p>Challenger Division - 3rd - 1,500 Diamonds</p>
+        <br />
+        <p>Developer Division - 1st - 2,500 Diamonds</p>
+        <p>Developer Division - 2nd - 1,500 Diamonds</p>
+        <p>Developer Division - 3rd - 1,000 Diamonds</p>
+        <br />
+        <p>Qualifier Division - 1st - 1,500 Diamonds</p>
+        <p>Qualifier Division - 2nd - 1,000 Diamonds</p>
+        <p>Qualifier Division - 3rd - 500 Diamonds</p>
         <p>A minimum of 1000 scouts playing the game month.</p>
       </li>
       <li>
