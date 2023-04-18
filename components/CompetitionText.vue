@@ -1,16 +1,14 @@
 <template>
   <div>
+    <h2>General</h2>
     <ol class="list-container">
       <li>
-        <h2>General</h2>
+        <p>
+          The promoter is: Sapien Interactive Ltd (company no. 12074025) (also
+          “Bootbag”) whose registered office is at New Derwent House, 69-73
+          Theobalds Road, London, England, WC1X 8TA
+        </p>
         <ol class="list-container">
-          <li>
-            <p>
-              The promoter is: Sapien Interactive Ltd (company no. 12074025)
-              (also “Bootbag”) whose registered office is at New Derwent House,
-              69-73 Theobalds Road, London, England, WC1X 8TA
-            </p>
-          </li>
           <li>
             <p>
               The Competition Terms are part of the Terms and Conditions and are
@@ -78,8 +76,10 @@
           </li>
         </ol>
       </li>
+
       <li>
         <h2>Competition Rules</h2>
+
         <ol class="list-container">
           <li>
             <p>
@@ -126,14 +126,16 @@
           </li>
         </ol>
       </li>
+
       <li>
         <h2>Age limits and parental permissions</h2>
         <ol class="list-container">
           <li>
             <p>
               Under 18? Get a parent/guardian to help with game use & reading
-              terms. Contact <a mailto="info@bootbag.co">info@bootbag.co</a> for
-              further help/questions if anything is unclear.
+              terms. Contact
+              <a mailto="info@bootbag.co">info@bootbag.co</a> for further
+              help/questions if anything is unclear.
             </p>
           </li>
           <li>
@@ -256,11 +258,12 @@
               By the apps software providing all entries are received and
               verified by the Bootbag team. Winning claimants should contact
               Sapien Interactive through
-              <a mailto="support@bootbag.co"></a>support@bootbag.co confirming
-              the mini game in the subject line they believe they have won and
-              incorporating details on their achievement. Claimants should
-              provide screenshots from their own user account which will help
-              validate their result and confirm if they are in fact the winner.
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a>
+              confirming the mini game in the subject line they believe they
+              have won and incorporating details on their achievement. Claimants
+              should provide screenshots from their own user account which will
+              help validate their result and confirm if they are in fact the
+              winner.
             </p>
           </li>
           <li>
@@ -403,10 +406,10 @@
               Personal Data, provided these are in compliance with the
               then-current version of the Sapien Interactive Ltd's privacy
               policy available at
-              <a href="http://www.bootbag.co">http://www.bootbag.co</a> (Privacy
-              Policy). In the event of any inconsistency or conflict between the
-              terms of the Privacy Policy and this agreement, the Privacy Policy
-              will take precedence.
+              <a href="http://www.bootbag.co">http://www.bootbag.co</a>
+              <strong>(Privacy Policy)</strong>. In the event of any
+              inconsistency or conflict between the terms of the Privacy Policy
+              and this agreement, the Privacy Policy will take precedence.
             </p>
           </li>
           <li>
@@ -667,14 +670,14 @@
           <li>
             <p>
               We may collect the following information whilst you visit our app:
-              Team name and scout name, Favourite team, Date of birth Contact
-              information including email address Payment details (card number,
-              Expiry date and CVV) Demographic information such as postcode,
-              preferences and interests Other information relevant to customer
-              surveys and/or offers What we do with the information we gather We
-              require this information to understand your needs and provide you
-              with a better service, and in particular for the following
-              reasons:
+              <strong>Team name</strong> and scout name, Favourite team, Date of
+              birth Contact information including email address Payment details
+              (card number, Expiry date and CVV) Demographic information such as
+              postcode, preferences and interests Other information relevant to
+              customer surveys and/or offers What we do with the information we
+              gather We require this information to understand your needs and
+              provide you with a better service, and in particular for the
+              following reasons:
             </p>
           </li>
           <li>
@@ -725,7 +728,7 @@
         </p>
       </li>
       <li>
-        <h2><a id="alisha"></a>Alisha</h2>
+        <h2><a id="alisha"></a>Alisha Competition</h2>
         <p>
           Compete to meet Alisha! The object of the game is to score the most
           points in a monthly Round to be in with a chance to meet Alisha
@@ -761,7 +764,7 @@
         </ol>
       </li>
       <li>
-        <h2><a id="minigames"></a>Mini Games</h2>
+        <h2><a id="minigames"></a>Mini Competition(s)</h2>
         <p>
           Match day competitions that enable users to challenge and vary their
           scouting decision making.
@@ -1080,7 +1083,7 @@
       counter-increment: item;
       display: table-cell;
       vertical-align: top;
-      width: 1em;
+      width: 1.3em;
     }
 
     p {
@@ -1110,7 +1113,7 @@
       counter-increment: alphabetStyle;
       display: table-cell;
       vertical-align: top;
-      width: 1em;
+      width: 1.3em;
     }
   }
 }
@@ -1122,7 +1125,7 @@
     content: '\2022';
     display: table-cell;
     vertical-align: top;
-    width: 1.1em;
+    width: 1.3em;
     color: $body-color;
   }
 }

@@ -7,13 +7,13 @@
             onClick="setTimeout(()=>{window.location = '#alisha' }, 500)"
             class="tab"
           >
-            Alisha
+            Alisha Competition
           </a>
           <a
             onClick="setTimeout(()=>{window.location = '#minigames' }, 500)"
             class="tab"
           >
-            Mini Games
+            Mini Competition(s)
           </a>
         </div>
 
