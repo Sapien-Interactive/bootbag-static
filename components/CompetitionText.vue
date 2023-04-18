@@ -586,6 +586,7 @@
               the scope of the Amended Terms.
             </p>
           </li>
+          <!-- Not needed yet, will be uncommented with TBC added later
           <li>
             <p>
               In addition to any other liability limitations Sapien Interactive
@@ -598,7 +599,7 @@
               clause 7, or Applicable Data Protection Laws shall be limited to
               £[TBC].
             </p>
-          </li>
+          </li> -->
         </ol>
       </li>
 
