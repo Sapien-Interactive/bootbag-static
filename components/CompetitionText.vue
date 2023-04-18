@@ -132,8 +132,8 @@
           <li>
             <p>
               Under 18? Get a parent/guardian to help with game use & reading
-              terms. Contact info@bootbag.co for further help/questions if
-              anything is unclear.
+              terms. Contact <a mailto="info@bootbag.co">info@bootbag.co</a> for
+              further help/questions if anything is unclear.
             </p>
           </li>
           <li>
@@ -147,6 +147,13 @@
               No cash prizes if under 18, unless you have a parent/guardian's
               permission to claim. 3.4 Permission is also needed for game entry
               & travel. We collect personal info, learn more here:
+              <a href="http://www.bootbag.co">http://www.bootbag.co</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              Permission is also needed for game entry & travel. We collect
+              personal info, learn more here:
               <a href="http://www.bootbag.co">http://www.bootbag.co</a>
             </p>
           </li>
@@ -204,7 +211,7 @@
               participate in, mini-leagues for any commercial purposes,
               including but not limited to:
             </p>
-            <ol class="list-container">
+            <ol class="alphabet-container">
               <li>
                 <p>Charging for entry into a mini-league;</p>
               </li>
@@ -248,8 +255,9 @@
             <p>
               By the apps software providing all entries are received and
               verified by the Bootbag team. Winning claimants should contact
-              Sapien Interactive through support@bootbag.co confirming the mini
-              game in the subject line they believe they have won and
+              Sapien Interactive through
+              <a mailto="support@bootbag.co"></a>support@bootbag.co confirming
+              the mini game in the subject line they believe they have won and
               incorporating details on their achievement. Claimants should
               provide screenshots from their own user account which will help
               validate their result and confirm if they are in fact the winner.
@@ -280,7 +288,8 @@
           <li>
             <p>
               By entering this competition, an entrant is indicating
-              his/her/their agreement to be bound by these terms and conditions.
+              his/her/<strong>their</strong> agreement to be bound by these
+              terms and conditions.
             </p>
           </li>
           <li>
@@ -293,11 +302,11 @@
           <li>
             <p>
               <strong>Identification of winner</strong>: The winner agrees to
-              the use of his/her/them name and image in any publicity material.
-              Any personal data relating to the winner or any other entrants
-              will be used solely in accordance with current UK data protection
-              legislation and will not be disclosed to a third party without the
-              entrant’s prior consent.
+              the use of his/her/<strong>them</strong> name and image in any
+              publicity material. Any personal data relating to the winner or
+              any other entrants will be used solely in accordance with current
+              UK data protection legislation and will not be disclosed to a
+              third party without the entrant’s prior consent.
             </p>
           </li>
         </ol>
@@ -305,38 +314,35 @@
       <li>
         <h2>Data Protection</h2>
         <ol class="list-container">
-          <div class="competition-list">
-            <p>
-              <strong
-                >For the purposes of this clause the following definitions
-                apply:</strong
-              >
-            </p>
-            <p>
-              <strong>Applicable Laws/Data Protection Laws:</strong> To the
-              extent the UK GDPR applies, the law of the United Kingdom or of a
-              part of the United Kingdom which relates to the protection of
-              personal data.
-            </p>
-            <p>
-              <strong>User Personal Data:</strong> any personal data Sapien
-              Interactive Ltd processes in connection with this agreement, in
-              the capacity of a processor on behalf of the User.
-            </p>
-            <p>
-              <strong>Purpose:</strong> the purposes for which the User Personal
-              Data is processed, as set out in clause 7.8.1.
-            </p>
-            <p>
-              <strong>Sapien Interactive Ltd Personal Data:</strong> any
-              personal data which Sapien Interactive Ltd processes in connection
-              with this agreement, in the capacity of a controller.
-            </p>
-            <p>
-              <strong>UK GDPR:</strong> has the meaning given to it in the Data
-              Protection Act 2018.
-            </p>
-          </div>
+          <p>
+            <strong
+              >For the purposes of this clause the following definitions
+              apply:</strong
+            >
+          </p>
+          <p>
+            <strong>Applicable Laws/Data Protection Laws:</strong> To the extent
+            the UK GDPR applies, the law of the United Kingdom or of a part of
+            the United Kingdom which relates to the protection of personal data.
+          </p>
+          <p>
+            <strong>User Personal Data:</strong> any personal data Sapien
+            Interactive Ltd processes in connection with this agreement, in the
+            capacity of a processor on behalf of the User.
+          </p>
+          <p>
+            <strong>Purpose:</strong> the purposes for which the User Personal
+            Data is processed, as set out in clause 7.8.1.
+          </p>
+          <p>
+            <strong>Sapien Interactive Ltd Personal Data:</strong> any personal
+            data which Sapien Interactive Ltd processes in connection with this
+            agreement, in the capacity of a controller.
+          </p>
+          <p>
+            <strong>UK GDPR:</strong> has the meaning given to it in the Data
+            Protection Act 2018.
+          </p>
           <li>
             <p>
               For the purposes of this clause 7, the terms controller,
@@ -357,7 +363,7 @@
               The parties have determined that, for the purposes of Applicable
               Data Protection Laws:
             </p>
-            <ol class="list-container">
+            <ol class="alphabet-container">
               <li>
                 <p>
                   Sapien Interactive Ltd shall act as controller in respect of
@@ -426,7 +432,7 @@
               Without prejudice to the generality of clause 7.2 Sapien
               Interactive Ltd shall, in relation to User Personal Data:
             </p>
-            <ol>
+            <ol class="list-container">
               <li>
                 <p>
                   process that User Personal Data only on the documented
@@ -523,14 +529,29 @@
                       shall ensure that the terms on which it appoints such
                       processors comply with Applicable Data Protection Laws,
                       and are consistent with the obligations imposed on the
-                      Sapien Interactive Ltd in this clause 7.
+                      Sapien Interactive Ltd in this clause 7;
                     </p>
                   </li>
                   <li>
                     <p>
                       shall remain responsible for the acts and omission of any
                       such processor as if they were the acts and omissions of
-                      the Sapien Interactive Ltd.
+                      the Sapien Interactive Ltd; and
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      shall inform the User of any intended changes concerning
+                      the addition or replacement of the processors, thereby
+                      giving the User the opportunity to object to such changes
+                      provided that if the User objects to the changes and
+                      cannot demonstrate, to Sapien Interactive Ltd's reasonable
+                      satisfaction, that the objection is due to an actual or
+                      likely breach of Applicable Data Protection Law, the User
+                      shall indemnify the Sapien Interactive Ltd for any losses,
+                      damages, costs (including legal fees) and expenses
+                      suffered by the Sapien Interactive Ltd in accommodating
+                      the objection.
                     </p>
                   </li>
                 </ol>
@@ -636,7 +657,8 @@
             the Sapien Interactive.</strong
           >
         </p>
-        <p>Prizes will be as follows:-</p>
+        <p><strong>Prizes will be as follows:-</strong></p>
+        <p>TBC</p>
         <p>A minimum of 1000 scouts playing the game month.</p>
       </li>
       <li>
@@ -670,7 +692,7 @@
         </ol>
       </li>
       <li>
-        <p>Internal record keeping</p>
+        <h2>Internal record keeping</h2>
         <p>
           We may use the information to improve our products and services. We
           may periodically send promotional emails about new products, special
@@ -735,10 +757,6 @@
               arranged meet and great. Post this date, prize will be null and
               void.
             </p>
-            <p>
-              Offering cash (or cash equivalent) prizes to participants in a
-              mini-league
-            </p>
           </div>
         </ol>
       </li>
@@ -780,75 +798,98 @@
       </li>
       <li>
         <h2>User Responsibilities</h2>
+
         <p>
           Users agree that, while playing Bootbag, they will not upload, post or
           transmit to or distribute or otherwise publish through the app or in
           relation to the Game any information, content or materials that:
         </p>
-        <ol class="list-container">
-          <div class="competition-list">
+        <ol class="alphabet-container">
+          <li>
             <p>
-              (a) are protected by copyright, or other proprietary or
-              intellectual property right, or derivative works with respect
-              thereto, except as provided herein or without first obtaining
-              permission from us or the copyright owner;
+              are protected by copyright, or other proprietary or intellectual
+              property right, or derivative works with respect thereto, except
+              as provided herein or without first obtaining permission from us
+              or the copyright owner;
             </p>
+          </li>
+          <li>
             <p>
-              (b) are unlawful, threatening, harassing, profane, tortious,
+              are unlawful, threatening, harassing, profane, tortious,
               defamatory, discriminatory, vulgar, obscene, libellous, deceptive,
               fraudulent, contains explicit or graphic descriptions or accounts
               of sexual acts (including, but not limited to, sexual language of
               a violent or threatening nature directed at another individual or
               group of individuals), invasive of another's privacy, or hateful;
             </p>
+          </li>
+          <li>
             <p>
-              (c) restrict or inhibit any other user from using and enjoying
+              restrict or inhibit any other user from using and enjoying
               Bootbag;
             </p>
+          </li>
+          <li>
             <p>
-              (d) constitute or encourage conduct that would constitute a
-              criminal offence or give rise to civil liability; or
+              constitute or encourage conduct that would constitute a criminal
+              offence or give rise to civil liability; or
             </p>
+          </li>
+          <li>
             <p>
-              (e) contain a virus or other harmful component or similar computer
+              contain a virus or other harmful component or similar computer
               code designed to adversely affect the operation of any computer
               software or hardware, advertising of any kind, or false or
               misleading indications of origin or statements of fact.
             </p>
+          </li>
+        </ol>
+
+        <p>
+          Users agree that, while playing, they shall keep passwords for their
+          account secure and keep confidential.
+        </p>
+
+        <p>Users also warrant and agree that they will not:</p>
+
+        <ol class="alphabet-container">
+          <li>
             <p>
-              Users agree that, while playing, they shall keep passwords for
-              their account secure and keep confidential.
+              impersonate, or misrepresent with any other person or entity;
             </p>
-            <p>Users also warrant and agree that they will not:</p>
-            <ol class="list-container">
-              <div class="competition-list">
-                <p>
-                  (a) impersonate, or misrepresent with any other person or
-                  entity;
-                </p>
-                <p>
-                  (b) upload, post, publish, transmit, reproduce, distribute or
-                  in any way exploit any information or other material obtained
-                  through the Bootbag for commercial purposes (other than as
-                  expressly permitted by the provider of such information or
-                  other material);
-                </p>
-                <p>(c) engage in spamming or flooding;</p>
-                <p>
-                  (d) use automated systems to access Bootbag and extract
-                  information from the app;
-                </p>
-                <p>
-                  (e) attempt to gain unauthorised access to other computer
-                  systems through the app;
-                </p>
-                <p>
-                  (f) bring the Game or the Premier League into disrepute; or
-                </p>
-                <p>(g) create mini-leagues for any commercial purpose.</p>
-              </div>
-            </ol>
-          </div>
+          </li>
+
+          <li>
+            <p>
+              upload, post, publish, transmit, reproduce, distribute or in any
+              way exploit any information or other material obtained through the
+              Bootbag for commercial purposes (other than as expressly permitted
+              by the provider of such information or other material);
+            </p>
+          </li>
+          <li>
+            <p>engage in spamming or flooding;</p>
+          </li>
+          <li>
+            <p>
+              use automated systems to access Bootbag and extract information
+              from the app;
+            </p>
+          </li>
+          <li>
+            <p>
+              attempt to gain unauthorised access to other computer systems
+              through the app;
+            </p>
+          </li>
+          <li>
+            <p>
+              bring the Game or the Premier League into disrepute; or
+            </p>
+          </li>
+          <li>
+            <p>create mini-leagues for any commercial purpose.</p>
+          </li>
         </ol>
       </li>
 
@@ -867,20 +908,26 @@
           The extent of Sapien Interactive Ltd's responsibility to you has been
           determined in the context of the following:
         </p>
-        <p>
-          a) the app is provided to you free of charge and on an "as is" basis;
-        </p>
-
-        <p>
-          b) you are responsible for any action you do or do not take as a
-          result of the app and the information therein;
-        </p>
-        <p>
-          you are responsible for ensuring that your equipment is enabled with
-          appropriate up-to-date virus checking software; and
-        </p>
+        <ol class="alphabet-container">
+          <li>
+            <p>
+              the app is provided to you free of charge and on an "as is" basis;
+            </p>
+          </li>
+          <li>
+            <p>
+              you are responsible for any action you do or do not take as a
+              result of the app and the information therein;
+            </p>
+          </li>
+          <li>
+            <p>
+              you are responsible for ensuring that your equipment is enabled
+              with appropriate up-to-date virus checking software; and
+            </p>
+          </li>
+        </ol>
       </li>
-
       <li>
         <p>
           While Sapien Interactive Ltd will endeavour to ensure that the app is
@@ -916,29 +963,42 @@
           but not limited to the following types of loss which you may suffer as
           a result of your entry to the Game:
         </p>
-        <p>
-          loss which was not foreseeable to you and theSapien Interactive Ltd
-          when you first applied for the Game (even if that loss results from
-          theSapien Interactive Ltd's failure to comply with these Terms or its
-          negligence);
-        </p>
-        <p>
-          any business loss you may suffer, including loss of revenue, profits,
-          or anticipated savings (whether those losses are the direct or
-          indirect result of Sapien Interactive Ltd's default);
-        </p>
-        <p>
-          any loss or damage to your account resulting from your failure to
-          maintain the security of your account and/or password;
-        </p>
-        <p>
-          loss which you suffer other than as a result of our failure to comply
-          with these Terms or our negligence or breach of statutory duty; and/or
-        </p>
-        <p>
-          any loss which you may suffer as a result of or in connection with or
-          arising out of any Prize.
-        </p>
+        <ol class="alphabet-container">
+          <li>
+            <p>
+              loss which was not foreseeable to you and theSapien Interactive
+              Ltd when you first applied for the Game (even if that loss results
+              from theSapien Interactive Ltd's failure to comply with these
+              Terms or its negligence);
+            </p>
+          </li>
+          <li>
+            <p>
+              any business loss you may suffer, including loss of revenue,
+              profits, or anticipated savings (whether those losses are the
+              direct or indirect result of Sapien Interactive Ltd's default);
+            </p>
+          </li>
+          <li>
+            <p>
+              any loss or damage to your account resulting from your failure to
+              maintain the security of your account and/or password;
+            </p>
+          </li>
+          <li>
+            <p>
+              loss which you suffer other than as a result of our failure to
+              comply with these Terms or our negligence or breach of statutory
+              duty; and/or
+            </p>
+          </li>
+          <li>
+            <p>
+              any loss which you may suffer as a result of or in connection with
+              or arising out of any Prize.
+            </p>
+          </li>
+        </ol>
       </li>
       <li>
         <h2>Breach</h2>
@@ -951,14 +1011,26 @@
           In the event of any breach by you of these Terms Sapien Interactive
           Ltd reserves the right in its sole discretion to:
         </p>
-        <p>a) permanently or temporarily refuse you entry to the app;</p>
-        <p>b) disqualify you from the Game;</p>
-        <p>c) modify, delete and/or suspend your Registration;</p>
-        <p>
-          d) delete all related information associated with your Registration;
-          and/or
-        </p>
-        <p>e) require any reasonable amendment to your Registration.</p>
+        <ol class="alphabet-container">
+          <li>
+            <p>permanently or temporarily refuse you entry to the app;</p>
+          </li>
+          <li>
+            <p>disqualify you from the Game;</p>
+          </li>
+          <li>
+            <p>modify, delete and/or suspend your Registration;</p>
+          </li>
+          <li>
+            <p>
+              delete all related information associated with your Registration;
+              and/or
+            </p>
+          </li>
+          <li>
+            <p>require any reasonable amendment to your Registration.</p>
+          </li>
+        </ol>
         <ol class="list-container">
           <li>
             <p>
@@ -1026,6 +1098,23 @@
   }
 }
 
+.alphabet-container {
+  counter-reset: alphabetStyle;
+
+  li {
+    display: table;
+    table-layout: fixed;
+
+    &:before {
+      content: counter(alphabetStyle, lower-alpha);
+      counter-increment: alphabetStyle;
+      display: table-cell;
+      vertical-align: top;
+      width: 1em;
+    }
+  }
+}
+
 .competition-list p {
   display: inline-table;
 
@@ -1034,7 +1123,7 @@
     display: table-cell;
     vertical-align: top;
     width: 1.1em;
-    color: #ffffff;
+    color: $body-color;
   }
 }
 </style>
