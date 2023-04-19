@@ -2,6 +2,21 @@
   <div>
     <section class="main-content columns article">
       <section class="section terms">
+        <div class="tab-wrapper">
+          <a
+            onClick="setTimeout(()=>{window.location = '#alisha' }, 500)"
+            class="tab"
+          >
+            Alisha Competition
+          </a>
+          <a
+            onClick="setTimeout(()=>{window.location = '#minigames' }, 500)"
+            class="tab"
+          >
+            Mini Competition(s)
+          </a>
+        </div>
+
         <CompetitionText />
       </section>
     </section>
@@ -17,6 +32,11 @@ export default {
   components: {
     Footer,
     CompetitionText
+  },
+  data() {
+    return {
+      activeTab: false
+    }
   }
 }
 </script>
@@ -33,5 +53,25 @@ export default {
     text-transform: none;
     margin-bottom: 20px;
   }
+}
+
+.tab {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  color: $white;
+  margin-right: 30px;
+
+  &:hover,
+  &:focus {
+    color: $brand-pink;
+    text-decoration: underline;
+  }
+}
+
+.tab-wrapper {
+  display: flex;
+  margin-bottom: 20px;
 }
 </style>
