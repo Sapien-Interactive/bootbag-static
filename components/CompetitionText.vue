@@ -1083,6 +1083,10 @@
     text-align: left;
   }
 
+  strong {
+    color: $body-color;
+  }
+
   li {
     display: table;
     table-layout: fixed;
