@@ -357,6 +357,8 @@ form {
   margin: 60px 0 40px 0;
 
   .ticket {
+    display: flex;
+    flex-direction: column;
     background-color: #242323;
     margin: 20px 0 60px 0;
     padding: 10px 0 0 0;
@@ -405,11 +407,16 @@ form {
     }
 
     .bottom {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 0 5px 5px;
       font-size: 16px;
       margin: 0;
       text-transform: uppercase;
       background-color: #535353;
-      padding: 10px 0;
+      padding: 10px;
       background-image: url('../assets/images/Group 1444@2x.png');
       background-repeat: no-repeat;
       background-position: top;

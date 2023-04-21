@@ -90,56 +90,61 @@
           </div> -->
           <div class="columns has-text-centered ticketWrapper">
             <div class="column ticket">
-              <img src="~/assets/images/Search-player-icon@2x.png" />
-
-              <p class="text">
-                Football's very first,<br /><strong
-                  >real-time<br />scouting game.</strong
-                >
-              </p>
-              <img
-                src="../assets/images/ticket-left-new.png"
-                class="ticketLeft"
-              />
-              <img
-                src="../assets/images/ticket-right-new.png"
-                class="ticketRight"
-              />
+              <div>
+                <img src="~/assets/images/Search-player-icon@2x.png" />
+                <p class="text">
+                  Football's very first,<br /><strong
+                    >real-time<br />scouting game.</strong
+                  >
+                </p>
+                <img
+                  src="../assets/images/ticket-left-new.png"
+                  class="ticketLeft"
+                />
+                <img
+                  src="../assets/images/ticket-right-new.png"
+                  class="ticketRight"
+                />
+              </div>
               <p class="bottom">
                 18 Million UK Football Fans
               </p>
             </div>
             <div class="column ticket">
-              <img src="~/assets/images/Pick-Roster-icon@2x.png" />
-              <p class="text">
-                Scout players from <br />England's divisions,<br />
-                <strong>Top 4 and the WSL!</strong>
-              </p>
-              <img
-                src="../assets/images/ticket-left-new.png"
-                class="ticketLeft"
-              />
-              <img
-                src="../assets/images/ticket-right-new.png"
-                class="ticketRight"
-              />
+              <div>
+                <img src="~/assets/images/Pick-Roster-icon@2x.png" />
+                <p class="text">
+                  Scout players from <br />England's divisions,<br />
+                  <strong>Top 4 and the WSL!</strong>
+                </p>
+                <img
+                  src="../assets/images/ticket-left-new.png"
+                  class="ticketLeft"
+                />
+                <img
+                  src="../assets/images/ticket-right-new.png"
+                  class="ticketRight"
+                />
+              </div>
               <p class="bottom">3.5 Billion Global Football Fans*</p>
             </div>
             <div class="column ticket">
-              <img src="~/assets/images/Watch-Match-Vision-icon@2x.png" />
-              <p class="text">
-                Watch the action.<br />Find the players,<br /><strong
-                  >Beat the competition.</strong
-                >
-              </p>
-              <img
-                src="../assets/images/ticket-left-new.png"
-                class="ticketLeft"
-              />
-              <img
-                src="../assets/images/ticket-right-new.png"
-                class="ticketRight"
-              />
+              <div>
+                <img src="~/assets/images/Watch-Match-Vision-icon@2x.png" />
+                <p class="text">
+                  Watch the action.<br />Find the players,<br /><strong
+                    >Beat the competition.</strong
+                  >
+                </p>
+                <img
+                  src="../assets/images/ticket-left-new.png"
+                  class="ticketLeft"
+                />
+                <img
+                  src="../assets/images/ticket-right-new.png"
+                  class="ticketRight"
+                />
+              </div>
               <p class="bottom">Compete To Be The Best</p>
             </div>
           </div>
