@@ -106,7 +106,7 @@ body {
 }
 
 .app {
-  background-color: $background-app;
+  background-color: $background-dark;
 }
 
 .navbar {
