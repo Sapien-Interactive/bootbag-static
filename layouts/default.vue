@@ -354,7 +354,7 @@ form {
 }
 
 .ticketWrapper {
-  margin: 60px 0 40px 0;
+  margin: 20px 0;
 
   .ticket {
     display: flex;

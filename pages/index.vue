@@ -21,6 +21,9 @@
         ></iframe>
       </div>
     </div>
+    <div>
+      <DownloadLogos />
+    </div>
     <!-- <div class="container is-12 aspect-ratio-box">
         <client-only>
           <vueVimeoPlayer
@@ -104,12 +107,13 @@
 <script>
 // import { vueVimeoPlayer } from 'vue-vimeo-player'
 import Footer from '~/components/Footer'
-import { UserService } from '~/services'
+import DownloadLogos from '~/components/DownloadLogos'
 
 export default {
   name: 'HomePage',
   components: {
-    Footer
+    Footer,
+    DownloadLogos
     // vueVimeoPlayer
   },
 
@@ -284,6 +288,10 @@ export default {
   display: none;
 }
 
+.ticketWrapper {
+  margin-top: 30px;
+}
+
 @media only screen and (min-width: 560px) {
   .wrap {
     position: relative;
@@ -347,7 +355,7 @@ export default {
   }
 
   .ticketWrapper {
-    margin-top: 80px;
+    margin-top: 20px;
   }
 
   .strapline {
