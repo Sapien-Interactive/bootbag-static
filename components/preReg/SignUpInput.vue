@@ -89,9 +89,9 @@ export default {
 </script>
 
 <style lang="scss">
-.error {
-  display: inline-block;
-  margin-top: 8px;
-  color: $signage-negative;
-}
+  .error {
+    display: inline-block;
+    margin-top: 8px;
+    color: $signage-negative;
+  }
 </style>
