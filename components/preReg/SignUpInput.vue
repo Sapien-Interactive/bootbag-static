@@ -49,7 +49,6 @@
 </template>
 
 <script>
-// import { vueVimeoPlayer } from 'vue-vimeo-player'
 import Footer from '~/components/Footer'
 import { UserService } from '~/services'
 
