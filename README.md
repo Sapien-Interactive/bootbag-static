@@ -4,19 +4,20 @@
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
-$ yarn install
+$ npm i
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ npm run dev
 
 # build for production and launch server
-$ yarn build
-$ yarn start
+$ npm run build
+$ npm start
 
-# generate static project
-$ yarn generate
+# deploy to production
+# to check environment do firebase projects:list, to switch to production do firebase use bootbag-production
+$ npm run deploy OR npm run deploy -P bootbag-production
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
