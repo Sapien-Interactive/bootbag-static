@@ -811,6 +811,86 @@
               creative used to promote the mini game and be specific to the mini
               game
             </p>
+            <p>
+              The voucher does not cover the cost of postage. Winners will have
+              to pay for postage. Postage varies per item.
+            </p>
+            <p>
+              The prize shall only be redeemable in a singular transaction. In
+              the event that the entirety of the prize money is not utilised
+              during the checkout process, any unspent portion of the prize
+              money shall not be subject to reimbursement in monetary form,
+              thereby resulting in the forfeiture of the remaining prize value
+            </p>
+          </div>
+        </ol>
+        <p>Live Mini Games</p>
+        <ol class="list-container">
+          <div class="competition-list">
+            <p>
+              Clean Sheet - This mini game runs from 16/8/23 and ends at 23:59
+              BST on 20/8/23. The winner will be announced in August 2023. If
+              you think you might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> from
+              the email you signed up with and let us know your Scout name. Only
+              the winner will be contacted due to high demand.
+            </p>
+            <p>
+              My Club - This mini game runs for a single game and ends at 23:59
+              BST on 4/8/23. The winner will be announced in August 2023. If you
+              think you might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> from
+              the the the email you signed up with and let us know your Scout
+              name. winner will be contacted due to high demand
+            </p>
+            <p>
+              Top Performers - This mini game runs on 5/8/23 ends at 23:59 BST.
+              The winner will be announced in August 2023. If you think you
+              might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> from
+              the email you signed up with and let us know your Scout name. Only
+              the winner will be contacted due to high demand.
+            </p>
+            <p>
+              Fair Challenge - This mini game runs on 6/8/23 and ends at 23:59
+              BST. The winner will be announced in August 2023. If you think you
+              might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> from
+              the email you signed up with and let us know your Scout name. Only
+              the winner will be contacted due to high demand.
+            </p>
+            <p>
+              On Fire - This mini game runs for a single game and ends at 23:59
+              BST on 4/8/23. The winner will be announced in August 2023. If you
+              think you might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> from
+              the email you signed up with and let us know your Scout name. Only
+              the winner will be contacted due to high demand.
+            </p>
+            <p>
+              Form Crusher - This mini game runs on 20/8/23 and ends at 23:59
+              BST. The winner will be announced in August 2023. If you think you
+              might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> from
+              the email you signed up with and let us know your Scout name. Only
+              the winner will be contacted due to high demand.
+            </p>
+            <p>
+              Top Tekkers - This mini game runs for a single game and ends at
+              23:59 BST on 4/8/23. The winner will be announced in August 2023.
+              If you think you might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a>
+              from the email you signed up with and let us know your Scout name.
+              Only the winner will be contacted due to high demand
+            </p>
+            <p>
+              League Maestro - This mini game runs from 4/8/23 and ends at 23:59
+              BST on 6/8/23. The winner will be announced in August 2023. If you
+              think you might have won, email us on
+              <a href="mailto:support@bootbag.co">support@bootbag.co</a> with
+              your scout name and from the email you sign up using. Only the
+              winner will be contacted due to high demand.
+            </p>
           </div>
         </ol>
       </li>
