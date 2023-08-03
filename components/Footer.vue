@@ -17,6 +17,9 @@
                 <router-link to="/how-to-play">How To Play</router-link>
               </li>
               <li>
+                <router-link to="/how-to-scout">How To Scout</router-link>
+              </li>
+              <li>
                 <router-link to="/contact">Contact</router-link>
               </li>
             </ul>
