@@ -3,7 +3,7 @@
     <h1>How To Play</h1>
     <div class="phone">
       <iframe
-        src="https://player.vimeo.com/video/823475037?color=ff0086&title=0&byline=0&portrait=1&playsinline=false"
+        src="https://player.vimeo.com/video/851240541?color=ff0086&title=0&byline=0&portrait=1&playsinline=false"
         frameborder="0"
         allow="autoplay; fullscreen"
         allowfullscreen
