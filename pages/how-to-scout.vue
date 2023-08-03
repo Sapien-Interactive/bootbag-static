@@ -1,9 +1,9 @@
 <template>
-  <div class="how-to-play">
-    <h1>How To Play</h1>
+  <div class="how-to-scout">
+    <h1>How To Scout</h1>
     <div class="phone">
       <iframe
-        src="https://player.vimeo.com/video/851240541?color=ff0086&title=0&byline=0&portrait=1&playsinline=false"
+        src="https://player.vimeo.com/video/851231762?color=ff0086&title=0&byline=0&portrait=1&playsinline=false"
         frameborder="0"
         allow="autoplay; fullscreen"
         allowfullscreen
@@ -17,7 +17,7 @@
 <script>
 import Footer from '~/components/Footer'
 export default {
-  name: 'HowToPlay',
+  name: 'HowToScout',
   components: {
     Footer
   },
@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style lang="scss">
-.how-to-play {
+.how-to-scout {
   h1 {
     display: none;
     font-weight: bold;

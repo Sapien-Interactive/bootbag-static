@@ -14,11 +14,11 @@
         </div>
         <a
           :class="{ 'is-active': isOpen }"
-          @click="isOpen = !isOpen"
           role="button"
           class="navbar-burger"
           aria-label="main-menu"
           aria-expanded="false"
+          @click="isOpen = !isOpen"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -29,17 +29,22 @@
     <div v-show="showHeader" :class="{ 'is-active': isOpen }" class="main-menu">
       <ul>
         <li>
-          <nuxt-link @click.native="isOpen = !isOpen" to="/about"
+          <nuxt-link to="/about" @click.native="isOpen = !isOpen"
             >About</nuxt-link
           >
         </li>
         <li>
-          <nuxt-link @click.native="isOpen = !isOpen" to="/how-to-play"
+          <nuxt-link to="/how-to-play" @click.native="isOpen = !isOpen"
             >How To Play</nuxt-link
           >
         </li>
         <li>
-          <nuxt-link @click.native="isOpen = !isOpen" to="/contact"
+          <nuxt-link to="/how-to-scout" @click.native="isOpen = !isOpen"
+            >How To Scout</nuxt-link
+          >
+        </li>
+        <li>
+          <nuxt-link to="/contact" @click.native="isOpen = !isOpen"
             >Contact</nuxt-link
           >
         </li>
