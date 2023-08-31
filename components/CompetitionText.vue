@@ -747,7 +747,7 @@
         <p>
           Compete to meet Alisha! The object of the game is to score the most
           points in a monthly Round to be in with a chance to meet Alisha
-          Lehmann. The highest Round scorer between April and August will be
+          Lehmann. The highest Round scorer between August and December will be
           crowned the winner and the opportunity to have a one to one meeting
           with Alisha *. Runner-up prizes will be rewarded each month.
         </p>
@@ -758,10 +758,13 @@
             </p>
             <p>Overseas based will win a video call with Alisha *.</p>
             <p>
-              Runner-up Prizes 3x signed shirts per month (April, May, June,
-              July) for top round scorers from each month.
+              Runner-up Prizes 3x signed shirts per month (September, October,
+              November, December) for top round scorers from each month.
             </p>
-            <p>Winner will be announced on or after August 1st 00:00 2023.</p>
+            <p>
+              Winner will be announced on or after each round ends on the 1st
+              00:00 2023 of the following month.
+            </p>
             <p>
               Call will be scheduled and agreed by both parties with a suitable
               time and day based on availability.
